@@ -1,0 +1,104 @@
+/******************************************************************************\
+FILE:           et_setup_page.zm
+AUTHOR:         Theo Veenker <theo.veenker@beexy.nl>
+ADAPTED BY:     -
+
+DESCRIPTION:
+
+Provides a page object for handling eye-tracker setup and calibration.
+
+
+HISTORY:
+2019-08-09 TV   Created.
+
+\******************************************************************************/
+
+
+Page et_setup_page
+{
+    init()
+    {
+        fill_pattern_color = TEST_PAGE_COLOR;
+    }
+
+
+    on_event:key_press()
+    {
+        if (eyetracker.handle_key_press())
+            ;
+        else if (input_key == KEY_F7)
+        {
+            int modifiers = input_modifiers;
+            if (modifiers == INPUT_MOD_CONTROL)
+                eyetracker.show_gaze = !eyetracker.show_gaze;
+            else if (modifiers == 0)
+                control.toggle_show_gaze();
+        }
+        else if (input_key == KEY_F8)
+        {
+            int modifiers = input_modifiers;
+            if (modifiers == INPUT_MOD_CONTROL)
+                eyetracker.show_fixations = !eyetracker.show_fixations;
+            else if (modifiers == 0)
+                control.toggle_show_fixations();
+        }
+        else
+            handle_special_key(this, input_key, input_modifiers);
+    }
+
+
+    on_event:message()
+    {
+        // Handle 'proceed' message received from eye-tracker.
+        if (message_arg == CONTINUE)
+            done(CONTINUE);
+//        else if (message_arg == CANCEL)
+//            control.quit_experiment();    // Quit.
+        else if (message_arg == CANCEL)
+            control.stop_experiment();      // Say thanks and quit.
+    }
+
+
+    void done(int msgid)
+    {
+        eyetracker.show_controls = false;
+
+        signal_target(msgid);
+        target = null;
+
+        // Enable the mouse cursor again.
+        show_cursor();
+    }
+
+
+    //==========================================================================
+
+
+    void action(Object caller,
+        dur showdelay=-1s, dur fadedur=-1s)
+    {
+        // Force page show delay and transition duration in sane range.
+        if (showdelay < 0s) showdelay = PAGE_TRANSITION_DELAY;
+        else showdelay = limit(showdelay, 0s, MAX_PAGE_TRANSITION_DELAY);
+        if (fadedur < 0s) fadedur = PAGE_TRANSITION_DURATION;
+        else fadedur = limit(fadedur, 0s, MAX_PAGE_TRANSITION_DURATION);
+
+        // Clear page transition delay.
+        page_transition_delay = 0s;
+
+        // Let's delay the first test page trial following this page.
+        first_trial_delay = FIRST_TRIAL_EXTRA_DELAY;
+
+        test_window1.show_page(this, now() + showdelay, fadedur);
+
+        // We don't want the mouse cursor to interfere.
+        hide_cursor();
+
+        target = caller;
+        eyetracker.target = this;
+        eyetracker.target_page = this;
+        eyetracker.show_controls = true;
+
+        test_window1.activate();
+    }
+}

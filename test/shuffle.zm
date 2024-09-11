@@ -1,0 +1,116 @@
+/******************************************************************************\
+FILE:           shuffle.zm
+AUTHOR:         Theo Veenker <theo.veenker@beexy.nl>
+ADAPTED BY:     Li Kloostra
+
+DESCRIPTION:
+
+Item table shuffling functions.
+
+
+HISTORY:
+2012-08-23 TV   Created.
+19-08-2024 LK   Added criteria: item 48 and 49 (middle items) must be fillers.
+		Maximal number of subsequent non-filler items changed to 2 instead of 3.
+		Maximal number of subsequent same type non-filler items changed to 1 instead of 2.
+
+\******************************************************************************/
+
+
+// Shuffles specified list in test_items table according to following criteria:
+//   - The maximum number of subsequent same type non-filler items is 2.
+//   - The maximum number of subsequent non-filler items is 3.
+//   - First item must be a filler item.
+//   - Item 48 and 49 must be filler items.
+int shuffle_test_items(int lst)
+{
+    int nitems = test_items[lst].size;
+
+    // Depending on criteria and table contents it may happen that it takes
+    // several attempts to make the shuffling succeed. We'll try it 100 times
+    // before giving up.
+    int nattempts;
+    bool again = true;
+    while (again && ++nattempts < 100) 
+    {
+        // First shuffle the entire item table.
+        again = false;
+        test_items[lst].shuffle(0, -1);
+
+        // Walk over the table and check for items conflicting with the
+        // criterion. If an item conflicts, then swap it randomly with one 
+        // of the items not yet looked at.
+        int n;
+        while (n < nitems)
+        {
+            int nitemswaps;
+            while (!is_allowed_item_sequence(test_items[lst], n))
+            {
+                if (n+1 == nitems || ++nitemswaps == 10) 
+                {
+                    again = true;
+                    break;
+                }
+                test_items[lst].swap(n, random(n, nitems - n));
+            }
+            if (again) break;
+            n++;
+        }
+    }
+
+    if (again)
+        println("Unable to shuffle test_items according to criteria. "
+            "Check table and/or criteria.");
+
+    // 
+    if (DUMP_TEST_ITEMS)
+        dump_test_items(lst);
+
+    return again ? ERROR : OK;
+}
+
+
+// Checks validity of item at position n in specified items table.
+bool is_allowed_item_sequence(TestItem[] items, int n)
+{
+    // First item must be a filler item.
+    if (n == 0 && items[n].type != FILL) return false;
+
+    if (items[n].type == FILL) return true;
+    
+    // Middle items must be fillers.
+    if (n == 48 && items[n].type != FILL) return false;
+    if (n == 49 && items[n].type != FILL) return false;
+
+    if (items[n].type == FILL) return true;
+
+    // Item is non-filler.
+
+    // The maximum number of subsequent non-filler items is 2.
+    if (n >= 2 && 
+        items[n-1].type != FILL &&
+        items[n-2].type != FILL) return false;
+
+    // The maximum number of subsequent same type non-filler items is 1.
+    if (n >= 1 && 
+        items[n].type == items[n-1].type) return false;
+
+    return true;
+}
+
+
+// Prints test_items table contents in terminal window.
+void dump_test_items(int lst)
+{
+    println("list " + string(lst) + ":");
+    int nitems = test_items[lst].size;
+    int n;
+    while (n < nitems)
+    {
+        println(string(n) + "\t" +
+            string(test_items[lst][n].type) + "\t" +
+            string(test_items[lst][n].id) + "\t" +
+            substring(test_items[lst][n].text, 0, 20));
+        n++;
+    }
+}

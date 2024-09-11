@@ -1,0 +1,23 @@
+/******************************************************************************\
+FILE:           response_box.zm
+AUTHOR:         Theo Veenker <theo.veenker@beexy.nl>
+ADAPTED BY:     -
+
+DESCRIPTION:
+
+Defines ResponseBox object type.
+
+
+ATTENTION:
+
+    This is used post Zep 1.10.x.
+
+
+HISTORY:
+2015-11-27 TV   Created as part of the standard Zep modules.
+
+\******************************************************************************/
+
+
+//alias ResponseBox ButtonBox;
+alias ResponseBox BeexyBox;

@@ -1,0 +1,88 @@
+/******************************************************************************\
+FILE:           fonts.zm
+AUTHOR:         Theo Veenker <theo.veenker@beexy.nl>
+ADAPTED BY:     -
+
+DESCRIPTION:
+
+Defines default fonts (family & size) for various graphic elements.
+
+To see which fonts are available to Zep on your system run the zeplistfonts
+utility. The generic fonts Monospace, Serif and Sans are always available. 
+However the appearance of these fallback fonts are not the same on all 
+platforms.
+
+
+HISTORY:
+2009-12-02 TV   Created as part of the standard Zep modules.
+
+\******************************************************************************/
+
+
+// Some generic font sizes. The relative sizes correspond to those in CSS 2.1.
+const real FONT_SIZE_MEDIUM     = 24;
+const real FONT_SIZE_LARGE      = FONT_SIZE_MEDIUM * 1.2;
+const real FONT_SIZE_XLARGE     = FONT_SIZE_MEDIUM * 1.5;
+const real FONT_SIZE_XXLARGE    = FONT_SIZE_MEDIUM * 2.0;
+const real FONT_SIZE_XXXLARGE   = FONT_SIZE_MEDIUM * 3.0;
+const real FONT_SIZE_SMALL      = FONT_SIZE_MEDIUM * 0.89;
+const real FONT_SIZE_XSMALL     = FONT_SIZE_MEDIUM * 0.75;
+const real FONT_SIZE_XXSMALL    = FONT_SIZE_MEDIUM * 0.6;
+
+
+// Some generic font families.
+const string FONT_FAMILY_SANS   = "Sans";
+const string FONT_FAMILY_SERIF  = "Serif";
+const string FONT_FAMILY_MONO   = "Monospace";
+
+
+// Fonts used on test pages.
+const string    TEST_PAGE_STIMULUS_FONT_FAMILY  = FONT_FAMILY_MONO;
+const real      TEST_PAGE_STIMULUS_FONT_SIZE    = FONT_SIZE_LARGE;
+const string    TEST_PAGE_MESSAGE_FONT_FAMILY   = FONT_FAMILY_SANS;
+const real      TEST_PAGE_MESSAGE_FONT_SIZE     = FONT_SIZE_MEDIUM;
+const string    TEST_PAGE_PROMPT_FONT_FAMILY    = FONT_FAMILY_SANS;
+const real      TEST_PAGE_PROMPT_FONT_SIZE      = FONT_SIZE_MEDIUM;
+const string    TEST_PAGE_LABEL_FONT_FAMILY     = FONT_FAMILY_SANS;
+const real      TEST_PAGE_LABEL_FONT_SIZE       = FONT_SIZE_MEDIUM;
+const string    TEST_PAGE_BUTTON_FONT_FAMILY    = FONT_FAMILY_SANS;
+const real      TEST_PAGE_BUTTON_FONT_SIZE      = FONT_SIZE_MEDIUM;
+const string    TEST_PAGE_INPUT_FONT_FAMILY     = FONT_FAMILY_MONO;
+const real      TEST_PAGE_INPUT_FONT_SIZE       = FONT_SIZE_MEDIUM;
+const string    TEST_PAGE_STATUS_FONT_FAMILY    = FONT_FAMILY_MONO;
+const real      TEST_PAGE_STATUS_FONT_SIZE      = FONT_SIZE_LARGE;
+
+
+// Fonts used on standard modules entry_page and exit_page.
+const string    ENTRY_PAGE_MESSAGE_FONT_FAMILY  = FONT_FAMILY_SERIF;
+const real      ENTRY_PAGE_MESSAGE_FONT_SIZE    = FONT_SIZE_XXXLARGE;
+
+
+// Fonts used on standard module pause_page.
+const string    INFO_PAGE_MESSAGE_FONT_FAMILY   = FONT_FAMILY_SANS;
+const real      INFO_PAGE_MESSAGE_FONT_SIZE     = FONT_SIZE_MEDIUM;
+const string    INFO_PAGE_BUTTON_FONT_FAMILY    = FONT_FAMILY_SANS;
+const real      INFO_PAGE_BUTTON_FONT_SIZE      = FONT_SIZE_MEDIUM;
+
+
+// Fonts used on standard module text_page.
+const string    TEXT_PAGE_MESSAGE_FONT_FAMILY   = FONT_FAMILY_SANS;
+const real      TEXT_PAGE_MESSAGE_FONT_SIZE     = FONT_SIZE_XLARGE;
+
+
+// Fonts used on standard module prompt_page.
+const string    PROMPT_PAGE_MESSAGE_FONT_FAMILY = FONT_FAMILY_SANS;
+const real      PROMPT_PAGE_MESSAGE_FONT_SIZE   = FONT_SIZE_MEDIUM;
+const string    PROMPT_PAGE_CAPTION_FONT_FAMILY = FONT_FAMILY_SANS;
+const real      PROMPT_PAGE_CAPTION_FONT_SIZE   = FONT_SIZE_SMALL;
+
+
+// Fonts used on standard modules input_page, choose_page, check_page.
+const string    INPUT_PAGE_MESSAGE_FONT_FAMILY  = FONT_FAMILY_SANS;
+const real      INPUT_PAGE_MESSAGE_FONT_SIZE    = FONT_SIZE_MEDIUM;
+const string    INPUT_PAGE_LABEL_FONT_FAMILY    = FONT_FAMILY_SANS;
+const real      INPUT_PAGE_LABEL_FONT_SIZE      = FONT_SIZE_SMALL;
+const string    INPUT_PAGE_BUTTON_FONT_FAMILY   = FONT_FAMILY_SANS;
+const real      INPUT_PAGE_BUTTON_FONT_SIZE     = FONT_SIZE_SMALL;
+const string    INPUT_PAGE_INPUT_FONT_FAMILY    = FONT_FAMILY_MONO;
+const real      INPUT_PAGE_INPUT_FONT_SIZE      = FONT_SIZE_SMALL;

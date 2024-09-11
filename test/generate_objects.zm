@@ -1,0 +1,108 @@
+/******************************************************************************\
+FILE:           
+AUTHOR:         duijn119 <email@server.nl>
+ADAPTED BY:     -
+
+DESCRIPTION:
+
+instead of running a task, this just presents all objects and generates the
+object info.
+
+
+HISTORY:
+2016-02-03 duijn119   Created.
+
+\******************************************************************************/
+
+// The important imports are all done in task.zm
+
+Block generate_objects
+{
+    Block list_block
+    {
+
+        on_event:entry()
+        {
+            if (generate_object_info)
+                num_cycles = test_items.size;
+        }
+
+        Block export_list
+        {
+            TestItem  item;   // current item
+            int       listnum;// current list index + 1;
+
+            on_event:entry()
+            {
+                num_cycles = test_items[list_block.cycle].size;
+                listnum = list_block.cycle + 1;
+
+                test_page.setup(num_cycles);
+            }
+
+            on_event:exit()
+            {
+                // correct the object info for each list
+                object_info_correct_height(listnum-1, test_page.layout.canvas.stimulus.line_height);
+                
+                test_page.cleanup();
+            }
+
+            Trial trial
+            {
+                on_event:entry()
+                {
+                    item = test_items[list_block.cycle][export_list.cycle];
+                }
+
+                SubTrial presentation
+                {
+                    on_event:entry()
+                    {
+                        test_page.setup(export_list.num_cycles);
+
+                        test_page.set_list_index(list_block.cycle);
+
+                        test_page.action(this, item, reference_time, -1);
+                    }
+                }
+
+                TransientPart
+                {
+                    on_event:entry()
+                    {
+                        question.enter();       // Skip recalibration part.
+                    }
+                }
+
+                SubTrial question
+                {
+                    on_event:entry()
+                    {
+                        question_page.setup(export_list.num_cycles);
+
+                        question_page.set_list_index(list_block.cycle);
+
+                        question_page.action(this, item, reference_time, 
+                            -1);
+                    }
+
+
+                    on_event:exit()
+                    {
+                        question_page.cleanup();
+                    }
+                }
+            }
+        }
+    }
+}
+
+// similar to task.zm ->action(Part caller)
+void generate(Part caller)
+{
+    println("Generating objects and 'png's of the stimuli of all stimulus lists.");
+    println("This feature is currently experimental, therefore");
+    println("you should check if all desired objects and png's are generated.");
+    generate_objects.enter(caller);
+}

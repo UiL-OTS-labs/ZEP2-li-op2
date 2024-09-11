@@ -1,0 +1,1746 @@
+﻿### TEST ITEMS ###;;;;;;;;;
+index;id;type;text;driftchk;receye;qtext;qdriftchk;qreceye;qanswer
+0;001;MI_MI;"Megan had honger maar gelukkig stond er een volle fruitschaal
+in de lobby van het hotel. Megan heeft een gele peer gegeten,
+maar ze heeft geen groene peer gegeten. De ochtend erna
+heeft Megan opnieuw een appel gegeten want ze wilde meer fruit
+eten.";TRUE;TRUE;Is Megan in een hotel?;FALSE;FALSE;TRUE
+1;001;MI_MA;"Megan had honger maar gelukkig stond er een volle fruitschaal
+in de lobby van het hotel. Megan heeft een gele peer gegeten,
+maar ze heeft geen groene appel gegeten. De ochtend erna
+heeft Megan opnieuw een appel gegeten want ze wilde meer fruit
+eten.";TRUE;TRUE;Is Megan in een hotel?;FALSE;FALSE;TRUE
+2;001;MA_MI;"Megan had honger maar gelukkig stond er een volle fruitschaal
+in de lobby van het hotel. Megan heeft een gele appel gegeten,
+maar ze heeft geen groene peer gegeten. De ochtend erna
+heeft Megan opnieuw een appel gegeten want ze wilde meer fruit
+eten.";TRUE;TRUE;Is Megan in een hotel?;FALSE;FALSE;TRUE
+3;001;MA_MA;"Megan had honger maar gelukkig stond er een volle fruitschaal
+in de lobby van het hotel. Megan heeft een gele appel gegeten,
+maar ze heeft geen groene appel gegeten. De ochtend erna
+heeft Megan opnieuw een appel gegeten want ze wilde meer fruit
+eten.";TRUE;TRUE;Is Megan in een hotel?;FALSE;FALSE;TRUE
+1;002;MI_MI;"Maria helpt met dieren tellen. Vanochtend ging ze wandelen met
+haar verrekijker op zak. Maria heeft een grote vlinder gezien,
+maar ze heeft geen kleine vlinder gezien. Later die middag
+heeft Maria opnieuw een vogel gezien en er snel een foto van
+gemaakt.";TRUE;TRUE;Was Maria haar verrekijker vergeten?;FALSE;FALSE;FALSE
+2;002;MI_MA;"Maria helpt met dieren tellen. Vanochtend ging ze wandelen met
+haar verrekijker op zak. Maria heeft een grote vlinder gezien,
+maar ze heeft geen kleine vogel gezien. Later die middag
+heeft Maria opnieuw een vogel gezien en er snel een foto van
+gemaakt.";TRUE;TRUE;Was Maria haar verrekijker vergeten?;FALSE;FALSE;FALSE
+3;002;MA_MI;"Maria helpt met dieren tellen. Vanochtend ging ze wandelen met
+haar verrekijker op zak. Maria heeft een grote vogel gezien,
+maar ze heeft geen kleine vlinder gezien. Later die middag
+heeft Maria opnieuw een vogel gezien en er snel een foto van
+gemaakt.";TRUE;TRUE;Was Maria haar verrekijker vergeten?;FALSE;FALSE;FALSE
+0;002;MA_MA;"Maria helpt met dieren tellen. Vanochtend ging ze wandelen met
+haar verrekijker op zak. Maria heeft een grote vogel gezien,
+maar ze heeft geen kleine vogel gezien. Later die middag
+heeft Maria opnieuw een vogel gezien en er snel een foto van
+gemaakt.";TRUE;TRUE;Was Maria haar verrekijker vergeten?;FALSE;FALSE;FALSE
+2;003;MI_MI;"Sara ging bij de supermarkt langs want ze was haar lunch
+vergeten mee te nemen. Sara heeft een warme pasta gekocht,
+maar ze heeft geen koude pasta gekocht. Twee dagen later
+heeft Sara opnieuw een sandwich gekocht want die was erg goed
+bevallen.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;003;MI_MA;"Sara ging bij de supermarkt langs want ze was haar lunch
+vergeten mee te nemen. Sara heeft een warme pasta gekocht,
+maar ze heeft geen koude sandwich gekocht. Twee dagen later
+heeft Sara opnieuw een sandwich gekocht want die was erg goed
+bevallen.";TRUE;TRUE;;FALSE;FALSE;FALSE
+0;003;MA_MI;"Sara ging bij de supermarkt langs want ze was haar lunch
+vergeten mee te nemen. Sara heeft een warme sandwich gekocht,
+maar ze heeft geen koude pasta gekocht. Twee dagen later
+heeft Sara opnieuw een sandwich gekocht want die was erg goed
+bevallen.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;003;MA_MA;"Sara ging bij de supermarkt langs want ze was haar lunch
+vergeten mee te nemen. Sara heeft een warme sandwich gekocht,
+maar ze heeft geen koude sandwich gekocht. Twee dagen later
+heeft Sara opnieuw een sandwich gekocht want die was erg goed
+bevallen.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;004;MI_MI;"Vorig jaar ging Ellen naar het grote cultuurfestival in het oude
+centrum van de stad. Ellen heeft een modern ballet bezocht,
+maar ze heeft geen klassiek ballet bezocht. Afgelopen maand
+heeft Ellen opnieuw een concert bezocht maar dan samen met
+een vriendin.";TRUE;TRUE;Is Ellen naar de bios geweest?;FALSE;FALSE;FALSE
+0;004;MI_MA;"Vorig jaar ging Ellen naar het grote cultuurfestival in het oude
+centrum van de stad. Ellen heeft een modern ballet bezocht,
+maar ze heeft geen klassiek concert bezocht. Afgelopen maand
+heeft Ellen opnieuw een concert bezocht maar dan samen met
+een vriendin.";TRUE;TRUE;Is Ellen naar de bios geweest?;FALSE;FALSE;FALSE
+1;004;MA_MI;"Vorig jaar ging Ellen naar het grote cultuurfestival in het oude
+centrum van de stad. Ellen heeft een modern concert bezocht,
+maar ze heeft geen klassiek ballet bezocht. Afgelopen maand
+heeft Ellen opnieuw een concert bezocht maar dan samen met
+een vriendin.";TRUE;TRUE;Is Ellen naar de bios geweest?;FALSE;FALSE;FALSE
+2;004;MA_MA;"Vorig jaar ging Ellen naar het grote cultuurfestival in het oude
+centrum van de stad. Ellen heeft een modern concert bezocht,
+maar ze heeft geen klassiek concert bezocht. Afgelopen maand
+heeft Ellen opnieuw een concert bezocht maar dan samen met
+een vriendin.";TRUE;TRUE;Is Ellen naar de bios geweest?;FALSE;FALSE;FALSE
+0;005;MI_MI;"Sofia is haar huis aan het poetsen. Ze heeft wel aardig wat
+schoonmaakmiddelen in huis. Sofia heeft een dikke dweil
+gebruikt, maar ze heeft geen grote dweil gebruikt. De volgende
+dag heeft Sofia opnieuw een spons gebruikt want de ramen waren
+vies.";TRUE;TRUE;Heeft Sofia schoongemaakt?;FALSE;FALSE;TRUE
+1;005;MI_MA;"Sofia is haar huis aan het poetsen. Ze heeft wel aardig wat
+schoonmaakmiddelen in huis. Sofia heeft een dikke dweil
+gebruikt, maar ze heeft geen grote spons gebruikt. De volgende
+dag heeft Sofia opnieuw een spons gebruikt want de ramen waren
+vies.";TRUE;TRUE;Heeft Sofia schoongemaakt?;FALSE;FALSE;TRUE
+2;005;MA_MI;"Sofia is haar huis aan het poetsen. Ze heeft wel aardig wat
+schoonmaakmiddelen in huis. Sofia heeft een dikke spons 
+gebruikt, maar ze heeft geen grote dweil gebruikt. De volgende
+dag heeft Sofia opnieuw een spons gebruikt want de ramen waren
+vies.";TRUE;TRUE;Heeft Sofia schoongemaakt?;FALSE;FALSE;TRUE
+3;005;MA_MA;"Sofia is haar huis aan het poetsen. Ze heeft wel aardig wat
+schoonmaakmiddelen in huis. Sofia heeft een dikke spons
+gebruikt, maar ze heeft geen grote spons gebruikt. De volgende
+dag heeft Sofia opnieuw een spons gebruikt want de ramen waren 
+vies.";TRUE;TRUE;Heeft Sofia schoongemaakt?;FALSE;FALSE;TRUE
+1;006;MI_MI;"Karen was op zoek naar een cadeau voor haar nichtje dat gek
+is op fashion. Karen heeft een handtas met glitter gekocht,
+maar ze heeft geen handtas met strikjes gekocht. Niet lang
+daarna heeft Karen opnieuw een haarband gekocht want haar zusje
+wilde er ook één.";TRUE;TRUE;Heeft Karen een zusje?;FALSE;FALSE;TRUE
+2;006;MI_MA;"Karen was op zoek naar een cadeau voor haar nichtje dat gek
+is op fashion. Karen heeft een handtas met glitter gekocht,
+maar ze heeft geen haarband met strikjes gekocht. Niet lang
+daarna heeft Karen opnieuw een haarband gekocht want haar zusje
+wilde er ook één.";TRUE;TRUE;Heeft Karen een zusje?;FALSE;FALSE;TRUE
+3;006;MA_MI;"Karen was op zoek naar een cadeau voor haar nichtje dat gek 
+is op fashion. Karen heeft een haarband met glitter gekocht,
+maar ze heeft geen handtas met strikjes gekocht. Niet lang
+daarna heeft Karen opnieuw een haarband gekocht want haar zusje
+wilde er ook één.";TRUE;TRUE;Heeft Karen een zusje?;FALSE;FALSE;TRUE
+0;006;MA_MA;"Karen was op zoek naar een cadeau voor haar nichtje dat gek
+is op fashion. Karen heeft een haarband met glitter gekocht, 
+maar ze heeft geen haarband met strikjes gekocht. Niet lang
+daarna heeft Karen opnieuw een haarband gekocht want haar zusje
+wilde er ook één.";TRUE;TRUE;Heeft Karen een zusje?;FALSE;FALSE;TRUE
+2;007;MI_MI;"Siska is een klassieke designer. Ze gebruikt daarbij vaak veel
+contrast maar weinig kleur. Siska heeft een witte brievenbus
+ontworpen, maar ze heeft geen zwarte brievenbus ontworpen. De dag
+daarna heeft Siska opnieuw een voordeur ontworpen maar dan van
+ondoorzichtig glas.";TRUE;TRUE;Heeft Siska kleur gebruikt?;FALSE;FALSE;FALSE
+3;007;MI_MA;"Siska is een klassieke designer. Ze gebruikt daarbij vaak veel
+contrast maar weinig kleur. Siska heeft een witte brievenbus
+ontworpen, maar ze heeft geen zwarte voordeur ontworpen. De dag
+daarna heeft Siska opnieuw een voordeur ontworpen maar dan van
+ondoorzichtig glas.";TRUE;TRUE;Heeft Siska kleur gebruikt?;FALSE;FALSE;FALSE
+0;007;MA_MI;"Siska is een klassieke designer. Ze gebruikt daarbij vaak veel
+contrast maar weinig kleur. Siska heeft een witte voordeur
+ontworpen, maar ze heeft geen zwarte brievenbus ontworpen. De dag
+daarna heeft Siska opnieuw een voordeur ontworpen maar dan van
+ondoorzichtig glas.";TRUE;TRUE;Heeft Siska kleur gebruikt?;FALSE;FALSE;FALSE
+1;007;MA_MA;"Siska is een klassieke designer. Ze gebruikt daarbij vaak veel
+contrast maar weinig kleur. Siska heeft een witte voordeur
+ontworpen, maar ze heeft geen zwarte voordeur ontworpen. De dag
+daarna heeft Siska opnieuw een voordeur ontworpen maar dan van
+ondoorzichtig glas.";TRUE;TRUE;Heeft Siska kleur gebruikt?;FALSE;FALSE;FALSE
+3;008;MI_MI;"Ilse werkt in een wetenschapsmuseum dat een internationaal
+publiek trekt. Ilse heeft een groep Zweedse studenten rondgeleid,
+maar ze heeft geen groep Britse studenten rondgeleid. Enkele dagen
+later heeft Ilse opnieuw een groep kleuters rondgeleid en die was
+erg enthousiast.";TRUE;TRUE;;FALSE;FALSE;FALSE
+0;008;MI_MA;"Ilse werkt in een wetenschapsmuseum dat een internationaal
+publiek trekt. Ilse heeft een groep Zweedse studenten rondgeleid,
+maar ze heeft geen groep Britse kleuters rondgeleid. Enkele dagen
+later heeft Ilse opnieuw een groep kleuters rondgeleid en die was
+erg enthousiast.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;008;MA_MI;"Ilse werkt in een wetenschapsmuseum dat een internationaal 
+publiek trekt. Ilse heeft een groep Zweedse kleuters rondgeleid,
+maar ze heeft geen groep Britse studenten rondgeleid. Enkele dagen
+later heeft Ilse opnieuw een groep kleuters rondgeleid en die was
+erg enthousiast.";TRUE;TRUE;;FALSE;FALSE;FALSE
+2;008;MA_MA;"Ilse werkt in een wetenschapsmuseum dat een internationaal 
+publiek trekt. Ilse heeft een groep Zweedse kleuters rondgeleid,
+maar ze heeft geen groep Britse kleuters rondgeleid. Enkele dagen
+later heeft Ilse opnieuw een groep kleuters rondgeleid en die was
+erg enthousiast.";TRUE;TRUE;;FALSE;FALSE;FALSE
+0;009;MI_MI;"Anne verzamelt oude munten en gaat soms ook naar evenementen
+voor verzamelaars. Anne heeft een zilveren gulden gevonden,
+maar ze heeft geen bronzen gulden gevonden. Een maandje later
+heeft Anne opnieuw een frank gevonden maar die had erg veel
+deukjes.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;009;MI_MA;"Anne verzamelt oude munten en gaat soms ook naar evenementen
+voor verzamelaars. Anne heeft een zilveren gulden gevonden, 
+maar ze heeft geen bronzen frank gevonden. Een maandje later
+heeft Anne opnieuw een frank gevonden maar die had erg veel
+deukjes.";TRUE;TRUE;;FALSE;FALSE;FALSE
+2;009;MA_MI;"Anne verzamelt oude munten en gaat soms ook naar evenementen
+voor verzamelaars. Anne heeft een zilveren frank gevonden,
+maar ze heeft geen bronzen gulden gevonden. Een maandje later
+heeft Anne opnieuw een frank gevonden maar die had erg veel
+deukjes.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;009;MA_MA;"Anne verzamelt oude munten en gaat soms ook naar evenementen
+voor verzamelaars. Anne heeft een zilveren frank gevonden,
+maar ze heeft geen bronzen frank gevonden. Een maandje later
+heeft Anne opnieuw een frank gevonden maar die had erg veel
+deukjes.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;010;MI_MI;"Clara moet bij de oogarts zo veel mogelijk dieren zien te vinden
+op een prent. Clara heeft een geit met witte poten gespot, maar
+ze heeft geen geit met bruine vlekken gespot. Een dag later
+heeft Clara opnieuw een wolf gespot maar dat was in een film
+over wolven.";TRUE;TRUE;Was Clara bij de tandarts?;FALSE;FALSE;FALSE
+2;010;MI_MA;"Clara moet bij de oogarts zo veel mogelijk dieren zien te vinden
+op een prent. Clara heeft een geit met witte poten gespot, maar
+ze heeft geen wolf met bruine vlekken gespot. Een dag later
+heeft Clara opnieuw een wolf gespot maar dat was in een film
+over wolven.";TRUE;TRUE;Was Clara bij de tandarts?;FALSE;FALSE;FALSE
+3;010;MA_MI;"Clara moet bij de oogarts zo veel mogelijk dieren zien te vinden
+op een prent. Clara heeft een wolf met witte poten gespot, maar
+ze heeft geen geit met bruine vlekken gespot. Een dag later
+heeft Clara opnieuw een wolf gespot maar dat was in een film
+over wolven.";TRUE;TRUE;Was Clara bij de tandarts?;FALSE;FALSE;FALSE
+0;010;MA_MA;"Clara moet bij de oogarts zo veel mogelijk dieren zien te vinden
+op een prent. Clara heeft een wolf met witte poten gespot, maar
+ze heeft geen wolf met bruine vlekken gespot. Een dag later
+heeft Clara opnieuw een wolf gespot maar dat was in een film
+over wolven.";TRUE;TRUE;Was Clara bij de tandarts?;FALSE;FALSE;FALSE
+2;011;MI_MI;"Bella wil een nieuwe outfit voor het eindgala. Ze staat in een
+mediterraanse boetiek. Bella heeft een broek uit Spanje gepast,
+maar ze heeft geen broek uit Italië gepast. Een week later
+heeft Bella opnieuw een jurk gepast want ze had nog steeds geen
+keuze gemaakt.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;011;MI_MA;"Bella wil een nieuwe outfit voor het eindgala. Ze staat in een
+mediterraanse boetiek. Bella heeft een broek uit Spanje gepast,
+maar ze heeft geen jurk uit Italië gepast. Een week later
+heeft Bella opnieuw een jurk gepast want ze had nog steeds geen
+keuze gemaakt.";TRUE;TRUE;;FALSE;FALSE;FALSE
+0;011;MA_MI;"Bella wil een nieuwe outfit voor het eindgala. Ze staat in een 
+mediterraanse boetiek. Bella heeft een jurk uit Spanje gepast,
+maar ze heeft geen broek uit Italië gepast. Een week later
+heeft Bella opnieuw een jurk gepast want ze had nog steeds geen
+keuze gemaakt.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;011;MA_MA;"Bella wil een nieuwe outfit voor het eindgala. Ze staat in een 
+mediterraanse boetiek. Bella heeft een jurk uit Spanje gepast,
+maar ze heeft geen jurk uit Italië gepast. Een week later
+heeft Bella opnieuw een jurk gepast want ze had nog steeds geen
+keuze gemaakt.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;012;MI_MI;"Op zomervakantie in Turkije was Sanne met haar moeder bij een
+mooie haven geweest. Sanne heeft een enorme vissersboot gezien,
+maar ze heeft geen kleine vissersboot gezien. Een week later
+heeft Sanne opnieuw een zeiljacht gezien want ze liep langs een
+scheepswerf.";TRUE;TRUE;Is Sanne naar Turkije geweest?;FALSE;FALSE;TRUE
+0;012;MI_MA;"Op zomervakantie in Turkije was Sanne met haar moeder bij een
+mooie haven geweest. Sanne heeft een enorme vissersboot gezien,
+maar ze heeft geen klein zeiljacht gezien. Een week later
+heeft Sanne opnieuw een zeiljacht gezien want ze liep langs een
+scheepswerf.";TRUE;TRUE;Is Sanne naar Turkije geweest?;FALSE;FALSE;TRUE
+1;012;MA_MI;"Op zomervakantie in Turkije was Sanne met haar moeder bij een
+mooie haven geweest. Sanne heeft een enorm zeiljacht gezien, 
+maar ze heeft geen kleine vissersboot gezien. Een week later
+heeft Sanne opnieuw een zeiljacht gezien want ze liep langs een
+scheepswerf.";TRUE;TRUE;Is Sanne naar Turkije geweest?;FALSE;FALSE;TRUE
+2;012;MA_MA;"Op zomervakantie in Turkije was Sanne met haar moeder bij een
+mooie haven geweest. Sanne heeft een enorm zeiljacht gezien,
+maar ze heeft geen klein zeiljacht gezien. Een week later
+heeft Sanne opnieuw een zeiljacht gezien want ze liep langs een
+scheepswerf.";TRUE;TRUE;Is Sanne naar Turkije geweest?;FALSE;FALSE;TRUE
+0;013;MI_MI;"Gisteravond was Mila bij een wijnproeverij in de oude stadsherberg.
+Mila heeft een fruitige Chardonnay gedronken, maar ze heeft
+geen droge Chardonnay gedronken. Een paar weken later
+heeft Mila opnieuw een Champagne gedronken al was die veel
+minder lekker.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;013;MI_MA;"Gisteravond was Mila bij een wijnproeverij in de oude stadsherberg.
+Mila heeft een fruitige Chardonnay gedronken, maar ze heeft
+geen droge Champagne gedronken. Een paar weken later
+heeft Mila opnieuw een Champagne gedronken al was die veel
+minder lekker.";TRUE;TRUE;;FALSE;FALSE;FALSE
+2;013;MA_MI;"Gisteravond was Mila bij een wijnproeverij in de oude stadsherberg.
+Mila heeft een fruitige Champagne gedronken, maar ze heeft
+geen droge Chardonnay gedronken. Een paar weken later
+heeft Mila opnieuw een Champagne gedronken al was die veel 
+minder lekker.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;013;MA_MA;"Gisteravond was Mila bij een wijnproeverij in de oude stadsherberg.
+Mila heeft een fruitige Champagne gedronken, maar ze heeft
+geen droge Champagne gedronken. Een paar weken later
+heeft Mila opnieuw een Champagne gedronken al was die veel
+minder lekker.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;014;MI_MI;"Sara ging vorig seizoen naar meerdere sportevenementen in de
+locale sporthal. Sara heeft een nationale tenniswedstrijd bezocht,
+maar ze heeft geen regionale tenniswedstrijd bezocht. Deze maand
+heeft Sara opnieuw een schermfinale bezocht en die was nog
+veel spannender.";TRUE;TRUE;;FALSE;FALSE;FALSE
+2;014;MI_MA;"Sara ging vorig seizoen naar meerdere sportevenementen in de
+locale sporthal. Sara heeft een nationale tenniswedstrijd bezocht,
+maar ze heeft geen regionale schermfinale bezocht. Deze maand
+heeft Sara opnieuw een schermfinale bezocht en die was nog
+veel spannender.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;014;MA_MI;"Sara ging vorig seizoen naar meerdere sportevenementen in de
+locale sporthal. Sara heeft een nationale schermfinale bezocht,
+maar ze heeft geen regionale tenniswedstrijd bezocht. Deze maand
+heeft Sara opnieuw een schermfinale bezocht en die was nog
+veel spannender.";TRUE;TRUE;;FALSE;FALSE;FALSE
+0;014;MA_MA;"Sara ging vorig seizoen naar meerdere sportevenementen in de
+locale sporthal. Sara heeft een nationale schermfinale bezocht,
+maar ze heeft geen regionale schermfinale bezocht. Deze maand
+heeft Sara opnieuw een schermfinale bezocht en die was nog
+veel spannender.";TRUE;TRUE;;FALSE;FALSE;FALSE
+2;015;MI_MI;"Marloes werkt in een kleine bakkerij en mag soms de acties van de 
+dag meebepalen. Marloes heeft een cake met vanille gekozen,
+maar ze heeft geen cake met chocolade gekozen. Drie dagen
+later heeft Marloes opnieuw een croissant gekozen want haar
+broertje wilde die kopen.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;015;MI_MA;"Marloes werkt in een kleine bakkerij en mag soms de acties van de 
+dag meebepalen. Marloes heeft een cake met vanille gekozen,
+maar ze heeft geen croissant met chocolade gekozen. Drie dagen 
+later heeft Marloes opnieuw een croissant gekozen want haar
+broertje wilde die kopen.";TRUE;TRUE;;FALSE;FALSE;FALSE
+0;015;MA_MI;"Marloes werkt in een kleine bakkerij en mag soms de acties van de
+dag meebepalen. Marloes heeft een croissant met vanille gekozen,
+maar ze heeft geen cake met chocolade gekozen. Drie dagen
+later heeft Marloes opnieuw een croissant gekozen want haar
+broertje wilde die kopen.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;015;MA_MA;"Marloes werkt in een kleine bakkerij en mag soms de acties van de 
+dag meebepalen. Marloes heeft een croissant met vanille gekozen,
+maar ze heeft geen croissant met chocolade gekozen. Drie dagen
+later heeft Marloes opnieuw een croissant gekozen want haar
+broertje wilde die kopen.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;016;MI_MI;"Tessa is sinds kort aan het werk als restaurateur bij een vintage
+meubelzaak. Tessa heeft een bankje van marmer opgeknapt,
+maar ze heeft geen bankje van eikenhout opgeknapt. Afgelopen 
+week heeft Tessa opnieuw een tafelblad opgeknapt en die aan haar
+oom verkocht.";TRUE;TRUE;;FALSE;FALSE;FALSE
+0;016;MI_MA;"Tessa is sinds kort aan het werk als restaurateur bij een vintage
+meubelzaak. Tessa heeft een bankje van marmer opgeknapt,
+maar ze heeft geen tafelblad van eikenhout opgeknapt. Afgelopen
+week heeft Tessa opnieuw een tafelblad opgeknapt en die aan haar
+oom verkocht.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;016;MA_MI;"Tessa is sinds kort aan het werk als restaurateur bij een vintage
+meubelzaak. Tessa heeft een tafelblad van marmer opgeknapt,
+maar ze heeft geen bankje van eikenhout opgeknapt. Afgelopen
+week heeft Tessa opnieuw een tafelblad opgeknapt en die aan haar
+oom verkocht.";TRUE;TRUE;;FALSE;FALSE;FALSE
+2;016;MA_MA;"Tessa is sinds kort aan het werk als restaurateur bij een vintage
+meubelzaak. Tessa heeft een tafelblad van marmer opgeknapt,
+maar ze heeft geen tafelblad van eikenhout opgeknapt. Afgelopen
+week heeft Tessa opnieuw een tafelblad opgeknapt en die aan haar
+oom verkocht.";TRUE;TRUE;;FALSE;FALSE;FALSE
+0;017;MI_MI;"Fenna is op Terschelling en is druk bezig met de speurtocht van
+het vakantiepark. Fenna heeft een lichtroze steen gevonden,
+maar ze heeft geen glinsterende steen gevonden. De dag erna
+heeft Fenna opnieuw een schelp gevonden en die was eigenlijk veel
+mooier.";TRUE;TRUE;Is Fenna op Terschelling?;FALSE;FALSE;TRUE
+1;017;MI_MA;"Fenna is op Terschelling en is druk bezig met de speurtocht van
+het vakantiepark. Fenna heeft een lichtroze steen gevonden,
+maar ze heeft geen glinsterende schelp gevonden. De dag erna
+heeft Fenna opnieuw een schelp gevonden en die was eigenlijk veel
+mooier.";TRUE;TRUE;Is Fenna op Terschelling?;FALSE;FALSE;TRUE
+2;017;MA_MI;"Fenna is op Terschelling en is druk bezig met de speurtocht van
+het vakantiepark. Fenna heeft een lichtroze schelp gevonden,
+maar ze heeft geen glinsterende steen gevonden. De dag erna
+heeft Fenna opnieuw een schelp gevonden en die was eigenlijk veel
+mooier.";TRUE;TRUE;Is Fenna op Terschelling?;FALSE;FALSE;TRUE
+3;017;MA_MA;"Fenna is op Terschelling en is druk bezig met de speurtocht van
+het vakantiepark. Fenna heeft een lichtroze schelp gevonden,
+maar ze heeft geen glinsterende schelp gevonden. De dag erna
+heeft Fenna opnieuw een schelp gevonden en die was eigenlijk veel
+mooier.";TRUE;TRUE;Is Fenna op Terschelling?;FALSE;FALSE;TRUE
+1;018;MI_MI;"Mara gaat meedoen aan een musical en leert verschillende emoties
+uit te beelden. Mara heeft een driftige dansroutine geoefend,
+maar ze heeft geen vrolijke dansroutine geoefend. De dag daarna
+heeft Mara opnieuw een dialoog geoefend al was haar tegenspeler
+ziek.";TRUE;TRUE;;FALSE;FALSE;FALSE
+2;018;MI_MA;"Mara gaat meedoen aan een musical en leert verschillende emoties
+uit te beelden. Mara heeft een driftige dansroutine geoefend, 
+maar ze heeft geen vrolijke dialoog geoefend. De dag daarna
+heeft Mara opnieuw een dialoog geoefend al was haar tegenspeler
+ziek.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;018;MA_MI;"Mara gaat meedoen aan een musical en leert verschillende emoties
+uit te beelden. Mara heeft een driftige dialoog geoefend,
+maar ze heeft geen vrolijke dansroutine geoefend. De dag daarna
+heeft Mara opnieuw een dialoog geoefend al was haar tegenspeler
+ziek.";TRUE;TRUE;;FALSE;FALSE;FALSE
+0;018;MA_MA;"Mara gaat meedoen aan een musical en leert verschillende emoties
+uit te beelden. Mara heeft een driftige dialoog geoefend,
+maar ze heeft geen vrolijke dialoog geoefend. De dag daarna
+heeft Mara opnieuw een dialoog geoefend al was haar tegenspeler
+ziek.";TRUE;TRUE;;FALSE;FALSE;FALSE
+2;019;MI_MI;"Milan maakt tijdens zijn rondreis elke dag een korte vlog voor
+zijn familie. Milan heeft gister een populair restaurant gefilmd,
+maar hij heeft geen romantisch restaurant gefilmd. Deze ochtend
+heeft Milan opnieuw een uitzichtpunt gefilmd maar daar was het
+niet zo druk.";TRUE;TRUE;Is Milan weg van huis?;FALSE;FALSE;TRUE
+3;019;MI_MA;"Milan maakt tijdens zijn rondreis elke dag een korte vlog voor
+zijn familie. Milan heeft gister een populair restaurant gefilmd,
+maar hij heeft geen romantisch uitzichtpunt gefilmd. Deze ochtend
+heeft Milan opnieuw een uitzichtpunt gefilmd maar daar was het
+niet zo druk.";TRUE;TRUE;Is Milan weg van huis?;FALSE;FALSE;TRUE
+0;019;MA_MI;"Milan maakt tijdens zijn rondreis elke dag een korte vlog voor
+zijn familie. Milan heeft gister een populair uitzichtpunt gefilmd,
+maar hij heeft geen romantisch restaurant gefilmd. Deze ochtend 
+heeft Milan opnieuw een uitzichtpunt gefilmd maar daar was het
+niet zo druk.";TRUE;TRUE;Is Milan weg van huis?;FALSE;FALSE;TRUE
+1;019;MA_MA;"Milan maakt tijdens zijn rondreis elke dag een korte vlog voor
+zijn familie. Milan heeft gister een populair uitzichtpunt gefilmd,
+maar hij heeft geen romantisch uitzichtpunt gefilmd. Deze ochtend
+heeft Milan opnieuw een uitzichtpunt gefilmd maar daar was het
+niet zo druk.";TRUE;TRUE;Is Milan weg van huis?;FALSE;FALSE;TRUE
+3;020;MI_MI;"Thomas is acteur en speelt graag uiteenlopende personages. Thomas
+heeft een maffiabaas in een komedie gespeeld, maar hij heeft
+geen maffiabaas in een thriller gespeeld. Een halfjaar later
+heeft Thomas opnieuw een brandweerman gespeeld en die scene was
+erg grappig.";TRUE;TRUE;Heeft Thomas ervaring met acteren?;FALSE;FALSE;TRUE
+0;020;MI_MA;"Thomas is acteur en speelt graag uiteenlopende personages. Thomas
+heeft een maffiabaas in een komedie gespeeld, maar hij heeft
+geen brandweerman in een thriller gespeeld. Een halfjaar later
+heeft Thomas opnieuw een brandweerman gespeeld en die scene was
+erg grappig.";TRUE;TRUE;Heeft Thomas ervaring met acteren?;FALSE;FALSE;TRUE
+1;020;MA_MI;"Thomas is acteur en speelt graag uiteenlopende personages. Thomas
+heeft een brandweerman in een komedie gespeeld, maar hij heeft
+geen maffiabaas in een thriller gespeeld. Een halfjaar later 
+heeft Thomas opnieuw een brandweerman gespeeld en die scene was
+erg grappig.";TRUE;TRUE;Heeft Thomas ervaring met acteren?;FALSE;FALSE;TRUE
+2;020;MA_MA;"Thomas is acteur en speelt graag uiteenlopende personages. Thomas
+heeft een brandweerman in een komedie gespeeld, maar hij heeft
+geen brandweerman in een thriller gespeeld. Een halfjaar later
+heeft Thomas opnieuw een brandweerman gespeeld en die scene was
+erg grappig.";TRUE;TRUE;Heeft Thomas ervaring met acteren?;FALSE;FALSE;TRUE
+0;021;MI_MI;"Harry is gek op online shoppen. Soms komen bestellingen in losse
+pakketjes aan. Harry heeft vandaag een beige pantalon ontvangen,
+maar hij heeft geen blauwe pantalon ontvangen. Twee dagen later
+heeft Harry opnieuw een colbert ontvangen maar die was in de
+verkeerde maat.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;021;MI_MA;"Harry is gek op online shoppen. Soms komen bestellingen in losse
+pakketjes aan. Harry heeft vandaag een beige pantalon ontvangen,
+maar hij heeft geen blauwe colbert ontvangen. Twee dagen later
+heeft Harry opnieuw een colbert ontvangen maar die was in de
+verkeerde maat.";TRUE;TRUE;;FALSE;FALSE;FALSE
+2;021;MA_MI;"Harry is gek op online shoppen. Soms komen bestellingen in losse
+pakketjes aan. Harry heeft vandaag een beige colbert ontvangen,
+maar hij heeft geen blauwe pantalon ontvangen. Twee dagen later
+heeft Harry opnieuw een colbert ontvangen maar die was in de
+verkeerde maat.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;021;MA_MA;"Harry is gek op online shoppen. Soms komen bestellingen in losse
+pakketjes aan. Harry heeft vandaag een beige colbert ontvangen,
+maar hij heeft geen blauwe colbert ontvangen. Twee dagen later
+heeft Harry opnieuw een colbert ontvangen maar die was in de
+verkeerde maat.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;022;MI_MI;"Johan is deze week vijf jaar samen met zijn vriendin en wil dit
+graag buiten vieren. Johan heeft een picknick in het bos gepland,
+maar hij heeft geen picknick in het park gepland. Een maand
+later heeft Johan opnieuw een borrel gepland maar dan als een
+verrassing voor moederdag.";TRUE;TRUE;Heeft Johan een nieuwe vriendin?;FALSE;FALSE;FALSE
+2;022;MI_MA;"Johan is deze week vijf jaar samen met zijn vriendin en wil dit
+graag buiten vieren. Johan heeft een picknick in het bos gepland,
+maar hij heeft geen borrel in het park gepland. Een maand
+later heeft Johan opnieuw een borrel gepland maar dan als een 
+verrassing voor moederdag.";TRUE;TRUE;Heeft Johan een nieuwe vriendin?;FALSE;FALSE;FALSE
+3;022;MA_MI;"Johan is deze week vijf jaar samen met zijn vriendin en wil dit
+graag buiten vieren. Johan heeft een borrel in het bos gepland,
+maar hij heeft geen picknick in het park gepland. Een maand
+later heeft Johan opnieuw een borrel gepland maar dan als een
+verrassing voor moederdag.";TRUE;TRUE;Heeft Johan een nieuwe vriendin?;FALSE;FALSE;FALSE
+0;022;MA_MA;"Johan is deze week vijf jaar samen met zijn vriendin en wil dit
+graag buiten vieren. Johan heeft een borrel in het bos gepland,
+maar hij heeft geen borrel in het park gepland. Een maand
+later heeft Johan opnieuw een borrel gepland maar dan als een
+verrassing voor moederdag.";TRUE;TRUE;Heeft Johan een nieuwe vriendin?;FALSE;FALSE;FALSE
+2;023;MI_MI;"Lucas verbouwt groenten in zijn moestuin. Vanavond komen zijn
+ouders eten. Lucas heeft een dipsaus met courgette gemaakt, maar
+hij heeft geen dipsaus met paprika gemaakt. Twee dagen later
+heeft Lucas opnieuw een soepje gemaakt want hij heeft een grote
+oogst dit jaar.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;023;MI_MA;"Lucas verbouwt groenten in zijn moestuin. Vanavond komen zijn
+ouders eten. Lucas heeft een dipsaus met courgette gemaakt, maar
+hij heeft geen soepje met paprika gemaakt. Twee dagen later
+heeft Lucas opnieuw een soepje gemaakt want hij heeft een grote
+oogst dit jaar.";TRUE;TRUE;;FALSE;FALSE;FALSE
+0;023;MA_MI;"Lucas verbouwt groenten in zijn moestuin. Vanavond komen zijn
+ouders eten. Lucas heeft een soepje met courgette gemaakt, maar
+hij heeft geen dipsaus met paprika gemaakt. Twee dagen later
+heeft Lucas opnieuw een soepje gemaakt want hij heeft een grote
+oogst dit jaar.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;023;MA_MA;"Lucas verbouwt groenten in zijn moestuin. Vanavond komen zijn
+ouders eten. Lucas heeft een soepje met courgette gemaakt, maar
+hij heeft geen soepje met paprika gemaakt. Twee dagen later
+heeft Lucas opnieuw een soepje gemaakt want hij heeft een grote
+oogst dit jaar.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;024;MI_MI;"Jesse is gek op auto's. Het is druk op de snelweg dus hij kijkt
+zijn ogen uit. Jesse heeft een knalrode cabriolet ingehaald, maar
+hij heeft geen gitzwarte cabriolet ingehaald. Later die avond
+heeft Jesse opnieuw een limousine ingehaald maar dat was geen
+mooi model.";TRUE;TRUE;Houdt Jesse van auto's?;FALSE;FALSE;TRUE
+0;024;MI_MA;"Jesse is gek op auto's. Het is druk op de snelweg dus hij kijkt
+zijn ogen uit. Jesse heeft een knalrode cabriolet ingehaald, maar
+hij heeft geen gitzwarte limousine ingehaald. Later die avond 
+heeft Jesse opnieuw een limousine ingehaald maar dat was geen
+mooi model.";TRUE;TRUE;Houdt Jesse van auto's?;FALSE;FALSE;TRUE
+1;024;MA_MI;"Jesse is gek op auto's. Het is druk op de snelweg dus hij kijkt
+zijn ogen uit. Jesse heeft een knalrode limousine ingehaald, maar
+hij heeft geen gitzwarte cabriolet ingehaald. Later die avond
+heeft Jesse opnieuw een limousine ingehaald maar dat was geen
+mooi model.";TRUE;TRUE;Houdt Jesse van auto's?;FALSE;FALSE;TRUE
+2;024;MA_MA;"Jesse is gek op auto's. Het is druk op de snelweg dus hij kijkt
+zijn ogen uit. Jesse heeft een knalrode limousine ingehaald, maar 
+hij heeft geen gitzwarte limousine ingehaald. Later die avond 
+heeft Jesse opnieuw een limousine ingehaald maar dat was geen
+mooi model.";TRUE;TRUE;Houdt Jesse van auto's?;FALSE;FALSE;TRUE
+0;025;MI_MI;"Abel is op vakantie in Italië en neemt zijn schetsboek overal mee
+naartoe. Abel heeft een matroos op een boot geschilderd, maar
+hij heeft geen matroos op de kade geschilderd. Eenmaal thuis
+heeft Abel opnieuw een kapitein geschilderd maar dan zonder
+achtergronddetails.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;025;MI_MA;"Abel is op vakantie in Italië en neemt zijn schetsboek overal mee
+naartoe. Abel heeft een matroos op een boot geschilderd, maar
+hij heeft geen kapitein op de kade geschilderd. Eenmaal thuis
+heeft Abel opnieuw een kapitein geschilderd maar dan zonder
+achtergronddetails.";TRUE;TRUE;;FALSE;FALSE;FALSE
+2;025;MA_MI;"Abel is op vakantie in Italië en neemt zijn schetsboek overal mee
+naartoe. Abel heeft een kapitein op een boot geschilderd, maar
+hij heeft geen matroos op de kade geschilderd. Eenmaal thuis
+heeft Abel opnieuw een kapitein geschilderd maar dan zonder
+achtergronddetails.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;025;MA_MA;"Abel is op vakantie in Italië en neemt zijn schetsboek overal mee
+naartoe. Abel heeft een kapitein op een boot geschilderd, maar
+hij heeft geen kapitein op de kade geschilderd. Eenmaal thuis
+heeft Abel opnieuw een kapitein geschilderd maar dan zonder
+achtergronddetails.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;026;MI_MI;"Ruben is een echte koukleum. Vorig jaar wilde hij goed voorbereid
+zijn op de kou. Ruben heeft een paar leren sloffen gekocht, maar
+hij heeft geen paar wollen sloffen gekocht. Afgelopen maand
+heeft Ruben opnieuw een paar wanten gekocht al was het nog maar
+begin oktober.";TRUE;TRUE;;FALSE;FALSE;FALSE
+2;026;MI_MA;"Ruben is een echte koukleum. Vorig jaar wilde hij goed voorbereid
+zijn op de kou. Ruben heeft een paar leren sloffen gekocht, maar
+hij heeft geen paar wollen wanten gekocht. Afgelopen maand
+heeft Ruben opnieuw een paar wanten gekocht al was het nog maar
+begin oktober.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;026;MA_MI;"Ruben is een echte koukleum. Vorig jaar wilde hij goed voorbereid
+zijn op de kou. Ruben heeft een paar leren wanten gekocht, maar
+hij heeft geen paar wollen sloffen gekocht. Afgelopen maand
+heeft Ruben opnieuw een paar wanten gekocht al was het nog maar
+begin oktober.";TRUE;TRUE;;FALSE;FALSE;FALSE
+0;026;MA_MA;"Ruben is een echte koukleum. Vorig jaar wilde hij goed voorbereid
+zijn op de kou. Ruben heeft een paar leren wanten gekocht, maar
+hij heeft geen paar wollen wanten gekocht. Afgelopen maand
+heeft Ruben opnieuw een paar wanten gekocht al was het nog maar
+begin oktober.";TRUE;TRUE;;FALSE;FALSE;FALSE
+2;027;MI_MI;"Pepijn werkt bij een dierenpension waar hij veel verschillende
+klusjes doet. Pepijn heeft een vogelkooi van plastic verschoond,
+maar hij heeft geen vogelkooi van metaal verschoond. Twee dagen
+later heeft Pepijn opnieuw een kattenbak verschoond want dat was
+alweer hoognodig.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;027;MI_MA;"Pepijn werkt bij een dierenpension waar hij veel verschillende
+klusjes doet. Pepijn heeft een vogelkooi van plastic verschoond,
+maar hij heeft geen kattenbak van metaal verschoond. Twee dagen
+later heeft Pepijn opnieuw een kattenbak verschoond want dat was
+alweer hoognodig.";TRUE;TRUE;;FALSE;FALSE;FALSE
+0;027;MA_MI;"Pepijn werkt bij een dierenpension waar hij veel verschillende
+klusjes doet. Pepijn heeft een kattenbak van plastic verschoond, 
+maar hij heeft geen vogelkooi van metaal verschoond. Twee dagen
+later heeft Pepijn opnieuw een kattenbak verschoond want dat was
+alweer hoognodig.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;027;MA_MA;"Pepijn werkt bij een dierenpension waar hij veel verschillende
+klusjes doet. Pepijn heeft een kattenbak van plastic verschoond,
+maar hij heeft geen kattenbak van metaal verschoond. Twee dagen
+later heeft Pepijn opnieuw een kattenbak verschoond want dat was
+alweer hoognodig.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;028;MI_MI;"Ryan gaat vanavond naar een feestje. Iedereen die komt neemt wat
+lekkers mee. Ryan heeft een zak zoute popcorn meegebracht,
+maar hij heeft geen zak zoete popcorn meegebracht. De keer
+daarop heeft Ryan opnieuw een zak nootjes meegebracht en als extra
+nog een fles speciaalbier.";TRUE;TRUE;Heeft Ryan een zak chips meegebracht?;FALSE;FALSE;FALSE
+0;028;MI_MA;"Ryan gaat vanavond naar een feestje. Iedereen die komt neemt wat
+lekkers mee. Ryan heeft een zak zoute popcorn meegebracht,
+maar hij heeft geen zak zoete nootjes meegebracht. De keer
+daarop heeft Ryan opnieuw een zak nootjes meegebracht en als extra
+nog een fles speciaalbier.";TRUE;TRUE;Heeft Ryan een zak chips meegebracht?;FALSE;FALSE;FALSE
+1;028;MA_MI;"Ryan gaat vanavond naar een feestje. Iedereen die komt neemt wat
+lekkers mee. Ryan heeft een zak zoute nootjes meegebracht,
+maar hij heeft geen zak zoete popcorn meegebracht. De keer
+daarop heeft Ryan opnieuw een zak nootjes meegebracht en als extra
+nog een fles speciaalbier.";TRUE;TRUE;Heeft Ryan een zak chips meegebracht?;FALSE;FALSE;FALSE
+2;028;MA_MA;"Ryan gaat vanavond naar een feestje. Iedereen die komt neemt wat
+lekkers mee. Ryan heeft een zak zoute nootjes meegebracht,
+maar hij heeft geen zak zoete nootjes meegebracht. De keer
+daarop heeft Ryan opnieuw een zak nootjes meegebracht en als extra
+nog een fles speciaalbier.";TRUE;TRUE;Heeft Ryan een zak chips meegebracht?;FALSE;FALSE;FALSE
+0;029;MI_MI;"Amir mag in de speelgoedwinkel een paar knuffels uitzoeken van
+oma. Amir heeft een kat met een strikje uitgekozen, maar hij heeft
+geen kat met een halsbandje uitgekozen. Voor zijn verjaardag
+heeft Amir opnieuw een hond uitgekozen want dan kunnen ze een
+gezin spelen.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;029;MI_MA;"Amir mag in de speelgoedwinkel een paar knuffels uitzoeken van
+oma. Amir heeft een kat met een strikje uitgekozen, maar hij heeft
+geen hond met een halsbandje uitgekozen. Voor zijn verjaardag
+heeft Amir opnieuw een hond uitgekozen want dan kunnen ze een
+gezin spelen.";TRUE;TRUE;;FALSE;FALSE;FALSE
+2;029;MA_MI;"Amir mag in de speelgoedwinkel een paar knuffels uitzoeken van
+oma. Amir heeft een hond met een strikje uitgekozen, maar hij heeft
+geen kat met een halsbandje uitgekozen. Voor zijn verjaardag
+heeft Amir opnieuw een hond uitgekozen want dan kunnen ze een
+gezin spelen.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;029;MA_MA;"Amir mag in de speelgoedwinkel een paar knuffels uitzoeken van 
+oma. Amir heeft een hond met een strikje uitgekozen, maar hij heeft
+geen hond met een halsbandje uitgekozen. Voor zijn verjaardag
+heeft Amir opnieuw een hond uitgekozen want dan kunnen ze een
+gezin spelen.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;030;MI_MI;"Kevin was voor zijn werk naar het buitenland. Gister kwam hij weer
+thuis. Kevin heeft een lekkernij uit België meegenomen, maar hij
+heeft geen lekkernij uit Duitsland meegenomen. Enkele weken later
+heeft Kevin opnieuw een magneet meegenomen maar die ging onderweg
+kapot.";TRUE;TRUE;;FALSE;FALSE;FALSE
+2;030;MI_MA;"Kevin was voor zijn werk naar het buitenland. Gister kwam hij weer
+thuis. Kevin heeft een lekkernij uit België meegenomen, maar hij
+heeft geen magneet uit Duitsland meegenomen. Enkele weken later
+heeft Kevin opnieuw een magneet meegenomen maar die ging onderweg
+kapot.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;030;MA_MI;"Kevin was voor zijn werk naar het buitenland. Gister kwam hij weer
+thuis. Kevin heeft een magneet uit België meegenomen, maar hij
+heeft geen lekkernij uit Duitsland meegenomen. Enkele weken later
+heeft Kevin opnieuw een magneet meegenomen maar die ging onderweg
+kapot.";TRUE;TRUE;;FALSE;FALSE;FALSE
+0;030;MA_MA;"Kevin was voor zijn werk naar het buitenland. Gister kwam hij weer
+thuis. Kevin heeft een magneet uit België meegenomen, maar hij
+heeft geen magneet uit Duitsland meegenomen. Enkele weken later
+heeft Kevin opnieuw een magneet meegenomen maar die ging onderweg
+kapot.";TRUE;TRUE;;FALSE;FALSE;FALSE
+2;031;MI_MI;"Timo is druk bezig met renoveren. Hij wil zijn huis binnenkort met
+winst verkopen. Timo heeft een kastje in de bijkeuken geverfd,
+maar hij heeft geen kastje in de slaapkamer geverfd. Twee dagen
+later heeft Timo opnieuw een zijmuur geverfd want hij wilde nog
+meer kleur.";TRUE;TRUE;Wil Timo zijn huis verkopen?;FALSE;FALSE;TRUE
+3;031;MI_MA;"Timo is druk bezig met renoveren. Hij wil zijn huis binnenkort met
+winst verkopen. Timo heeft een kastje in de bijkeuken geverfd,
+maar hij heeft geen zijmuur in de slaapkamer geverfd. Twee dagen
+later heeft Timo opnieuw een zijmuur geverfd want hij wilde nog
+meer kleur.";TRUE;TRUE;Wil Timo zijn huis verkopen?;FALSE;FALSE;TRUE
+0;031;MA_MI;"Timo is druk bezig met renoveren. Hij wil zijn huis binnenkort met
+winst verkopen. Timo heeft een zijmuur in de bijkeuken geverfd,
+maar hij heeft geen kastje in de slaapkamer geverfd. Twee dagen
+later heeft Timo opnieuw een zijmuur geverfd want hij wilde nog
+meer kleur.";TRUE;TRUE;Wil Timo zijn huis verkopen?;FALSE;FALSE;TRUE
+1;031;MA_MA;"Timo is druk bezig met renoveren. Hij wil zijn huis binnenkort met
+winst verkopen. Timo heeft een zijmuur in de bijkeuken geverfd,
+maar hij heeft geen zijmuur in de slaapkamer geverfd. Twee dagen
+later heeft Timo opnieuw een zijmuur geverfd want hij wilde nog
+meer kleur.";TRUE;TRUE;Wil Timo zijn huis verkopen?;FALSE;FALSE;TRUE
+3;032;MI_MI;"Adam werkt bij de publieke omroep en is daarvoor aanwezig bij de
+Olympische Spelen. Adam heeft een Canadese turner geïnterviewd,
+maar hij heeft geen Portugese turner geïnterviewd. Een dag later
+heeft Thomas opnieuw een zwemmer geïnterviewd en die bleek nogal
+een grapjas te zijn.";TRUE;TRUE;;FALSE;FALSE;FALSE
+0;032;MI_MA;"Adam werkt bij de publieke omroep en is daarvoor aanwezig bij de
+Olympische Spelen. Adam heeft een Canadese turner geïnterviewd,
+maar hij heeft geen Portugese zwemmer geïnterviewd. Een dag later
+heeft Thomas opnieuw een zwemmer geïnterviewd en die bleek nogal
+een grapjas te zijn.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;032;MA_MI;"Adam werkt bij de publieke omroep en is daarvoor aanwezig bij de
+Olympische Spelen. Adam heeft een Canadese zwemmer geïnterviewd,
+maar hij heeft geen Portugese turner geïnterviewd. Een dag later 
+heeft Thomas opnieuw een zwemmer geïnterviewd en die bleek nogal
+een grapjas te zijn.";TRUE;TRUE;;FALSE;FALSE;FALSE
+2;032;MA_MA;"Adam werkt bij de publieke omroep en is daarvoor aanwezig bij de
+Olympische Spelen. Adam heeft een Canadese zwemmer geïnterviewd,
+maar hij heeft geen Portugese zwemmer geïnterviewd. Een dag later
+heeft Thomas opnieuw een zwemmer geïnterviewd en die bleek nogal
+een grapjas te zijn.";TRUE;TRUE;;FALSE;FALSE;FALSE
+0;033;MI_MI;"Charlie wil een internationaal blaasorkest oprichten en de wereld
+rondtoeren. Charlie heeft een klarinettist uit Canada benaderd,
+maar hij heeft geen klarinettist uit Senegal benaderd. Een week
+later heeft Charlie opnieuw een trompettist benaderd maar die was
+niet erg enthousiast.";TRUE;TRUE;Zoekt Charlie een gitarist?;FALSE;FALSE;FALSE
+1;033;MI_MA;"Charlie wil een internationaal blaasorkest oprichten en de wereld
+rondtoeren. Charlie heeft een klarinettist uit Canada benaderd,
+maar hij heeft geen trompettist uit Senegal benaderd. Een week
+later heeft Charlie opnieuw een trompettist benaderd maar die was
+niet erg enthousiast.";TRUE;TRUE;Zoekt Charlie een gitarist?;FALSE;FALSE;FALSE
+2;033;MA_MI;"Charlie wil een internationaal blaasorkest oprichten en de wereld
+rondtoeren. Charlie heeft een trompettist uit Canada benaderd,
+maar hij heeft geen klarinettist uit Senegal benaderd. Een week
+later heeft Charlie opnieuw een trompettist benaderd maar die was
+niet erg enthousiast.";TRUE;TRUE;Zoekt Charlie een gitarist?;FALSE;FALSE;FALSE
+3;033;MA_MA;"Charlie wil een internationaal blaasorkest oprichten en de wereld
+rondtoeren. Charlie heeft een trompettist uit Canada benaderd,
+maar hij heeft geen trompettist uit Senegal benaderd. Een week
+later heeft Charlie opnieuw een trompettist benaderd maar die was
+niet erg enthousiast.";TRUE;TRUE;Zoekt Charlie een gitarist?;FALSE;FALSE;FALSE
+1;034;MI_MI;"Dion is op werkbezoek in Australië. Hij doet onderzoek naar
+zeedieren. Dion heeft een video van een walvis gemaakt, maar
+hij heeft geen video van een zeehond gemaakt. De volgende
+dag heeft Dion opnieuw een tekening gemaakt want hij wilde één
+met minder details.";TRUE;TRUE;Is Dion op vakantie?;FALSE;FALSE;FALSE
+2;034;MI_MA;"Dion is op werkbezoek in Australië. Hij doet onderzoek naar
+zeedieren. Dion heeft een video van een walvis gemaakt, maar
+hij heeft geen tekening van een zeehond gemaakt. De volgende
+dag heeft Dion opnieuw een tekening gemaakt want hij wilde één
+met minder details.";TRUE;TRUE;Is Dion op vakantie?;FALSE;FALSE;FALSE
+3;034;MA_MI;"Dion is op werkbezoek in Australië. Hij doet onderzoek naar
+zeedieren. Dion heeft een tekening van een walvis gemaakt, maar
+hij heeft geen video van een zeehond gemaakt. De volgende
+dag heeft Dion opnieuw een tekening gemaakt want hij wilde één
+met minder details.";TRUE;TRUE;Is Dion op vakantie?;FALSE;FALSE;FALSE
+0;034;MA_MA;"Dion is op werkbezoek in Australië. Hij doet onderzoek naar
+zeedieren. Dion heeft een tekening van een walvis gemaakt, maar
+hij heeft geen tekening van een zeehond gemaakt. De volgende
+dag heeft Dion opnieuw een tekening gemaakt want hij wilde één
+met minder details.";TRUE;TRUE;Is Dion op vakantie?;FALSE;FALSE;FALSE
+2;035;MI_MI;"Friso werkt bij de nationale alarmcentrale. Vorige week was het
+druk. Friso heeft een bejaarde met een steekwond gesproken,
+maar hij heeft geen bejaarde met hoofdletsel gesproken. Deze
+week heeft Friso opnieuw een scholier gesproken want er was een
+leraar flauwgevallen.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;035;MI_MA;"Friso werkt bij de nationale alarmcentrale. Vorige week was het
+druk. Friso heeft een bejaarde met een steekwond gesproken,
+maar hij heeft geen scholier met hoofdletsel gesproken. Deze
+week heeft Friso opnieuw een scholier gesproken want er was een
+leraar flauwgevallen.";TRUE;TRUE;;FALSE;FALSE;FALSE
+0;035;MA_MI;"Friso werkt bij de nationale alarmcentrale. Vorige week was het
+druk. Friso heeft een scholier met een steekwond gesproken,
+maar hij heeft geen bejaarde met hoofdletsel gesproken. Deze 
+week heeft Friso opnieuw een scholier gesproken want er was een
+leraar flauwgevallen.";TRUE;TRUE;;FALSE;FALSE;FALSE
+1;035;MA_MA;"Friso werkt bij de nationale alarmcentrale. Vorige week was het
+druk. Friso heeft een scholier met een steekwond gesproken,
+maar hij heeft geen scholier met hoofdletsel gesproken. Deze
+week heeft Friso opnieuw een scholier gesproken want er was een
+leraar flauwgevallen.";TRUE;TRUE;;FALSE;FALSE;FALSE
+3;036;MI_MI;"Er zijn deze maand weer archeologische vondsten gedaan in
+Luxemburg. Er is een tekening van een neanderthaler gevonden, 
+maar er is geen tekening van een dinosaurus gevonden. Na grondig
+onderzoek is er opnieuw een schedel gevonden maar die was helaas
+flink beschadigd.";TRUE;TRUE;Is er een Romeinse ruïne gevonden?;FALSE;FALSE;FALSE
+0;036;MI_MA;"Er zijn deze maand weer archeologische vondsten gedaan in
+Luxemburg. Er is een tekening van een neanderthaler gevonden,
+maar er is geen schedel van een dinosaurus gevonden. Na grondig
+onderzoek is er opnieuw een schedel gevonden maar die was helaas
+flink beschadigd.";TRUE;TRUE;Is er een Romeinse ruïne gevonden?;FALSE;FALSE;FALSE
+1;036;MA_MI;"Er zijn deze maand weer archeologische vondsten gedaan in
+Luxemburg. Er is een schedel van een neanderthaler gevonden,
+maar er is geen tekening van een dinosaurus gevonden. Na grondig 
+onderzoek is er opnieuw een schedel gevonden maar die was helaas
+flink beschadigd.";TRUE;TRUE;Is er een Romeinse ruïne gevonden?;FALSE;FALSE;FALSE
+2;036;MA_MA;"Er zijn deze maand weer archeologische vondsten gedaan in
+Luxemburg. Er is een schedel van een neanderthaler gevonden,
+maar er is geen schedel van een dinosaurus gevonden. Na grondig
+onderzoek is er opnieuw een schedel gevonden maar die was helaas
+flink beschadigd.";TRUE;TRUE;Is er een Romeinse ruïne gevonden?;FALSE;FALSE;FALSE
+0;037;FILL;"Het was een bijzondere tijd in het leven van Jan. Twee weken
+geleden heeft hij een kind gekregen. Sindsdien heeft hij veel
+nachten doorgebracht met weinig slaap. Zijn nieuwe leven als
+vader brengt zowel vreugde als uitdagingen met zich mee.";TRUE;FALSE;Krijgt Jan genoeg slaap?;FALSE;FALSE;FALSE
+1;037;FILL;"Het was een bijzondere tijd in het leven van Jan. Twee weken
+geleden heeft hij een kind gekregen. Sindsdien heeft hij veel
+nachten doorgebracht met weinig slaap. Zijn nieuwe leven als
+vader brengt zowel vreugde als uitdagingen met zich mee.";TRUE;FALSE;Krijgt Jan genoeg slaap?;FALSE;FALSE;FALSE
+2;037;FILL;"Het was een bijzondere tijd in het leven van Jan. Twee weken
+geleden heeft hij een kind gekregen. Sindsdien heeft hij veel
+nachten doorgebracht met weinig slaap. Zijn nieuwe leven als
+vader brengt zowel vreugde als uitdagingen met zich mee.";TRUE;FALSE;Krijgt Jan genoeg slaap?;FALSE;FALSE;FALSE
+3;037;FILL;"Het was een bijzondere tijd in het leven van Jan. Twee weken
+geleden heeft hij een kind gekregen. Sindsdien heeft hij veel
+nachten doorgebracht met weinig slaap. Zijn nieuwe leven als
+vader brengt zowel vreugde als uitdagingen met zich mee.";TRUE;FALSE;Krijgt Jan genoeg slaap?;FALSE;FALSE;FALSE
+1;038;FILL;"Pien is wethouder en heeft het al een tijdje druk. Ze heeft nu een
+oppasmoeder aangenomen om op de kinderen te passen, omdat zij
+dit jaar extra veel vergaderingen heeft en vaak tot laat moet
+werken. Haar man is vaak weg voor zijn werk.";TRUE;FALSE;Heeft Pien het druk?;FALSE;FALSE;TRUE
+2;038;FILL;"Pien is wethouder en heeft het al een tijdje druk. Ze heeft nu een
+oppasmoeder aangenomen om op de kinderen te passen, omdat zij
+dit jaar extra veel vergaderingen heeft en vaak tot laat moet
+werken. Haar man is vaak weg voor zijn werk.";TRUE;FALSE;Heeft Pien het druk?;FALSE;FALSE;TRUE
+3;038;FILL;"Pien is wethouder en heeft het al een tijdje druk. Ze heeft nu een
+oppasmoeder aangenomen om op de kinderen te passen, omdat zij
+dit jaar extra veel vergaderingen heeft en vaak tot laat moet
+werken. Haar man is vaak weg voor zijn werk.";TRUE;FALSE;Heeft Pien het druk?;FALSE;FALSE;TRUE
+0;038;FILL;"Pien is wethouder en heeft het al een tijdje druk. Ze heeft nu een
+oppasmoeder aangenomen om op de kinderen te passen, omdat zij
+dit jaar extra veel vergaderingen heeft en vaak tot laat moet
+werken. Haar man is vaak weg voor zijn werk.";TRUE;FALSE;Heeft Pien het druk?;FALSE;FALSE;TRUE
+2;039;FILL;"Raymond leefde een dubbelleven. Hij was opgepakt maar had
+een deal gesloten met de politie. In ruil voor informatie over een
+crimineel netwerk zou hij een lichtere straf kunnen krijgen. Hij
+hoopte hiermee zijn leven snel weer op de rit te kunnen krijgen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;039;FILL;"Raymond leefde een dubbelleven. Hij was opgepakt maar had
+een deal gesloten met de politie. In ruil voor informatie over een
+crimineel netwerk zou hij een lichtere straf kunnen krijgen. Hij
+hoopte hiermee zijn leven snel weer op de rit te kunnen krijgen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;039;FILL;"Raymond leefde een dubbelleven. Hij was opgepakt maar had
+een deal gesloten met de politie. In ruil voor informatie over een
+crimineel netwerk zou hij een lichtere straf kunnen krijgen. Hij
+hoopte hiermee zijn leven snel weer op de rit te kunnen krijgen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;039;FILL;"Raymond leefde een dubbelleven. Hij was opgepakt maar had
+een deal gesloten met de politie. In ruil voor informatie over een
+crimineel netwerk zou hij een lichtere straf kunnen krijgen. Hij
+hoopte hiermee zijn leven snel weer op de rit te kunnen krijgen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;040;FILL;"De scheidsrechter heeft Annemieke gevraagd grensrechter te
+worden. Tijdens de wedstrijd was hij erg onder de indruk van haar
+commentaar. Annemieke was al een tijdje op zoek naar een nieuwe
+hobby en zei meteen dat ze graag wilde helpen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;040;FILL;"De scheidsrechter heeft Annemieke gevraagd grensrechter te
+worden. Tijdens de wedstrijd was hij erg onder de indruk van haar
+commentaar. Annemieke was al een tijdje op zoek naar een nieuwe
+hobby en zei meteen dat ze graag wilde helpen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;040;FILL;"De scheidsrechter heeft Annemieke gevraagd grensrechter te
+worden. Tijdens de wedstrijd was hij erg onder de indruk van haar
+commentaar. Annemieke was al een tijdje op zoek naar een nieuwe
+hobby en zei meteen dat ze graag wilde helpen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;040;FILL;"De scheidsrechter heeft Annemieke gevraagd grensrechter te
+worden. Tijdens de wedstrijd was hij erg onder de indruk van haar
+commentaar. Annemieke was al een tijdje op zoek naar een nieuwe
+hobby en zei meteen dat ze graag wilde helpen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;041;FILL;"Sinds de verhuizing voelde Jozef zich wat eenzaam. Hij had namelijk
+nog geen buren in het nieuwe pand. Toch was hij tevreden met de
+werkruimte en de rust die hij nu had. De komende maanden zullen
+er steeds meer nieuwe bewoners intrekken.";TRUE;FALSE;Is Jozef verhuisd?;FALSE;FALSE;TRUE
+1;041;FILL;"Sinds de verhuizing voelde Jozef zich wat eenzaam. Hij had namelijk
+nog geen buren in het nieuwe pand. Toch was hij tevreden met de
+werkruimte en de rust die hij nu had. De komende maanden zullen
+er steeds meer nieuwe bewoners intrekken.";TRUE;FALSE;Is Jozef verhuisd?;FALSE;FALSE;TRUE
+2;041;FILL;"Sinds de verhuizing voelde Jozef zich wat eenzaam. Hij had namelijk
+nog geen buren in het nieuwe pand. Toch was hij tevreden met de
+werkruimte en de rust die hij nu had. De komende maanden zullen
+er steeds meer nieuwe bewoners intrekken.";TRUE;FALSE;Is Jozef verhuisd?;FALSE;FALSE;TRUE
+3;041;FILL;"Sinds de verhuizing voelde Jozef zich wat eenzaam. Hij had namelijk
+nog geen buren in het nieuwe pand. Toch was hij tevreden met de
+werkruimte en de rust die hij nu had. De komende maanden zullen
+er steeds meer nieuwe bewoners intrekken.";TRUE;FALSE;Is Jozef verhuisd?;FALSE;FALSE;TRUE
+1;042;FILL;"Het was een druk jaar voor dominee Soraya. Het hele jaar door zag
+zij overal problemen voor de toekomst en vroeg ze zich af hoe ze
+haar gemeenschap het beste kon ondersteunen in deze onzekere
+tijden. Achteraf was ze wel trots op hoe ze had gehandeld.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;042;FILL;"Het was een druk jaar voor dominee Soraya. Het hele jaar door zag
+zij overal problemen voor de toekomst en vroeg ze zich af hoe ze
+haar gemeenschap het beste kon ondersteunen in deze onzekere
+tijden. Achteraf was ze wel trots op hoe ze had gehandeld.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;042;FILL;"Het was een druk jaar voor dominee Soraya. Het hele jaar door zag
+zij overal problemen voor de toekomst en vroeg ze zich af hoe ze
+haar gemeenschap het beste kon ondersteunen in deze onzekere
+tijden. Achteraf was ze wel trots op hoe ze had gehandeld.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;042;FILL;"Het was een druk jaar voor dominee Soraya. Het hele jaar door zag
+zij overal problemen voor de toekomst en vroeg ze zich af hoe ze
+haar gemeenschap het beste kon ondersteunen in deze onzekere
+tijden. Achteraf was ze wel trots op hoe ze had gehandeld.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;043;FILL;"De glazenwasser dacht vaak aan vroeger. De glazenwasser heeft
+een halfzus, maar hij had al jaren geen contact meer gehad met de
+rest van de familie. Gelukkig vond hij troost in zijn werk en de
+tevredenheid van zijn klanten die hem waardeerden voor zijn
+vakmanschap.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;043;FILL;"De glazenwasser dacht vaak aan vroeger. De glazenwasser heeft
+een halfzus, maar hij had al jaren geen contact meer gehad met de
+rest van de familie. Gelukkig vond hij troost in zijn werk en de
+tevredenheid van zijn klanten die hem waardeerden voor zijn
+vakmanschap.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;043;FILL;"De glazenwasser dacht vaak aan vroeger. De glazenwasser heeft
+een halfzus, maar hij had al jaren geen contact meer gehad met de
+rest van de familie. Gelukkig vond hij troost in zijn werk en de
+tevredenheid van zijn klanten die hem waardeerden voor zijn
+vakmanschap.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;043;FILL;"De glazenwasser dacht vaak aan vroeger. De glazenwasser heeft
+een halfzus, maar hij had al jaren geen contact meer gehad met de
+rest van de familie. Gelukkig vond hij troost in zijn werk en de
+tevredenheid van zijn klanten die hem waardeerden voor zijn
+vakmanschap.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;044;FILL;"Harmen had genoeg ervaring om gasten te verwelkomen en te
+begeleiden tijdens het evenement. Maar omdat hij geen
+woordvoerder had ingehuurd voor de pers werden zijn gesprekken
+met de gasten steeds onderbroken. Het feest liep daarom minder
+soepel dan gehoopt.";TRUE;FALSE;Was er een woordvoerder ingehuurd?;FALSE;FALSE;FALSE
+0;044;FILL;"Harmen had genoeg ervaring om gasten te verwelkomen en te
+begeleiden tijdens het evenement. Maar omdat hij geen
+woordvoerder had ingehuurd voor de pers werden zijn gesprekken
+met de gasten steeds onderbroken. Het feest liep daarom minder
+soepel dan gehoopt.";TRUE;FALSE;Was er een woordvoerder ingehuurd?;FALSE;FALSE;FALSE
+1;044;FILL;"Harmen had genoeg ervaring om gasten te verwelkomen en te
+begeleiden tijdens het evenement. Maar omdat hij geen
+woordvoerder had ingehuurd voor de pers werden zijn gesprekken
+met de gasten steeds onderbroken. Het feest liep daarom minder
+soepel dan gehoopt.";TRUE;FALSE;Was er een woordvoerder ingehuurd?;FALSE;FALSE;FALSE
+2;044;FILL;"Harmen had genoeg ervaring om gasten te verwelkomen en te
+begeleiden tijdens het evenement. Maar omdat hij geen
+woordvoerder had ingehuurd voor de pers werden zijn gesprekken
+met de gasten steeds onderbroken. Het feest liep daarom minder
+soepel dan gehoopt.";TRUE;FALSE;Was er een woordvoerder ingehuurd?;FALSE;FALSE;FALSE
+0;045;FILL;"Van jongs af aan wilde Jelleke graag een betere band met de
+familie. Door haar drukke schema vond ze daar vaak weinig tijd
+voor. Ze was altijd bezig met haar studie en werk, maar dit jaar
+heeft Jelleke bijna alle familiebijeenkomsten bij kunnen wonen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;045;FILL;"Van jongs af aan wilde Jelleke graag een betere band met de
+familie. Door haar drukke schema vond ze daar vaak weinig tijd
+voor. Ze was altijd bezig met haar studie en werk, maar dit jaar
+heeft Jelleke bijna alle familiebijeenkomsten bij kunnen wonen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;045;FILL;"Van jongs af aan wilde Jelleke graag een betere band met de
+familie. Door haar drukke schema vond ze daar vaak weinig tijd
+voor. Ze was altijd bezig met haar studie en werk, maar dit jaar
+heeft Jelleke bijna alle familiebijeenkomsten bij kunnen wonen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;045;FILL;"Van jongs af aan wilde Jelleke graag een betere band met de
+familie. Door haar drukke schema vond ze daar vaak weinig tijd
+voor. Ze was altijd bezig met haar studie en werk, maar dit jaar
+heeft Jelleke bijna alle familiebijeenkomsten bij kunnen wonen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;046;FILL;"Al een hele tijd zocht Rita iemand met een passie voor auto's om
+haar hobby mee te delen. Uiteindelijk heeft ze in haar nichtje de
+perfecte partner gevonden om samen aan auto's te sleutelen. De
+afgelopen zomermaanden hebben ze enorm veel plezier gehad in
+de garage.";TRUE;FALSE;Heeft Rita een nichtje?;FALSE;FALSE;TRUE
+2;046;FILL;"Al een hele tijd zocht Rita iemand met een passie voor auto's om
+haar hobby mee te delen. Uiteindelijk heeft ze in haar nichtje de
+perfecte partner gevonden om samen aan auto's te sleutelen. De
+afgelopen zomermaanden hebben ze enorm veel plezier gehad in
+de garage.";TRUE;FALSE;Heeft Rita een nichtje?;FALSE;FALSE;TRUE
+3;046;FILL;"Al een hele tijd zocht Rita iemand met een passie voor auto's om
+haar hobby mee te delen. Uiteindelijk heeft ze in haar nichtje de
+perfecte partner gevonden om samen aan auto's te sleutelen. De
+afgelopen zomermaanden hebben ze enorm veel plezier gehad in
+de garage.";TRUE;FALSE;Heeft Rita een nichtje?;FALSE;FALSE;TRUE
+0;046;FILL;"Al een hele tijd zocht Rita iemand met een passie voor auto's om
+haar hobby mee te delen. Uiteindelijk heeft ze in haar nichtje de
+perfecte partner gevonden om samen aan auto's te sleutelen. De
+afgelopen zomermaanden hebben ze enorm veel plezier gehad in
+de garage.";TRUE;FALSE;Heeft Rita een nichtje?;FALSE;FALSE;TRUE
+2;047;FILL;"Tijdens de première was het publiek verbaasd over de kwaliteit
+van de film en de indrukwekkende acteerprestaties. De regisseur
+had een onbekende jonge actrice voor de film aangenomen. De
+positieve woorden van het publiek gaven de crew erg veel
+voldoening.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;047;FILL;"Tijdens de première was het publiek verbaasd over de kwaliteit
+van de film en de indrukwekkende acteerprestaties. De regisseur
+had een onbekende jonge actrice voor de film aangenomen. De
+positieve woorden van het publiek gaven de crew erg veel
+voldoening.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;047;FILL;"Tijdens de première was het publiek verbaasd over de kwaliteit
+van de film en de indrukwekkende acteerprestaties. De regisseur
+had een onbekende jonge actrice voor de film aangenomen. De
+positieve woorden van het publiek gaven de crew erg veel
+voldoening.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;047;FILL;"Tijdens de première was het publiek verbaasd over de kwaliteit
+van de film en de indrukwekkende acteerprestaties. De regisseur
+had een onbekende jonge actrice voor de film aangenomen. De
+positieve woorden van het publiek gaven de crew erg veel
+voldoening.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;048;FILL;"De notaris zocht een nieuwe assistent met enkele jaren ervaring.
+Het was moeilijk om zo iemand te vinden, maar uiteindelijk heeft
+hij een kennis aangenomen. Het sollicitatiegesprek was wat
+ongemakkelijk omdat ze elkaar nooit in een professionele context
+spraken.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;048;FILL;"De notaris zocht een nieuwe assistent met enkele jaren ervaring.
+Het was moeilijk om zo iemand te vinden, maar uiteindelijk heeft
+hij een kennis aangenomen. Het sollicitatiegesprek was wat
+ongemakkelijk omdat ze elkaar nooit in een professionele context
+spraken.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;048;FILL;"De notaris zocht een nieuwe assistent met enkele jaren ervaring.
+Het was moeilijk om zo iemand te vinden, maar uiteindelijk heeft
+hij een kennis aangenomen. Het sollicitatiegesprek was wat
+ongemakkelijk omdat ze elkaar nooit in een professionele context
+spraken.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;048;FILL;"De notaris zocht een nieuwe assistent met enkele jaren ervaring.
+Het was moeilijk om zo iemand te vinden, maar uiteindelijk heeft
+hij een kennis aangenomen. Het sollicitatiegesprek was wat
+ongemakkelijk omdat ze elkaar nooit in een professionele context
+spraken.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;049;FILL;"Jaap schrok toen het brandalarm afging in de koffieruimte en geen
+van zijn werknemers wist hoe ze moesten reageren. Gelukkig bleek
+het vals alarm, maar het was duidelijk dat het hoog tijd was
+om zijn afdeling een calamiteitentraining te geven.";TRUE;FALSE;Was er een alarm afgegaan?;FALSE;FALSE;TRUE
+1;049;FILL;"Jaap schrok toen het brandalarm afging in de koffieruimte en geen
+van zijn werknemers wist hoe ze moesten reageren. Gelukkig bleek
+het vals alarm, maar het was duidelijk dat het hoog tijd was
+om zijn afdeling een calamiteitentraining te geven.";TRUE;FALSE;Was er een alarm afgegaan?;FALSE;FALSE;TRUE
+2;049;FILL;"Jaap schrok toen het brandalarm afging in de koffieruimte en geen
+van zijn werknemers wist hoe ze moesten reageren. Gelukkig bleek
+het vals alarm, maar het was duidelijk dat het hoog tijd was
+om zijn afdeling een calamiteitentraining te geven.";TRUE;FALSE;Was er een alarm afgegaan?;FALSE;FALSE;TRUE
+3;049;FILL;"Jaap schrok toen het brandalarm afging in de koffieruimte en geen
+van zijn werknemers wist hoe ze moesten reageren. Gelukkig bleek
+het vals alarm, maar het was duidelijk dat het hoog tijd was
+om zijn afdeling een calamiteitentraining te geven.";TRUE;FALSE;Was er een alarm afgegaan?;FALSE;FALSE;TRUE
+1;050;FILL;"De psychiater ging vrijwel nooit meer op verjaardagsbezoek omdat
+ze geen familie meer had om te bezoeken. Ze heeft haar man een
+paar jaar geleden verloren, en ze hadden geen kinderen. Gelukkig
+haalt ze altijd veel voldoening uit haar werk en het helpen van
+haar patiënten.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;050;FILL;"De psychiater ging vrijwel nooit meer op verjaardagsbezoek omdat
+ze geen familie meer had om te bezoeken. Ze heeft haar man een
+paar jaar geleden verloren, en ze hadden geen kinderen. Gelukkig
+haalt ze altijd veel voldoening uit haar werk en het helpen van
+haar patiënten.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;050;FILL;"De psychiater ging vrijwel nooit meer op verjaardagsbezoek omdat
+ze geen familie meer had om te bezoeken. Ze heeft haar man een
+paar jaar geleden verloren, en ze hadden geen kinderen. Gelukkig
+haalt ze altijd veel voldoening uit haar werk en het helpen van
+haar patiënten.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;050;FILL;"De psychiater ging vrijwel nooit meer op verjaardagsbezoek omdat
+ze geen familie meer had om te bezoeken. Ze heeft haar man een
+paar jaar geleden verloren, en ze hadden geen kinderen. Gelukkig
+haalt ze altijd veel voldoening uit haar werk en het helpen van
+haar patiënten.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;051;FILL;"De oude kapitein hield van zijn onafhankelijkheid. Hij nam geen
+schoonmaker in dienst toen hij ouder werd. Hij werkte het liefst
+alleen omdat hij vond dat dit de efficiëntie aan boord bevorderde.
+Eigenlijk genoot hij wel van de eenzaamheid die de zee met zich
+meebracht.";TRUE;FALSE;Nam de kapitein een schoonmaker aan?;FALSE;FALSE;FALSE
+3;051;FILL;"De oude kapitein hield van zijn onafhankelijkheid. Hij nam geen
+schoonmaker in dienst toen hij ouder werd. Hij werkte het liefst
+alleen omdat hij vond dat dit de efficiëntie aan boord bevorderde.
+Eigenlijk genoot hij wel van de eenzaamheid die de zee met zich
+meebracht.";TRUE;FALSE;Nam de kapitein een schoonmaker aan?;FALSE;FALSE;FALSE
+0;051;FILL;"De oude kapitein hield van zijn onafhankelijkheid. Hij nam geen
+schoonmaker in dienst toen hij ouder werd. Hij werkte het liefst
+alleen omdat hij vond dat dit de efficiëntie aan boord bevorderde.
+Eigenlijk genoot hij wel van de eenzaamheid die de zee met zich
+meebracht.";TRUE;FALSE;Nam de kapitein een schoonmaker aan?;FALSE;FALSE;FALSE
+1;051;FILL;"De oude kapitein hield van zijn onafhankelijkheid. Hij nam geen
+schoonmaker in dienst toen hij ouder werd. Hij werkte het liefst
+alleen omdat hij vond dat dit de efficiëntie aan boord bevorderde.
+Eigenlijk genoot hij wel van de eenzaamheid die de zee met zich
+meebracht.";TRUE;FALSE;Nam de kapitein een schoonmaker aan?;FALSE;FALSE;FALSE
+3;052;FILL;"De minister had al een tijdje niet zoveel interesse meer in
+landbouw. Hij had een groep boeren aangewezen om hem advies te
+geven vanwege de recente kritiek van de bevolking. Hij besefte
+dat hij zo snel mogelijk een vervanger moest gaan zoeken.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;052;FILL;"De minister had al een tijdje niet zoveel interesse meer in
+landbouw. Hij had een groep boeren aangewezen om hem advies te
+geven vanwege de recente kritiek van de bevolking. Hij besefte
+dat hij zo snel mogelijk een vervanger moest gaan zoeken.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;052;FILL;"De minister had al een tijdje niet zoveel interesse meer in
+landbouw. Hij had een groep boeren aangewezen om hem advies te
+geven vanwege de recente kritiek van de bevolking. Hij besefte
+dat hij zo snel mogelijk een vervanger moest gaan zoeken.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;052;FILL;"De minister had al een tijdje niet zoveel interesse meer in
+landbouw. Hij had een groep boeren aangewezen om hem advies te
+geven vanwege de recente kritiek van de bevolking. Hij besefte
+dat hij zo snel mogelijk een vervanger moest gaan zoeken.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;053;FILL;"Thomas is decaan op een basisschool in het dorp. Hij heeft een
+opvallende keuze gemaakt. Thomas heeft laatst een juf met weinig
+ervaring in dienst genomen. Dit leidde eerst tot verwarring binnen
+het team, maar uiteindelijk bleek dat ze veel goede ideeën had.";TRUE;FALSE;Is er een nieuwe directeur?;FALSE;FALSE;FALSE
+1;053;FILL;"Thomas is decaan op een basisschool in het dorp. Hij heeft een
+opvallende keuze gemaakt. Thomas heeft laatst een juf met weinig
+ervaring in dienst genomen. Dit leidde eerst tot verwarring binnen
+het team, maar uiteindelijk bleek dat ze veel goede ideeën had.";TRUE;FALSE;Is er een nieuwe directeur?;FALSE;FALSE;FALSE
+2;053;FILL;"Thomas is decaan op een basisschool in het dorp. Hij heeft een
+opvallende keuze gemaakt. Thomas heeft laatst een juf met weinig
+ervaring in dienst genomen. Dit leidde eerst tot verwarring binnen
+het team, maar uiteindelijk bleek dat ze veel goede ideeën had.";TRUE;FALSE;Is er een nieuwe directeur?;FALSE;FALSE;FALSE
+3;053;FILL;"Thomas is decaan op een basisschool in het dorp. Hij heeft een
+opvallende keuze gemaakt. Thomas heeft laatst een juf met weinig
+ervaring in dienst genomen. Dit leidde eerst tot verwarring binnen
+het team, maar uiteindelijk bleek dat ze veel goede ideeën had.";TRUE;FALSE;Is er een nieuwe directeur?;FALSE;FALSE;FALSE
+1;054;FILL;"Theresa komt uit een grote familie van bakkers. Zelf heeft ze een
+koksopleiding gedaan. Tijdens familiefeesten kookt ze altijd veel
+lekkere hapjes. De gedeelde liefde voor eten maken brengt de
+familie veel vreugde en samenhorigheid tijdens feestelijke
+gelegenheden.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;054;FILL;"Theresa komt uit een grote familie van bakkers. Zelf heeft ze een
+koksopleiding gedaan. Tijdens familiefeesten kookt ze altijd veel
+lekkere hapjes. De gedeelde liefde voor eten maken brengt de
+familie veel vreugde en samenhorigheid tijdens feestelijke
+gelegenheden.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;054;FILL;"Theresa komt uit een grote familie van bakkers. Zelf heeft ze een
+koksopleiding gedaan. Tijdens familiefeesten kookt ze altijd veel
+lekkere hapjes. De gedeelde liefde voor eten maken brengt de
+familie veel vreugde en samenhorigheid tijdens feestelijke
+gelegenheden.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;054;FILL;"Theresa komt uit een grote familie van bakkers. Zelf heeft ze een
+koksopleiding gedaan. Tijdens familiefeesten kookt ze altijd veel
+lekkere hapjes. De gedeelde liefde voor eten maken brengt de
+familie veel vreugde en samenhorigheid tijdens feestelijke
+gelegenheden.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;055;FILL;"Sven is een buurtinitiatief gestart om afval te verminderen. Hij
+organiseert elke maand opruimacties en informatiesessies over
+recycling en composteren. Het initiatief krijgt ondertussen steun
+van de gemeente. De resultaten zijn al zichtbaar en de bewoners
+zijn erg blij.";TRUE;FALSE;Is het buurtinitiatief een succes?;FALSE;FALSE;TRUE
+3;055;FILL;"Sven is een buurtinitiatief gestart om afval te verminderen. Hij
+organiseert elke maand opruimacties en informatiesessies over
+recycling en composteren. Het initiatief krijgt ondertussen steun
+van de gemeente. De resultaten zijn al zichtbaar en de bewoners
+zijn erg blij.";TRUE;FALSE;Is het buurtinitiatief een succes?;FALSE;FALSE;TRUE
+0;055;FILL;"Sven is een buurtinitiatief gestart om afval te verminderen. Hij
+organiseert elke maand opruimacties en informatiesessies over
+recycling en composteren. Het initiatief krijgt ondertussen steun
+van de gemeente. De resultaten zijn al zichtbaar en de bewoners
+zijn erg blij.";TRUE;FALSE;Is het buurtinitiatief een succes?;FALSE;FALSE;TRUE
+1;055;FILL;"Sven is een buurtinitiatief gestart om afval te verminderen. Hij
+organiseert elke maand opruimacties en informatiesessies over
+recycling en composteren. Het initiatief krijgt ondertussen steun
+van de gemeente. De resultaten zijn al zichtbaar en de bewoners
+zijn erg blij.";TRUE;FALSE;Is het buurtinitiatief een succes?;FALSE;FALSE;TRUE
+3;056;FILL;"Caleb was altijd gefocust op zijn werk. Hij heeft geen grote
+familie, maar hij heeft een lieve oudoom. Ondanks dat zijn werk
+veel van zijn tijd in beslag nam, probeerde hij af en toe tijd vrij
+te maken voor een familiebezoekje om hun band niet helemaal te
+verwaarlozen.";TRUE;FALSE;Heeft Caleb een grote familie?;FALSE;FALSE;FALSE
+0;056;FILL;"Caleb was altijd gefocust op zijn werk. Hij heeft geen grote
+familie, maar hij heeft een lieve oudoom. Ondanks dat zijn werk
+veel van zijn tijd in beslag nam, probeerde hij af en toe tijd vrij
+te maken voor een familiebezoekje om hun band niet helemaal te
+verwaarlozen.";TRUE;FALSE;Heeft Caleb een grote familie?;FALSE;FALSE;FALSE
+1;056;FILL;"Caleb was altijd gefocust op zijn werk. Hij heeft geen grote
+familie, maar hij heeft een lieve oudoom. Ondanks dat zijn werk
+veel van zijn tijd in beslag nam, probeerde hij af en toe tijd vrij
+te maken voor een familiebezoekje om hun band niet helemaal te
+verwaarlozen.";TRUE;FALSE;Heeft Caleb een grote familie?;FALSE;FALSE;FALSE
+2;056;FILL;"Caleb was altijd gefocust op zijn werk. Hij heeft geen grote
+familie, maar hij heeft een lieve oudoom. Ondanks dat zijn werk
+veel van zijn tijd in beslag nam, probeerde hij af en toe tijd vrij
+te maken voor een familiebezoekje om hun band niet helemaal te
+verwaarlozen.";TRUE;FALSE;Heeft Caleb een grote familie?;FALSE;FALSE;FALSE
+0;057;FILL;"De coach had een moeilijke beslissing genomen. De coach had een
+goede speler uit het team gezet omdat die steeds niet naar de
+training kwam. Al de hele dag was zij bang voor hoe de wedstrijd
+die middag zou gaan, omdat ze wist dat het team nu minder sterk
+was.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;057;FILL;"De coach had een moeilijke beslissing genomen. De coach had een
+goede speler uit het team gezet omdat die steeds niet naar de
+training kwam. Al de hele dag was zij bang voor hoe de wedstrijd
+die middag zou gaan, omdat ze wist dat het team nu minder sterk
+was.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;057;FILL;"De coach had een moeilijke beslissing genomen. De coach had een
+goede speler uit het team gezet omdat die steeds niet naar de
+training kwam. Al de hele dag was zij bang voor hoe de wedstrijd
+die middag zou gaan, omdat ze wist dat het team nu minder sterk
+was.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;057;FILL;"De coach had een moeilijke beslissing genomen. De coach had een
+goede speler uit het team gezet omdat die steeds niet naar de
+training kwam. Al de hele dag was zij bang voor hoe de wedstrijd
+die middag zou gaan, omdat ze wist dat het team nu minder sterk
+was.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;058;FILL;"Jantine heeft een druk leven. Ze heeft geen kinderen, maar wel een
+man. Sinds de bruiloft had zij het bijzonder druk vanwege haar
+werkverplichtingen waardoor ze maar weinig tijd overhield voor
+persoonlijke zaken. Het was moeilijk een balans te vinden tussen
+haar carrière en haar privéleven.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;058;FILL;"Jantine heeft een druk leven. Ze heeft geen kinderen, maar wel een
+man. Sinds de bruiloft had zij het bijzonder druk vanwege haar
+werkverplichtingen waardoor ze maar weinig tijd overhield voor
+persoonlijke zaken. Het was moeilijk een balans te vinden tussen
+haar carrière en haar privéleven.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;058;FILL;"Jantine heeft een druk leven. Ze heeft geen kinderen, maar wel een
+man. Sinds de bruiloft had zij het bijzonder druk vanwege haar
+werkverplichtingen waardoor ze maar weinig tijd overhield voor
+persoonlijke zaken. Het was moeilijk een balans te vinden tussen
+haar carrière en haar privéleven.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;058;FILL;"Jantine heeft een druk leven. Ze heeft geen kinderen, maar wel een
+man. Sinds de bruiloft had zij het bijzonder druk vanwege haar
+werkverplichtingen waardoor ze maar weinig tijd overhield voor
+persoonlijke zaken. Het was moeilijk een balans te vinden tussen
+haar carrière en haar privéleven.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;059;FILL;"De officier had een nieuw team onder zijn leiding. Hij streefde
+naar een hecht team dat goed samenwerkt onder alle
+omstandigheden, maar daarvoor moest nog wel wat gebeuren. Toch
+wist hij dat dit de juiste selectie was voor het nieuwe project.";TRUE;FALSE;Had de officier vertrouwen in zijn team?;FALSE;FALSE;TRUE
+3;059;FILL;"De officier had een nieuw team onder zijn leiding. Hij streefde
+naar een hecht team dat goed samenwerkt onder alle
+omstandigheden, maar daarvoor moest nog wel wat gebeuren. Toch
+wist hij dat dit de juiste selectie was voor het nieuwe project.";TRUE;FALSE;Had de officier vertrouwen in zijn team?;FALSE;FALSE;TRUE
+0;059;FILL;"De officier had een nieuw team onder zijn leiding. Hij streefde
+naar een hecht team dat goed samenwerkt onder alle
+omstandigheden, maar daarvoor moest nog wel wat gebeuren. Toch
+wist hij dat dit de juiste selectie was voor het nieuwe project.";TRUE;FALSE;Had de officier vertrouwen in zijn team?;FALSE;FALSE;TRUE
+1;059;FILL;"De officier had een nieuw team onder zijn leiding. Hij streefde
+naar een hecht team dat goed samenwerkt onder alle
+omstandigheden, maar daarvoor moest nog wel wat gebeuren. Toch
+wist hij dat dit de juiste selectie was voor het nieuwe project.";TRUE;FALSE;Had de officier vertrouwen in zijn team?;FALSE;FALSE;TRUE
+3;060;FILL;"Hendrik beheerde sinds een jaar zijn eigen café en probeerde zijn
+weg te vinden in zijn nieuwe rol. Hij heeft nog geen tweede barman
+aangenomen, maar dat moet binnenkort wel. De zaken lopen
+namelijk goed en het café krijg steeds meer naamsbekendheid. ";TRUE;FALSE;Heeft Hendrik een café?;FALSE;FALSE;TRUE
+0;060;FILL;"Hendrik beheerde sinds een jaar zijn eigen café en probeerde zijn
+weg te vinden in zijn nieuwe rol. Hij heeft nog geen tweede barman
+aangenomen, maar dat moet binnenkort wel. De zaken lopen
+namelijk goed en het café krijg steeds meer naamsbekendheid. ";TRUE;FALSE;Heeft Hendrik een café?;FALSE;FALSE;TRUE
+1;060;FILL;"Hendrik beheerde sinds een jaar zijn eigen café en probeerde zijn
+weg te vinden in zijn nieuwe rol. Hij heeft nog geen tweede barman
+aangenomen, maar dat moet binnenkort wel. De zaken lopen
+namelijk goed en het café krijg steeds meer naamsbekendheid. ";TRUE;FALSE;Heeft Hendrik een café?;FALSE;FALSE;TRUE
+2;060;FILL;"Hendrik beheerde sinds een jaar zijn eigen café en probeerde zijn
+weg te vinden in zijn nieuwe rol. Hij heeft nog geen tweede barman
+aangenomen, maar dat moet binnenkort wel. De zaken lopen
+namelijk goed en het café krijg steeds meer naamsbekendheid. ";TRUE;FALSE;Heeft Hendrik een café?;FALSE;FALSE;TRUE
+0;061;FILL;"De opzichter was tevreden met haar werk. De opzichter had een
+directeur als leidinggevende. Ze was erg blij met haar, omdat de
+directeur haar veel vrijheid gaf in haar werk. Dit zorgde voor een
+prettige werkomgeving waarin ze zich goed kon ontwikkelen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;061;FILL;"De opzichter was tevreden met haar werk. De opzichter had een
+directeur als leidinggevende. Ze was erg blij met haar, omdat de
+directeur haar veel vrijheid gaf in haar werk. Dit zorgde voor een
+prettige werkomgeving waarin ze zich goed kon ontwikkelen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;061;FILL;"De opzichter was tevreden met haar werk. De opzichter had een
+directeur als leidinggevende. Ze was erg blij met haar, omdat de
+directeur haar veel vrijheid gaf in haar werk. Dit zorgde voor een
+prettige werkomgeving waarin ze zich goed kon ontwikkelen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;061;FILL;"De opzichter was tevreden met haar werk. De opzichter had een
+directeur als leidinggevende. Ze was erg blij met haar, omdat de
+directeur haar veel vrijheid gaf in haar werk. Dit zorgde voor een
+prettige werkomgeving waarin ze zich goed kon ontwikkelen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;062;FILL;"De cipier was al een hele poos niet meer echt gelukkig omdat ze
+haar kleindochter zelden zag. Het werk in de gevangenis was zwaar
+en eiste veel van haar tijd op wat haar soms eenzaam maakte.
+Volgend jaar kan ze gelukkig met pensioen.";TRUE;FALSE;Vindt de cipier haar werk leuk?;FALSE;FALSE;TRUE
+2;062;FILL;"De cipier was al een hele poos niet meer echt gelukkig omdat ze
+haar kleindochter zelden zag. Het werk in de gevangenis was zwaar
+en eiste veel van haar tijd op wat haar soms eenzaam maakte.
+Volgend jaar kan ze gelukkig met pensioen.";TRUE;FALSE;Vindt de cipier haar werk leuk?;FALSE;FALSE;TRUE
+3;062;FILL;"De cipier was al een hele poos niet meer echt gelukkig omdat ze
+haar kleindochter zelden zag. Het werk in de gevangenis was zwaar
+en eiste veel van haar tijd op wat haar soms eenzaam maakte.
+Volgend jaar kan ze gelukkig met pensioen.";TRUE;FALSE;Vindt de cipier haar werk leuk?;FALSE;FALSE;TRUE
+0;062;FILL;"De cipier was al een hele poos niet meer echt gelukkig omdat ze
+haar kleindochter zelden zag. Het werk in de gevangenis was zwaar
+en eiste veel van haar tijd op wat haar soms eenzaam maakte.
+Volgend jaar kan ze gelukkig met pensioen.";TRUE;FALSE;Vindt de cipier haar werk leuk?;FALSE;FALSE;TRUE
+2;063;FILL;"De cabaretier had een complexe relatie met zijn schoonvader.
+Jammer genoeg kan die niet zo goed lachen om zijn grappen over
+de familie. Dit maakt familiebezoekjes soms wat ongemakkelijk. 
+Toch is de cabaretier tevreden met zijn script en gaat hij niets
+aanpassen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;063;FILL;"De cabaretier had een complexe relatie met zijn schoonvader.
+Jammer genoeg kan die niet zo goed lachen om zijn grappen over
+de familie. Dit maakt familiebezoekjes soms wat ongemakkelijk. 
+Toch is de cabaretier tevreden met zijn script en gaat hij niets
+aanpassen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;063;FILL;"De cabaretier had een complexe relatie met zijn schoonvader.
+Jammer genoeg kan die niet zo goed lachen om zijn grappen over
+de familie. Dit maakt familiebezoekjes soms wat ongemakkelijk. 
+Toch is de cabaretier tevreden met zijn script en gaat hij niets
+aanpassen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;063;FILL;"De cabaretier had een complexe relatie met zijn schoonvader.
+Jammer genoeg kan die niet zo goed lachen om zijn grappen over
+de familie. Dit maakt familiebezoekjes soms wat ongemakkelijk. 
+Toch is de cabaretier tevreden met zijn script en gaat hij niets
+aanpassen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;064;FILL;"De beroepsmilitair was vanaf het begin al bang dat de missie fout
+zou gaan omdat de situatie erg gevaarlijk was. Toch probeerde hij
+kalm te blijven en zijn collega's te ondersteunen waar mogelijk.
+Mentaal sterk blijven is erg belangrijk voor het team.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;064;FILL;"De beroepsmilitair was vanaf het begin al bang dat de missie fout
+zou gaan omdat de situatie erg gevaarlijk was. Toch probeerde hij
+kalm te blijven en zijn collega's te ondersteunen waar mogelijk.
+Mentaal sterk blijven is erg belangrijk voor het team.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;064;FILL;"De beroepsmilitair was vanaf het begin al bang dat de missie fout
+zou gaan omdat de situatie erg gevaarlijk was. Toch probeerde hij
+kalm te blijven en zijn collega's te ondersteunen waar mogelijk.
+Mentaal sterk blijven is erg belangrijk voor het team.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;064;FILL;"De beroepsmilitair was vanaf het begin al bang dat de missie fout
+zou gaan omdat de situatie erg gevaarlijk was. Toch probeerde hij
+kalm te blijven en zijn collega's te ondersteunen waar mogelijk.
+Mentaal sterk blijven is erg belangrijk voor het team.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;065;FILL;"Jonathan is deurwaarder. Bij veel mensen was hij niet erg geliefd
+omdat zijn baan vaak negatieve reacties opriep. Dit maakte het
+werk soms zwaar, maar hij probeerde altijd professioneel te
+blijven. Gelukkig heeft hij twee fijne collega's waarmee hij vaak
+een praatje maakt.";TRUE;FALSE;Reageert iedereen positief op Jonathans werk?;FALSE;FALSE;FALSE
+1;065;FILL;"Jonathan is deurwaarder. Bij veel mensen was hij niet erg geliefd
+omdat zijn baan vaak negatieve reacties opriep. Dit maakte het
+werk soms zwaar, maar hij probeerde altijd professioneel te
+blijven. Gelukkig heeft hij twee fijne collega's waarmee hij vaak
+een praatje maakt.";TRUE;FALSE;Reageert iedereen positief op Jonathans werk?;FALSE;FALSE;FALSE
+2;065;FILL;"Jonathan is deurwaarder. Bij veel mensen was hij niet erg geliefd
+omdat zijn baan vaak negatieve reacties opriep. Dit maakte het
+werk soms zwaar, maar hij probeerde altijd professioneel te
+blijven. Gelukkig heeft hij twee fijne collega's waarmee hij vaak
+een praatje maakt.";TRUE;FALSE;Reageert iedereen positief op Jonathans werk?;FALSE;FALSE;FALSE
+3;065;FILL;"Jonathan is deurwaarder. Bij veel mensen was hij niet erg geliefd
+omdat zijn baan vaak negatieve reacties opriep. Dit maakte het
+werk soms zwaar, maar hij probeerde altijd professioneel te
+blijven. Gelukkig heeft hij twee fijne collega's waarmee hij vaak
+een praatje maakt.";TRUE;FALSE;Reageert iedereen positief op Jonathans werk?;FALSE;FALSE;FALSE
+1;066;FILL;"Hans zat in een spannende fase in zijn leven. Vorige maand was hij
+begonnen aan een nieuwe baan in een andere stad. Het was een
+grote verandering, maar hij genoot van de nieuwe sociale contacten
+die hij al snel opdeed.";TRUE;FALSE;Heeft Hans een nieuwe baan?;FALSE;FALSE;TRUE
+2;066;FILL;"Hans zat in een spannende fase in zijn leven. Vorige maand was hij
+begonnen aan een nieuwe baan in een andere stad. Het was een
+grote verandering, maar hij genoot van de nieuwe sociale contacten
+die hij al snel opdeed.";TRUE;FALSE;Heeft Hans een nieuwe baan?;FALSE;FALSE;TRUE
+3;066;FILL;"Hans zat in een spannende fase in zijn leven. Vorige maand was hij
+begonnen aan een nieuwe baan in een andere stad. Het was een
+grote verandering, maar hij genoot van de nieuwe sociale contacten
+die hij al snel opdeed.";TRUE;FALSE;Heeft Hans een nieuwe baan?;FALSE;FALSE;TRUE
+0;066;FILL;"Hans zat in een spannende fase in zijn leven. Vorige maand was hij
+begonnen aan een nieuwe baan in een andere stad. Het was een
+grote verandering, maar hij genoot van de nieuwe sociale contacten
+die hij al snel opdeed.";TRUE;FALSE;Heeft Hans een nieuwe baan?;FALSE;FALSE;TRUE
+2;067;FILL;"Elke dag was een nieuw avontuur voor Mia. Ze had besloten om de
+wereld rond te reizen en nieuwe culturen te ontdekken. Soms kon de
+reis best eenzaam zijn, maar ze genoot ook enorm van de vrijheid
+en onafhankelijkheid.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;067;FILL;"Elke dag was een nieuw avontuur voor Mia. Ze had besloten om de
+wereld rond te reizen en nieuwe culturen te ontdekken. Soms kon de
+reis best eenzaam zijn, maar ze genoot ook enorm van de vrijheid
+en onafhankelijkheid.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;067;FILL;"Elke dag was een nieuw avontuur voor Mia. Ze had besloten om de
+wereld rond te reizen en nieuwe culturen te ontdekken. Soms kon de
+reis best eenzaam zijn, maar ze genoot ook enorm van de vrijheid
+en onafhankelijkheid.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;067;FILL;"Elke dag was een nieuw avontuur voor Mia. Ze had besloten om de
+wereld rond te reizen en nieuwe culturen te ontdekken. Soms kon de
+reis best eenzaam zijn, maar ze genoot ook enorm van de vrijheid
+en onafhankelijkheid.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;068;FILL;"Het was een bewogen jaar voor Ahmed. Hij had eindelijk het huis
+van zijn dromen gekocht, maar de renovaties bleken een stuk
+ingewikkelder dan verwacht. Acht maanden later was het eindelijk
+zover en het resultaat zag er fantastisch uit.";TRUE;FALSE;Gingen de renovaties zoals gepland?;FALSE;FALSE;FALSE
+0;068;FILL;"Het was een bewogen jaar voor Ahmed. Hij had eindelijk het huis
+van zijn dromen gekocht, maar de renovaties bleken een stuk
+ingewikkelder dan verwacht. Acht maanden later was het eindelijk
+zover en het resultaat zag er fantastisch uit.";TRUE;FALSE;Gingen de renovaties zoals gepland?;FALSE;FALSE;FALSE
+1;068;FILL;"Het was een bewogen jaar voor Ahmed. Hij had eindelijk het huis
+van zijn dromen gekocht, maar de renovaties bleken een stuk
+ingewikkelder dan verwacht. Acht maanden later was het eindelijk
+zover en het resultaat zag er fantastisch uit.";TRUE;FALSE;Gingen de renovaties zoals gepland?;FALSE;FALSE;FALSE
+2;068;FILL;"Het was een bewogen jaar voor Ahmed. Hij had eindelijk het huis
+van zijn dromen gekocht, maar de renovaties bleken een stuk
+ingewikkelder dan verwacht. Acht maanden later was het eindelijk
+zover en het resultaat zag er fantastisch uit.";TRUE;FALSE;Gingen de renovaties zoals gepland?;FALSE;FALSE;FALSE
+0;069;FILL;"Het bedrijf van Claire was de afgelopen jaren flink gegroeid. Toch
+overwoog ze nu om het te verkopen. Het was een moeilijke
+beslissing, maar ze wist dat dit haar kans was om meer tijd met
+het gezin door te brengen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;069;FILL;"Het bedrijf van Claire was de afgelopen jaren flink gegroeid. Toch
+overwoog ze nu om het te verkopen. Het was een moeilijke
+beslissing, maar ze wist dat dit haar kans was om meer tijd met
+het gezin door te brengen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;069;FILL;"Het bedrijf van Claire was de afgelopen jaren flink gegroeid. Toch
+overwoog ze nu om het te verkopen. Het was een moeilijke
+beslissing, maar ze wist dat dit haar kans was om meer tijd met
+het gezin door te brengen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;069;FILL;"Het bedrijf van Claire was de afgelopen jaren flink gegroeid. Toch
+overwoog ze nu om het te verkopen. Het was een moeilijke
+beslissing, maar ze wist dat dit haar kans was om meer tijd met
+het gezin door te brengen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;070;FILL;"Sinds zijn pensioen had Pieter veel meer tijd voor zijn hobby's.
+Hij besteedde zijn dagen aan tuinieren en het repareren van oude
+lampen. Het gaf hem een gevoel van voldoening en rust. Zijn
+kleinzoon is door hem zelfs restaurateur geworden.";TRUE;FALSE;Verveelt Pieter zich sinds hij met pensioen is?;FALSE;FALSE;FALSE
+2;070;FILL;"Sinds zijn pensioen had Pieter veel meer tijd voor zijn hobby's.
+Hij besteedde zijn dagen aan tuinieren en het repareren van oude
+lampen. Het gaf hem een gevoel van voldoening en rust. Zijn
+kleinzoon is door hem zelfs restaurateur geworden.";TRUE;FALSE;Verveelt Pieter zich sinds hij met pensioen is?;FALSE;FALSE;FALSE
+3;070;FILL;"Sinds zijn pensioen had Pieter veel meer tijd voor zijn hobby's.
+Hij besteedde zijn dagen aan tuinieren en het repareren van oude
+lampen. Het gaf hem een gevoel van voldoening en rust. Zijn
+kleinzoon is door hem zelfs restaurateur geworden.";TRUE;FALSE;Verveelt Pieter zich sinds hij met pensioen is?;FALSE;FALSE;FALSE
+0;070;FILL;"Sinds zijn pensioen had Pieter veel meer tijd voor zijn hobby's.
+Hij besteedde zijn dagen aan tuinieren en het repareren van oude
+lampen. Het gaf hem een gevoel van voldoening en rust. Zijn
+kleinzoon is door hem zelfs restaurateur geworden.";TRUE;FALSE;Verveelt Pieter zich sinds hij met pensioen is?;FALSE;FALSE;FALSE
+2;071;FILL;"Lisa heeft na een moeilijke periode besloten om hulp te zoeken en
+aan zichzelf te werken. Lisa is sinds een paar weken bezig met een
+nieuwe therapie en voelt zich al een stuk beter. Daarnaast is ze
+begonnen met een cursus dichten.";TRUE;FALSE;Heeft Lisa een moeilijke tijd gehad?;FALSE;FALSE;TRUE
+3;071;FILL;"Lisa heeft na een moeilijke periode besloten om hulp te zoeken en
+aan zichzelf te werken. Lisa is sinds een paar weken bezig met een
+nieuwe therapie en voelt zich al een stuk beter. Daarnaast is ze
+begonnen met een cursus dichten.";TRUE;FALSE;Heeft Lisa een moeilijke tijd gehad?;FALSE;FALSE;TRUE
+0;071;FILL;"Lisa heeft na een moeilijke periode besloten om hulp te zoeken en
+aan zichzelf te werken. Lisa is sinds een paar weken bezig met een
+nieuwe therapie en voelt zich al een stuk beter. Daarnaast is ze
+begonnen met een cursus dichten.";TRUE;FALSE;Heeft Lisa een moeilijke tijd gehad?;FALSE;FALSE;TRUE
+1;071;FILL;"Lisa heeft na een moeilijke periode besloten om hulp te zoeken en
+aan zichzelf te werken. Lisa is sinds een paar weken bezig met een
+nieuwe therapie en voelt zich al een stuk beter. Daarnaast is ze
+begonnen met een cursus dichten.";TRUE;FALSE;Heeft Lisa een moeilijke tijd gehad?;FALSE;FALSE;TRUE
+3;072;FILL;"Lucas had altijd al een passie voor koken gehad. Dit jaar had hij
+eindelijk de stap gezet om zijn eigen restaurant te openen. Het
+was hard werken, maar de blije reacties van zijn gasten maakten
+het allemaal de moeite waard.";TRUE;FALSE;Heeft Lucas een eigen restaurant?;FALSE;FALSE;TRUE
+0;072;FILL;"Lucas had altijd al een passie voor koken gehad. Dit jaar had hij
+eindelijk de stap gezet om zijn eigen restaurant te openen. Het
+was hard werken, maar de blije reacties van zijn gasten maakten
+het allemaal de moeite waard.";TRUE;FALSE;Heeft Lucas een eigen restaurant?;FALSE;FALSE;TRUE
+1;072;FILL;"Lucas had altijd al een passie voor koken gehad. Dit jaar had hij
+eindelijk de stap gezet om zijn eigen restaurant te openen. Het
+was hard werken, maar de blije reacties van zijn gasten maakten
+het allemaal de moeite waard.";TRUE;FALSE;Heeft Lucas een eigen restaurant?;FALSE;FALSE;TRUE
+2;072;FILL;"Lucas had altijd al een passie voor koken gehad. Dit jaar had hij
+eindelijk de stap gezet om zijn eigen restaurant te openen. Het
+was hard werken, maar de blije reacties van zijn gasten maakten
+het allemaal de moeite waard.";TRUE;FALSE;Heeft Lucas een eigen restaurant?;FALSE;FALSE;TRUE
+0;073;FILL;"Emma wilde het roer omgooien. Ze was voor haar nieuwe werk naar
+een andere stad verhuisd. Het was even wennen, maar ze genoot
+van de levendige straten, de vele cafeetjes, en de luxe van haar
+appartementencomplex.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;073;FILL;"Emma wilde het roer omgooien. Ze was voor haar nieuwe werk naar
+een andere stad verhuisd. Het was even wennen, maar ze genoot
+van de levendige straten, de vele cafeetjes, en de luxe van haar
+appartementencomplex.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;073;FILL;"Emma wilde het roer omgooien. Ze was voor haar nieuwe werk naar
+een andere stad verhuisd. Het was even wennen, maar ze genoot
+van de levendige straten, de vele cafeetjes, en de luxe van haar
+appartementencomplex.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;073;FILL;"Emma wilde het roer omgooien. Ze was voor haar nieuwe werk naar
+een andere stad verhuisd. Het was even wennen, maar ze genoot
+van de levendige straten, de vele cafeetjes, en de luxe van haar
+appartementencomplex.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;074;FILL;"Mark had altijd gedroomd van een carrière als schrijver. Dit jaar
+publiceerde hij zijn eerste boek en dat was enorm zenuwslopend.
+Hoewel de eerste recensie niet zo positief was, werd het boek
+uiteindelijk goed verkocht.";TRUE;FALSE;Heeft Mark een boek geschreven?;FALSE;FALSE;TRUE
+2;074;FILL;"Mark had altijd gedroomd van een carrière als schrijver. Dit jaar
+publiceerde hij zijn eerste boek en dat was enorm zenuwslopend.
+Hoewel de eerste recensie niet zo positief was, werd het boek
+uiteindelijk goed verkocht.";TRUE;FALSE;Heeft Mark een boek geschreven?;FALSE;FALSE;TRUE
+3;074;FILL;"Mark had altijd gedroomd van een carrière als schrijver. Dit jaar
+publiceerde hij zijn eerste boek en dat was enorm zenuwslopend.
+Hoewel de eerste recensie niet zo positief was, werd het boek
+uiteindelijk goed verkocht.";TRUE;FALSE;Heeft Mark een boek geschreven?;FALSE;FALSE;TRUE
+0;074;FILL;"Mark had altijd gedroomd van een carrière als schrijver. Dit jaar
+publiceerde hij zijn eerste boek en dat was enorm zenuwslopend.
+Hoewel de eerste recensie niet zo positief was, werd het boek
+uiteindelijk goed verkocht.";TRUE;FALSE;Heeft Mark een boek geschreven?;FALSE;FALSE;TRUE
+2;075;FILL;"Sophie is begonnen aan een intensieve opleiding terwijl ze twee
+jonge kinderen thuis heeft. Haar man heeft het druk omdat hij
+mantelzorger is voor zijn zieke zus. Maar Sophie is vastberaden om
+haar doelen te bereiken en haar gezin trots te maken.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;075;FILL;"Sophie is begonnen aan een intensieve opleiding terwijl ze twee
+jonge kinderen thuis heeft. Haar man heeft het druk omdat hij
+mantelzorger is voor zijn zieke zus. Maar Sophie is vastberaden om
+haar doelen te bereiken en haar gezin trots te maken.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;075;FILL;"Sophie is begonnen aan een intensieve opleiding terwijl ze twee
+jonge kinderen thuis heeft. Haar man heeft het druk omdat hij
+mantelzorger is voor zijn zieke zus. Maar Sophie is vastberaden om
+haar doelen te bereiken en haar gezin trots te maken.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;075;FILL;"Sophie is begonnen aan een intensieve opleiding terwijl ze twee
+jonge kinderen thuis heeft. Haar man heeft het druk omdat hij
+mantelzorger is voor zijn zieke zus. Maar Sophie is vastberaden om
+haar doelen te bereiken en haar gezin trots te maken.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;076;FILL;"Josefine is sinds afgelopen maand echt helemaal verslaafd aan een
+nieuwe game op de PC. Ze heeft al zeker 200 uur gespeeld, maar de
+game heeft veel moeilijke levels. Soms is ze wel drie dagen bezig
+met een level omdat ze het net niet haalt.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;076;FILL;"Josefine is sinds afgelopen maand echt helemaal verslaafd aan een
+nieuwe game op de PC. Ze heeft al zeker 200 uur gespeeld, maar de
+game heeft veel moeilijke levels. Soms is ze wel drie dagen bezig
+met een level omdat ze het net niet haalt.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;076;FILL;"Josefine is sinds afgelopen maand echt helemaal verslaafd aan een
+nieuwe game op de PC. Ze heeft al zeker 200 uur gespeeld, maar de
+game heeft veel moeilijke levels. Soms is ze wel drie dagen bezig
+met een level omdat ze het net niet haalt.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;076;FILL;"Josefine is sinds afgelopen maand echt helemaal verslaafd aan een
+nieuwe game op de PC. Ze heeft al zeker 200 uur gespeeld, maar de
+game heeft veel moeilijke levels. Soms is ze wel drie dagen bezig
+met een level omdat ze het net niet haalt.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;077;FILL;"De analist hield van een schone werkplek omdat dit haar in staat
+stelde zich volledig te concentreren. Ze had geen schoonmaakster
+aangenomen want het was voor haar essentieel dat alles op de
+juiste plek bleef liggen. Ze wilde absoluut niks kwijtraken.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;077;FILL;"De analist hield van een schone werkplek omdat dit haar in staat
+stelde zich volledig te concentreren. Ze had geen schoonmaakster
+aangenomen want het was voor haar essentieel dat alles op de
+juiste plek bleef liggen. Ze wilde absoluut niks kwijtraken.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;077;FILL;"De analist hield van een schone werkplek omdat dit haar in staat
+stelde zich volledig te concentreren. Ze had geen schoonmaakster
+aangenomen want het was voor haar essentieel dat alles op de
+juiste plek bleef liggen. Ze wilde absoluut niks kwijtraken.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;077;FILL;"De analist hield van een schone werkplek omdat dit haar in staat
+stelde zich volledig te concentreren. Ze had geen schoonmaakster
+aangenomen want het was voor haar essentieel dat alles op de
+juiste plek bleef liggen. Ze wilde absoluut niks kwijtraken.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;078;FILL;"De accountant werkte al jaren zelfstandig. Hij nam geen partner
+aan voor de grote nieuwe klus omdat hij het vertrouwen had in
+zijn eigen capaciteiten. De accountant vond het niet efficiënt om
+steeds te moeten overleggen met een ander.";TRUE;FALSE;Werkt de accountant graag samen?;FALSE;FALSE;FALSE
+2;078;FILL;"De accountant werkte al jaren zelfstandig. Hij nam geen partner
+aan voor de grote nieuwe klus omdat hij het vertrouwen had in
+zijn eigen capaciteiten. De accountant vond het niet efficiënt om
+steeds te moeten overleggen met een ander.";TRUE;FALSE;Werkt de accountant graag samen?;FALSE;FALSE;FALSE
+3;078;FILL;"De accountant werkte al jaren zelfstandig. Hij nam geen partner
+aan voor de grote nieuwe klus omdat hij het vertrouwen had in
+zijn eigen capaciteiten. De accountant vond het niet efficiënt om
+steeds te moeten overleggen met een ander.";TRUE;FALSE;Werkt de accountant graag samen?;FALSE;FALSE;FALSE
+0;078;FILL;"De accountant werkte al jaren zelfstandig. Hij nam geen partner
+aan voor de grote nieuwe klus omdat hij het vertrouwen had in
+zijn eigen capaciteiten. De accountant vond het niet efficiënt om
+steeds te moeten overleggen met een ander.";TRUE;FALSE;Werkt de accountant graag samen?;FALSE;FALSE;FALSE
+2;079;FILL;"Liezelot had zich aangemeld voor een vrijwilligersproject in
+Zuid-Amerika om kinderen te helpen met hun onderwijs. Het was
+een ervaring die haar diep had geraakt. Elke dag werkte ze samen
+met de lokale gemeenschap voor een betere toekomst.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;079;FILL;"Liezelot had zich aangemeld voor een vrijwilligersproject in
+Zuid-Amerika om kinderen te helpen met hun onderwijs. Het was
+een ervaring die haar diep had geraakt. Elke dag werkte ze samen
+met de lokale gemeenschap voor een betere toekomst.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;079;FILL;"Liezelot had zich aangemeld voor een vrijwilligersproject in
+Zuid-Amerika om kinderen te helpen met hun onderwijs. Het was
+een ervaring die haar diep had geraakt. Elke dag werkte ze samen
+met de lokale gemeenschap voor een betere toekomst.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;079;FILL;"Liezelot had zich aangemeld voor een vrijwilligersproject in
+Zuid-Amerika om kinderen te helpen met hun onderwijs. Het was
+een ervaring die haar diep had geraakt. Elke dag werkte ze samen
+met de lokale gemeenschap voor een betere toekomst.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;080;FILL;"David had altijd gitaar gespeeld als hobby, maar nu wilde hij er
+meer mee doen. Hij begon met het geven van gitaarlessen aan
+kinderen in de buurt. Het was geweldige ervaring om zijn kennis
+en liefde voor muziek te kunnen delen. ";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;080;FILL;"David had altijd gitaar gespeeld als hobby, maar nu wilde hij er
+meer mee doen. Hij begon met het geven van gitaarlessen aan
+kinderen in de buurt. Het was geweldige ervaring om zijn kennis
+en liefde voor muziek te kunnen delen. ";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;080;FILL;"David had altijd gitaar gespeeld als hobby, maar nu wilde hij er
+meer mee doen. Hij begon met het geven van gitaarlessen aan
+kinderen in de buurt. Het was geweldige ervaring om zijn kennis
+en liefde voor muziek te kunnen delen. ";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;080;FILL;"David had altijd gitaar gespeeld als hobby, maar nu wilde hij er
+meer mee doen. Hij begon met het geven van gitaarlessen aan
+kinderen in de buurt. Het was geweldige ervaring om zijn kennis
+en liefde voor muziek te kunnen delen. ";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;081;FILL;"Leo had besloten om een sabbatical te nemen van zijn drukke baan
+en de wereld rond te reizen. Hij ontmoette mensen uit alle lagen
+van de bevolking en hoorde hun verhalen. Elke maand bracht hij
+door in een ander land en leerde hij nieuwe tradities.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;081;FILL;"Leo had besloten om een sabbatical te nemen van zijn drukke baan
+en de wereld rond te reizen. Hij ontmoette mensen uit alle lagen
+van de bevolking en hoorde hun verhalen. Elke maand bracht hij
+door in een ander land en leerde hij nieuwe tradities.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;081;FILL;"Leo had besloten om een sabbatical te nemen van zijn drukke baan
+en de wereld rond te reizen. Hij ontmoette mensen uit alle lagen
+van de bevolking en hoorde hun verhalen. Elke maand bracht hij
+door in een ander land en leerde hij nieuwe tradities.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;081;FILL;"Leo had besloten om een sabbatical te nemen van zijn drukke baan
+en de wereld rond te reizen. Hij ontmoette mensen uit alle lagen
+van de bevolking en hoorde hun verhalen. Elke maand bracht hij
+door in een ander land en leerde hij nieuwe tradities.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;082;FILL;"Vincent had altijd van koken gehouden en dit jaar nam hij deel aan
+een kookwedstrijd. Hij heeft geëxperimenteerd met nieuwe recepten
+en technieken, en bereikte uiteindelijk de finale. Hoewel hij niet
+won, was het een geweldige en waardevolle ervaring.";TRUE;FALSE;Heeft Vincent de kookwedstrijd gewonnen?;FALSE;FALSE;FALSE
+2;082;FILL;"Vincent had altijd van koken gehouden en dit jaar nam hij deel aan
+een kookwedstrijd. Hij heeft geëxperimenteerd met nieuwe recepten
+en technieken, en bereikte uiteindelijk de finale. Hoewel hij niet
+won, was het een geweldige en waardevolle ervaring.";TRUE;FALSE;Heeft Vincent de kookwedstrijd gewonnen?;FALSE;FALSE;FALSE
+3;082;FILL;"Vincent had altijd van koken gehouden en dit jaar nam hij deel aan
+een kookwedstrijd. Hij heeft geëxperimenteerd met nieuwe recepten
+en technieken, en bereikte uiteindelijk de finale. Hoewel hij niet
+won, was het een geweldige en waardevolle ervaring.";TRUE;FALSE;Heeft Vincent de kookwedstrijd gewonnen?;FALSE;FALSE;FALSE
+0;082;FILL;"Vincent had altijd van koken gehouden en dit jaar nam hij deel aan
+een kookwedstrijd. Hij heeft geëxperimenteerd met nieuwe recepten
+en technieken, en bereikte uiteindelijk de finale. Hoewel hij niet
+won, was het een geweldige en waardevolle ervaring.";TRUE;FALSE;Heeft Vincent de kookwedstrijd gewonnen?;FALSE;FALSE;FALSE
+2;083;FILL;"Milou zit bij een lokaal theatergezelschap en speelt mee in
+verschillende producties. Elke voorstelling heeft een nieuwe
+uitdaging, maar ze geniet van elke minuut. Milou krijgt veel
+energie van het applaus van het publiek en hoopt binnenkort een
+hoofdrol te krijgen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;083;FILL;"Milou zit bij een lokaal theatergezelschap en speelt mee in
+verschillende producties. Elke voorstelling heeft een nieuwe
+uitdaging, maar ze geniet van elke minuut. Milou krijgt veel
+energie van het applaus van het publiek en hoopt binnenkort een
+hoofdrol te krijgen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;083;FILL;"Milou zit bij een lokaal theatergezelschap en speelt mee in
+verschillende producties. Elke voorstelling heeft een nieuwe
+uitdaging, maar ze geniet van elke minuut. Milou krijgt veel
+energie van het applaus van het publiek en hoopt binnenkort een
+hoofdrol te krijgen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;083;FILL;"Milou zit bij een lokaal theatergezelschap en speelt mee in
+verschillende producties. Elke voorstelling heeft een nieuwe
+uitdaging, maar ze geniet van elke minuut. Milou krijgt veel
+energie van het applaus van het publiek en hoopt binnenkort een
+hoofdrol te krijgen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;084;FILL;"Twan ontdekte een nieuwe hobby: fotografie. Hij kocht een goede
+camera en begon zijn omgeving te fotograferen. Hij vond het
+heerlijk om landschappen vast te leggen, maar vond portretten
+schieten echt het allerleukst.";TRUE;FALSE;Heeft Twan een goede camera?;FALSE;FALSE;TRUE
+0;084;FILL;"Twan ontdekte een nieuwe hobby: fotografie. Hij kocht een goede
+camera en begon zijn omgeving te fotograferen. Hij vond het
+heerlijk om landschappen vast te leggen, maar vond portretten
+schieten echt het allerleukst.";TRUE;FALSE;Heeft Twan een goede camera?;FALSE;FALSE;TRUE
+1;084;FILL;"Twan ontdekte een nieuwe hobby: fotografie. Hij kocht een goede
+camera en begon zijn omgeving te fotograferen. Hij vond het
+heerlijk om landschappen vast te leggen, maar vond portretten
+schieten echt het allerleukst.";TRUE;FALSE;Heeft Twan een goede camera?;FALSE;FALSE;TRUE
+2;084;FILL;"Twan ontdekte een nieuwe hobby: fotografie. Hij kocht een goede
+camera en begon zijn omgeving te fotograferen. Hij vond het
+heerlijk om landschappen vast te leggen, maar vond portretten
+schieten echt het allerleukst.";TRUE;FALSE;Heeft Twan een goede camera?;FALSE;FALSE;TRUE
+0;085;FILL;"Jasper had besloten om zijn huis te renoveren. Hij heeft zichzelf
+leren klussen en wilde zijn huis mooier en functioneler maken. Het
+werk kostte veel tijd en moeite, maar het resultaat was een woning
+waar hij erg trots op was en zich helemaal thuis voelde.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;085;FILL;"Jasper had besloten om zijn huis te renoveren. Hij heeft zichzelf
+leren klussen en wilde zijn huis mooier en functioneler maken. Het
+werk kostte veel tijd en moeite, maar het resultaat was een woning
+waar hij erg trots op was en zich helemaal thuis voelde.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;085;FILL;"Jasper had besloten om zijn huis te renoveren. Hij heeft zichzelf
+leren klussen en wilde zijn huis mooier en functioneler maken. Het
+werk kostte veel tijd en moeite, maar het resultaat was een woning
+waar hij erg trots op was en zich helemaal thuis voelde.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;085;FILL;"Jasper had besloten om zijn huis te renoveren. Hij heeft zichzelf
+leren klussen en wilde zijn huis mooier en functioneler maken. Het
+werk kostte veel tijd en moeite, maar het resultaat was een woning
+waar hij erg trots op was en zich helemaal thuis voelde.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;086;FILL;"Lucas leerde een nieuw instrument bespelen. Hij had altijd al
+interesse gehad in de piano, maar had er nooit tijd voor genomen.
+Dit jaar nam hij eindelijk lessen en oefende hij dagelijks. Het
+was uitdagend, maar hij merkte al snel vooruitgang. ";TRUE;FALSE;Zat Lucas vroeger op pianoles?;FALSE;FALSE;FALSE
+2;086;FILL;"Lucas leerde een nieuw instrument bespelen. Hij had altijd al
+interesse gehad in de piano, maar had er nooit tijd voor genomen.
+Dit jaar nam hij eindelijk lessen en oefende hij dagelijks. Het
+was uitdagend, maar hij merkte al snel vooruitgang. ";TRUE;FALSE;Zat Lucas vroeger op pianoles?;FALSE;FALSE;FALSE
+3;086;FILL;"Lucas leerde een nieuw instrument bespelen. Hij had altijd al
+interesse gehad in de piano, maar had er nooit tijd voor genomen.
+Dit jaar nam hij eindelijk lessen en oefende hij dagelijks. Het
+was uitdagend, maar hij merkte al snel vooruitgang. ";TRUE;FALSE;Zat Lucas vroeger op pianoles?;FALSE;FALSE;FALSE
+0;086;FILL;"Lucas leerde een nieuw instrument bespelen. Hij had altijd al
+interesse gehad in de piano, maar had er nooit tijd voor genomen.
+Dit jaar nam hij eindelijk lessen en oefende hij dagelijks. Het
+was uitdagend, maar hij merkte al snel vooruitgang. ";TRUE;FALSE;Zat Lucas vroeger op pianoles?;FALSE;FALSE;FALSE
+2;087;FILL;"Elise zet zich al lang in voor dierenwelzijn. Ze begon als
+vrijwilliger bij een dierenasiel en zorgde voor veel verlaten
+huisdieren. Het was hartverscheurend maar ontzettend dankbaar
+werk. Elise geeft nu voorlichtingen en hoopt dat mensen hun dieren
+beter gaan behandelen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;087;FILL;"Elise zet zich al lang in voor dierenwelzijn. Ze begon als
+vrijwilliger bij een dierenasiel en zorgde voor veel verlaten
+huisdieren. Het was hartverscheurend maar ontzettend dankbaar
+werk. Elise geeft nu voorlichtingen en hoopt dat mensen hun dieren
+beter gaan behandelen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;087;FILL;"Elise zet zich al lang in voor dierenwelzijn. Ze begon als
+vrijwilliger bij een dierenasiel en zorgde voor veel verlaten
+huisdieren. Het was hartverscheurend maar ontzettend dankbaar
+werk. Elise geeft nu voorlichtingen en hoopt dat mensen hun dieren
+beter gaan behandelen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;087;FILL;"Elise zet zich al lang in voor dierenwelzijn. Ze begon als
+vrijwilliger bij een dierenasiel en zorgde voor veel verlaten
+huisdieren. Het was hartverscheurend maar ontzettend dankbaar
+werk. Elise geeft nu voorlichtingen en hoopt dat mensen hun dieren
+beter gaan behandelen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;088;FILL;"Anna had een klein huisje gekocht met een grote tuin waar ze haar
+eigen groenten begon te verbouwen. Ze leerde veel over duurzame
+tuinbouw en maakte nieuwe vrienden in de lokale gemeenschap.
+Elke avond genoot Anna van haar nieuwe tuin.";TRUE;FALSE;Woont Anna in een flat?;FALSE;FALSE;FALSE
+0;088;FILL;"Anna had een klein huisje gekocht met een grote tuin waar ze haar
+eigen groenten begon te verbouwen. Ze leerde veel over duurzame
+tuinbouw en maakte nieuwe vrienden in de lokale gemeenschap.
+Elke avond genoot Anna van haar nieuwe tuin.";TRUE;FALSE;Woont Anna in een flat?;FALSE;FALSE;FALSE
+1;088;FILL;"Anna had een klein huisje gekocht met een grote tuin waar ze haar
+eigen groenten begon te verbouwen. Ze leerde veel over duurzame
+tuinbouw en maakte nieuwe vrienden in de lokale gemeenschap.
+Elke avond genoot Anna van haar nieuwe tuin.";TRUE;FALSE;Woont Anna in een flat?;FALSE;FALSE;FALSE
+2;088;FILL;"Anna had een klein huisje gekocht met een grote tuin waar ze haar
+eigen groenten begon te verbouwen. Ze leerde veel over duurzame
+tuinbouw en maakte nieuwe vrienden in de lokale gemeenschap.
+Elke avond genoot Anna van haar nieuwe tuin.";TRUE;FALSE;Woont Anna in een flat?;FALSE;FALSE;FALSE
+0;089;FILL;"Marieke heeft een liefde voor schilderen en heeft al een aantal
+cursussen gedaan. Haar werken kregen al snel lof van vrienden,
+dus ze besloot mee te doen aan een lokale kunstexpositie. Het was
+een geweldige kans en ze leerde veel andere artiesten kennen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;089;FILL;"Marieke heeft een liefde voor schilderen en heeft al een aantal
+cursussen gedaan. Haar werken kregen al snel lof van vrienden,
+dus ze besloot mee te doen aan een lokale kunstexpositie. Het was
+een geweldige kans en ze leerde veel andere artiesten kennen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+2;089;FILL;"Marieke heeft een liefde voor schilderen en heeft al een aantal
+cursussen gedaan. Haar werken kregen al snel lof van vrienden,
+dus ze besloot mee te doen aan een lokale kunstexpositie. Het was
+een geweldige kans en ze leerde veel andere artiesten kennen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;089;FILL;"Marieke heeft een liefde voor schilderen en heeft al een aantal
+cursussen gedaan. Haar werken kregen al snel lof van vrienden,
+dus ze besloot mee te doen aan een lokale kunstexpositie. Het was
+een geweldige kans en ze leerde veel andere artiesten kennen.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;090;FILL;"Benny en zijn vrienden wilden de gemeenschap samenbrengen en
+bedachten verschillende activiteiten en optredens. Uiteindelijk
+besloten ze een buurtfestival te organiseren. Het evenement was
+een groot succes en bracht de buurt dichter bij elkaar.";TRUE;FALSE;Organiseerde Benny een internationaal evenement?;FALSE;FALSE;FALSE
+2;090;FILL;"Benny en zijn vrienden wilden de gemeenschap samenbrengen en
+bedachten verschillende activiteiten en optredens. Uiteindelijk
+besloten ze een buurtfestival te organiseren. Het evenement was
+een groot succes en bracht de buurt dichter bij elkaar.";TRUE;FALSE;Organiseerde Benny een internationaal evenement?;FALSE;FALSE;FALSE
+3;090;FILL;"Benny en zijn vrienden wilden de gemeenschap samenbrengen en
+bedachten verschillende activiteiten en optredens. Uiteindelijk
+besloten ze een buurtfestival te organiseren. Het evenement was
+een groot succes en bracht de buurt dichter bij elkaar.";TRUE;FALSE;Organiseerde Benny een internationaal evenement?;FALSE;FALSE;FALSE
+0;090;FILL;"Benny en zijn vrienden wilden de gemeenschap samenbrengen en
+bedachten verschillende activiteiten en optredens. Uiteindelijk
+besloten ze een buurtfestival te organiseren. Het evenement was
+een groot succes en bracht de buurt dichter bij elkaar.";TRUE;FALSE;Organiseerde Benny een internationaal evenement?;FALSE;FALSE;FALSE
+2;091;FILL;"Femke besloot dit jaar om meer te lezen. Ze maakte een lijst van
+boeken die ze altijd al wilde lezen en probeerde elke dag minstens
+een halfuur te lezen. Ze genoot van de nieuwe inzichten die het
+lezen haar bood.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;091;FILL;"Femke besloot dit jaar om meer te lezen. Ze maakte een lijst van
+boeken die ze altijd al wilde lezen en probeerde elke dag minstens
+een halfuur te lezen. Ze genoot van de nieuwe inzichten die het
+lezen haar bood.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;091;FILL;"Femke besloot dit jaar om meer te lezen. Ze maakte een lijst van
+boeken die ze altijd al wilde lezen en probeerde elke dag minstens
+een halfuur te lezen. Ze genoot van de nieuwe inzichten die het
+lezen haar bood.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;091;FILL;"Femke besloot dit jaar om meer te lezen. Ze maakte een lijst van
+boeken die ze altijd al wilde lezen en probeerde elke dag minstens
+een halfuur te lezen. Ze genoot van de nieuwe inzichten die het
+lezen haar bood.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;092;FILL;"Robin heeft recent een passie voor tuinieren ontdekt. Hij heeft
+zijn achtertuin omgetoverd in een prachtige bloemenzee. Tuinieren
+bleek voor Robin de perfecte manier om te ontspannen na een lange
+werkdag op kantoor.";TRUE;FALSE;Is Robin tuinman van beroep?;FALSE;FALSE;FALSE
+0;092;FILL;"Robin heeft recent een passie voor tuinieren ontdekt. Hij heeft
+zijn achtertuin omgetoverd in een prachtige bloemenzee. Tuinieren
+bleek voor Robin de perfecte manier om te ontspannen na een lange
+werkdag op kantoor.";TRUE;FALSE;Is Robin tuinman van beroep?;FALSE;FALSE;FALSE
+1;092;FILL;"Robin heeft recent een passie voor tuinieren ontdekt. Hij heeft
+zijn achtertuin omgetoverd in een prachtige bloemenzee. Tuinieren
+bleek voor Robin de perfecte manier om te ontspannen na een lange
+werkdag op kantoor.";TRUE;FALSE;Is Robin tuinman van beroep?;FALSE;FALSE;FALSE
+2;092;FILL;"Robin heeft recent een passie voor tuinieren ontdekt. Hij heeft
+zijn achtertuin omgetoverd in een prachtige bloemenzee. Tuinieren
+bleek voor Robin de perfecte manier om te ontspannen na een lange
+werkdag op kantoor.";TRUE;FALSE;Is Robin tuinman van beroep?;FALSE;FALSE;FALSE
+0;093;FILL;"Jannie is een kookclubje begonnen met haar beste vriendinnen. Ze
+komen elke maand samen om nieuwe recepten uit te proberen. 
+Het is niet alleen een culinaire ontdekkingstocht, maar ook een
+geweldige manier om tijd door te brengen met vrienden.";TRUE;FALSE;Houden Jannie en haar vriendinnen van koken?;FALSE;FALSE;TRUE
+1;093;FILL;"Jannie is een kookclubje begonnen met haar beste vriendinnen. Ze
+komen elke maand samen om nieuwe recepten uit te proberen. 
+Het is niet alleen een culinaire ontdekkingstocht, maar ook een
+geweldige manier om tijd door te brengen met vrienden.";TRUE;FALSE;Houden Jannie en haar vriendinnen van koken?;FALSE;FALSE;TRUE
+2;093;FILL;"Jannie is een kookclubje begonnen met haar beste vriendinnen. Ze
+komen elke maand samen om nieuwe recepten uit te proberen. 
+Het is niet alleen een culinaire ontdekkingstocht, maar ook een
+geweldige manier om tijd door te brengen met vrienden.";TRUE;FALSE;Houden Jannie en haar vriendinnen van koken?;FALSE;FALSE;TRUE
+3;093;FILL;"Jannie is een kookclubje begonnen met haar beste vriendinnen. Ze
+komen elke maand samen om nieuwe recepten uit te proberen. 
+Het is niet alleen een culinaire ontdekkingstocht, maar ook een
+geweldige manier om tijd door te brengen met vrienden.";TRUE;FALSE;Houden Jannie en haar vriendinnen van koken?;FALSE;FALSE;TRUE
+1;094;FILL;"Peter volgde een cursus houtbewerking en maakte al snel zijn
+eerste tafel. Het gevoel dat hij iets met zijn eigen handen had
+gemaakt gaf hem enorm veel voldoening. Vrienden en familie vroegen
+al snel of hij open stond voor opdrachten.";TRUE;FALSE;Was de cursus een succes?;FALSE;FALSE;TRUE
+2;094;FILL;"Peter volgde een cursus houtbewerking en maakte al snel zijn
+eerste tafel. Het gevoel dat hij iets met zijn eigen handen had
+gemaakt gaf hem enorm veel voldoening. Vrienden en familie vroegen
+al snel of hij open stond voor opdrachten.";TRUE;FALSE;Was de cursus een succes?;FALSE;FALSE;TRUE
+3;094;FILL;"Peter volgde een cursus houtbewerking en maakte al snel zijn
+eerste tafel. Het gevoel dat hij iets met zijn eigen handen had
+gemaakt gaf hem enorm veel voldoening. Vrienden en familie vroegen
+al snel of hij open stond voor opdrachten.";TRUE;FALSE;Was de cursus een succes?;FALSE;FALSE;TRUE
+0;094;FILL;"Peter volgde een cursus houtbewerking en maakte al snel zijn
+eerste tafel. Het gevoel dat hij iets met zijn eigen handen had
+gemaakt gaf hem enorm veel voldoening. Vrienden en familie vroegen
+al snel of hij open stond voor opdrachten.";TRUE;FALSE;Was de cursus een succes?;FALSE;FALSE;TRUE
+2;095;FILL;"Ingrid besloot om dit jaar een marathon te lopen. Ze is maanden 
+bezig geweest met trainen en hield zich aan een strikt schema. De
+training voor de marathon was zwaar, maar het gevoel van over de
+finish rennen gaf haar echt een adrenalinekick.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;095;FILL;"Ingrid besloot om dit jaar een marathon te lopen. Ze is maanden 
+bezig geweest met trainen en hield zich aan een strikt schema. De
+training voor de marathon was zwaar, maar het gevoel van over de
+finish rennen gaf haar echt een adrenalinekick.";TRUE;FALSE;;FALSE;FALSE;FALSE
+0;095;FILL;"Ingrid besloot om dit jaar een marathon te lopen. Ze is maanden 
+bezig geweest met trainen en hield zich aan een strikt schema. De
+training voor de marathon was zwaar, maar het gevoel van over de
+finish rennen gaf haar echt een adrenalinekick.";TRUE;FALSE;;FALSE;FALSE;FALSE
+1;095;FILL;"Ingrid besloot om dit jaar een marathon te lopen. Ze is maanden 
+bezig geweest met trainen en hield zich aan een strikt schema. De
+training voor de marathon was zwaar, maar het gevoel van over de
+finish rennen gaf haar echt een adrenalinekick.";TRUE;FALSE;;FALSE;FALSE;FALSE
+3;096;FILL;"Naomi en haar partner hebben vorige herfst een puppy geadopteerd.
+Het was in het begin even wennen, maar de liefde en vreugde die
+het hondje in hun leven bracht was onbetaalbaar. Ze genoten van
+de lange wandelingen met hun nieuwe maatje.";TRUE;FALSE;Is Naomi single?;FALSE;FALSE;FALSE
+0;096;FILL;"Naomi en haar partner hebben vorige herfst een puppy geadopteerd.
+Het was in het begin even wennen, maar de liefde en vreugde die
+het hondje in hun leven bracht was onbetaalbaar. Ze genoten van
+de lange wandelingen met hun nieuwe maatje.";TRUE;FALSE;Is Naomi single?;FALSE;FALSE;FALSE
+1;096;FILL;"Naomi en haar partner hebben vorige herfst een puppy geadopteerd.
+Het was in het begin even wennen, maar de liefde en vreugde die
+het hondje in hun leven bracht was onbetaalbaar. Ze genoten van
+de lange wandelingen met hun nieuwe maatje.";TRUE;FALSE;Is Naomi single?;FALSE;FALSE;FALSE
+2;096;FILL;"Naomi en haar partner hebben vorige herfst een puppy geadopteerd.
+Het was in het begin even wennen, maar de liefde en vreugde die
+het hondje in hun leven bracht was onbetaalbaar. Ze genoten van
+de lange wandelingen met hun nieuwe maatje.";TRUE;FALSE;Is Naomi single?;FALSE;FALSE;FALSE

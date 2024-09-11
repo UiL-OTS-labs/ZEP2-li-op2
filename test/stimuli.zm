@@ -1,0 +1,159 @@
+/******************************************************************************\
+FILE:           stimuli.zm
+AUTHOR:         Theo Veenker <theo.veenker@beexy.nl>
+ADAPTED BY:     Li Kloostra, August 2024
+
+DESCRIPTION:
+
+Defines the formats of item table(s) and provides the actual content of
+the item table(s) i.e. stimulus information.
+
+
+HISTORY:
+2012-08-23 TV   Created.
+2024-08-08 LK   Adjusted item types (conditions)
+
+\******************************************************************************/
+
+
+// Symbolic definition of item type.
+enum ItemType
+{
+    PRAC,                     // practice trial
+    FILL,                     // filler
+    MA_MA,                    // Match-Match condition
+    MA_MI,                    // Match-Mismatch condition
+    MI_MA,                    // Mismatch-Match condition
+    MI_MI,                    // Mismatch-Mismatch condition
+}
+
+
+// Item table record.
+record TestItem
+{
+//    int         id;             // item id
+    string      id;             // item id
+    ItemType    type;           // item type (condition)
+
+    string      text;           // stimulus text
+    bool        driftchk;       // if set, perform drift check
+    bool        receye;         // if set, record eye movements
+
+    string      qtext;          // true/false statement about stimulus [opt]
+    bool        qdriftchk;      // if set, perform drift check (for question)
+    bool        qreceye;        // if set, record eye movements (for question)
+    bool        qanswer;        // whether statement is correct
+}
+
+
+// Practice item table.
+//   index: item number
+TestItem[..] prac_items;
+
+// Test item table.
+//   index 1: GRP1, GRP2
+//   index 2: item number
+TestItem[..][..] test_items;
+
+/**
+ * prepends the items with additional zeros if neccessary.
+ *
+ * This might ease working with fixation.
+ */
+
+int zero_pad_item_number(TestItem[][] items)
+{
+    int err = OK;
+    int i = 0;
+    int g = 0;
+    while (g < items.size) {
+        while (i < items[g].size) {
+            int l = length(items[g][i].id);
+            string id = items[g][i].id;
+            if (l == 0) {
+                println("Error while loading stimuli: test item with empty id.");
+                println("Error is problably in stimulus: " + string(i + 1));
+                err = ERROR;
+            }
+            else if (l == 1) {
+                println("Warning: changing stimulus id \"" + id + "\" into \"" + 
+                        "00" + id + "\""
+                        );
+                println("Warning is problably in stimulus: " + string(i + 1));
+                items[g][i].id = "00" + id;
+                println(items[g][i].id);
+            }
+            else if (l == 2) {
+                println("Warning: changing stimulus id \"" + id + "\" into \"" + 
+                        "0" + id + "\""
+                        );
+                println("Warning is problably in stimulus: " + string(i + 1));
+                items[g][i].id = "0" + id;
+            }
+            else if (l == 3)
+                ;// thats fine.
+            else {
+                println("Error: stimulus id \"" +  id  + "\" is too long");
+                println("Error is problably in stimulus: " + string(i + 1));
+                err = ERROR;
+            }
+
+            int j = 0;
+            id = items[g][i].id;
+            // test whether every character in id is numeric as it should
+            // otherwise one runs into problems with fixation.
+            while (j < length(id)) {
+                char c = character(id,j);
+                if (c < '0' || c > '9') {
+                    println("Error: stimulus id \"" + test_items[g][i].id + "\" is not a number.");
+                    println("Error is problably in stimulus: " + string(i + 1));
+                    err = ERROR;
+                }
+                j++;
+            }
+
+            i++;
+        }
+        g++;
+    }
+    return err;
+}
+
+// Loads item table(s) from CSV file(s) in the stimuli folder.
+int load_stimuli(string dir)
+{
+    // Uncomment relevant parts below to load stimuli from CSV file.
+
+    int err;
+
+    // Load data into prac_items table.
+    err = prac_items.load(dir + "prac_items.csv", 
+        true,           // if true, file contains a header row
+        1);             // number of lines to skip before header and data
+    if (err) return err;
+
+    // Load data into test_items table.
+    err = test_items.load(dir + "test_items.csv", 
+        true,           // if true, file contains a header row
+        1);             // number of lines to skip before header and data
+    if (err) return err;
+
+    // make sure all id's are zero padded e.e.g. 1 becomes 001 and 11 becomes 011.
+    err = zero_pad_item_number(test_items);
+    if (err)
+        return err;
+
+    return OK;
+}
+
+
+// Saves item table(s) as CSV file(s) in the script folder.
+void save_stimuli()
+{
+    prac_items.save(script_dir() + "prac_items.csv", 
+        "Practice items");
+
+    test_items.save(script_dir() + "test_items.csv", 
+        "Test items");
+}
+

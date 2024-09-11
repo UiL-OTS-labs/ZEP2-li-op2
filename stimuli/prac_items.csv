@@ -1,0 +1,17 @@
+### Practice items ###
+id;type;text;driftchk;receye;qtext;qdriftchk;qreceye;qanswer
+001;PRAC;"Jasper was op vakantie geweest in het buitenland. Hij moet morgen
+helaas weer werken. Hij had eigenlijk wel langer op vakantie
+gewild, maar dat kwam jammer genoeg niet uit met zijn budget.
+Hij gaat volgende maand alweer weer sparen voor volgend jaar.";true;true;"Wil Jasper volgend jaar op vakantie?";false;false;true
+002;PRAC;"Jonas zit in groep vijf op de basisschool. Zijn zusje zit ook op
+deze school maar dan twee klassen lager. Daarnaast heeft hij nog
+een jonger broertje, maar die is nog te jong om naar school te
+kunnen gaan.";true;true;;false;false;false
+003;PRAC;"Het regent al de hele week. Volgens de voorspellingen blijft dit
+nog wel een paar dagen aanhouden. Dat is jammer want de scholen
+hebben nu meivakantie en veel kinderen worden rusteloos van het
+lange binnenzitten.";true;true;"Is het meivakantie?";false;false;true
+
+
+

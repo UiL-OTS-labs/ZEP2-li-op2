@@ -1,0 +1,377 @@
+/******************************************************************************\
+FILE:           test_page.zm
+AUTHOR:         Theo Veenker <theo.veenker@beexy.nl>
+ADAPTED BY:     Li Kloostra <l.kloostra@uu.nl>
+
+DESCRIPTION:
+
+Provides a page object to show to the participant during test trials.
+It handles presenting the stimulus and recording the participant's response.
+
+
+HISTORY:
+2012-08-23 TV   Created.
+2024-08-08 LK   Adjusted line spacing: pixels between lines and line height
+\******************************************************************************/
+
+
+Page test_page
+{
+    TestItem    item;           // trial control parameters
+    int         listindex;      // Is used while generating_object_info to
+                                // output to the right list.
+
+
+    init()
+    {
+        fill_pattern_color = TEST_PAGE_COLOR;
+    }
+
+
+    on_event:key_press()
+    {
+        if (eyetracker.handle_key(input_key, input_modifiers)) 
+            ;
+        else if (input_key == KEY_Return || input_key == ' ')
+            response.process_hit(event_time);
+        else
+            handle_special_key(this, input_key, input_modifiers);
+    }
+
+
+    on_event:message()
+    {
+        if (message_sender == eyetracker)
+        {
+            if (message_arg == DRIFT_CHECK_DONE)
+            {
+                if (item.receye && !generate_object_info) eyetracker.start_tracking();
+
+                // Start stimulus.
+                time stimonset = 
+                    layout.start_stimulus(event_time + DC_VISUAL_DELAY);
+
+                // Response interval starts at stimulus onset. No timeout.
+                response.start(stimonset);
+            }
+            else if (message_arg == RECALIBRATE)
+            {
+                response.recalibrate = true;
+                done(CANCEL);
+            }
+            else if (message_arg == RECORDING_DONE)
+            {
+            }
+        }
+        else
+        {
+            // Process button-box message. See setup() below.
+            response.process_hit(event_time);
+        }
+    }
+
+
+    VerticalLayout layout
+    {
+        init()
+        {
+            spacing = 50;
+            height = 0;     // 0 means as large as possible
+        }
+
+
+        CanvasGadget canvas
+        {
+            init()
+            {
+                fill_pattern_color = TEST_PAGE_STIMULUS_COLOR;
+                size = 900, 450;
+                offset_x = 20;
+                offset_y = 20;
+            }
+
+
+            TextShape stimulus
+            {
+                init()
+                {
+                    font_family = TEST_PAGE_STIMULUS_FONT_FAMILY;
+//                    font_size = TEST_PAGE_STIMULUS_FONT_SIZE;
+//                    font_size = FONT_SIZE_MEDIUM;
+                    font_size = FONT_SIZE_SMALL;
+                    line_spacing = 70;       // pixels between lines
+                    //line_spacing = line_height * 2;
+                    letter_spacing = 0;     // 1/10 pixels between characters
+                    line_pattern_color = TEST_PAGE_STIMULUS_TEXT_COLOR;
+                    hor_alignment = ALIGN_BEGIN;
+                    ver_alignment = ALIGN_BEGIN;
+                    item_box_mode = 0
+//                        | ITEM_BOX_SHOW
+                        | ITEM_BOX_INCLUDE_LEADING_SPACE
+//                        | ITEM_BOX_INCLUDE_TRAILING_SPACE
+                        | ITEM_BOX_INCLUDE_VERTICAL_SPACE
+//                        | ITEM_BOX_INDIVIDUAL_CHARACTERS
+                        ;
+                }
+
+
+                on_event:start()
+                {
+                    if (!generate_object_info) {
+                        int dt = int(now() - start_time);
+                        eyetracker.print_to_data_file(start_time, 
+                            "SYNCTIME " + string(dt));
+                        eyetracker.print_to_data_file(start_time, 
+                            string(dt) + " DISPLAY ON");
+                    }
+
+                    if (generate_object_info && item.receye == true)
+                    {
+                        string fn = data_dir() + script_name() + "/img/" + 
+                            string(item.type) + item.id + ".png";
+                        test_page.export_as_png(fn);
+
+                        int j;
+                        int nlines = num_lines;
+                        int n;
+                        while (n < nlines)
+                        {
+                            int sentencelength = length(line_string(n));
+                            int nitems = num_items[n];
+                            int i;                              
+                            while (i < nitems)
+                            {
+                                ObjectInfo output;
+                                output.id = item.id;
+                                output.completetype = string(item.type);
+                                output.nlines = nlines;
+                                output.linenum = n;
+                                output.objnumintext = j;
+                                output.nwordsinline = nitems;
+                                output.objnuminline = i;
+                                output.x = int(item_x(n, i) + 
+                                    canvas.x_abs + canvas.offset_x);
+                                output.y = int(item_y(n, i) + 
+                                    canvas.y_abs + canvas.offset_y);
+                                output.width = int(item_width(n, i));
+                                output.height = int(item_height(n, i));
+                                output.linelength = sentencelength;
+                                output.wordlength = length(item_string(n, i));
+                                output.text = item_string(n, i);
+                                object_info_append(listindex, output);
+                                i++;
+                                j++;
+                            }
+                            n++;
+                        }
+                    } 
+                }
+            }
+        }
+
+
+        time start_stimulus(time t)
+        {
+            // Prepare stimulus presentation object.
+            canvas.stimulus.text = item.text;
+
+            // Start stimulus.
+            canvas.stimulus.start(t);
+
+            // Return stimulus onset time.
+            return canvas.stimulus.expected_start_time;
+        }
+
+
+        void reset()
+        {
+            full_abort();
+
+            canvas.stimulus.is_visible = false;
+        }
+    }
+
+
+    Timer drift_check_timer
+    {
+        on_event:expire()
+        {
+            // don't touch the eyetracker while generating the objects.
+            if (!generate_object_info) {
+                // Tell eye-tracker which target page to draw on and which
+                // object to signal when drift-check is done or aborted.
+                eyetracker.target_page = test_page;
+                eyetracker.target = test_page;
+
+                int x = int(layout.canvas.x_abs + layout.canvas.offset_x +
+                    layout.canvas.stimulus.string_width("n") / 2);
+                int y = int(layout.canvas.y_abs + layout.canvas.offset_y +
+                    layout.canvas.stimulus.line_height / 2);
+
+                eyetracker.start_drift_check(x, y);
+            }
+        }
+    }
+
+
+    void start_drift_check(time t)
+    {
+        if (item.driftchk && !generate_object_info)
+            drift_check_timer.start(t);
+        else
+        {
+            if (item.receye && !generate_object_info) eyetracker.start_tracking();
+
+            // Start stimulus.
+            time stimonset = layout.start_stimulus(t);
+
+            // Response interval starts at stimulus onset. No timeout.
+            if (generate_object_info)
+                response.start(stimonset, 100ms);
+            else
+                response.start(stimonset);
+        }
+    }
+
+
+    Response response
+    {
+        // Response data.
+        int     rt;             // response time [ms]
+        bool    recalibrate;    // set, when eye-tracker recalibration required
+
+
+        void clear()
+        {
+            rt = -9999;
+            recalibrate = false;
+        }
+
+
+        void process_hit(time t)
+        {
+            HitType validity = hit(t);
+
+            // Accept the first hit in the response interval and end the 
+            // response interval.
+            if (validity == HIT_VALID)
+            {
+                rt = int(reaction_time(0));
+
+                ignore_remaining_hits();
+
+                stop(t + RECORDING_STOP_DELAY);
+            }
+            else if (validity == HIT_TOO_EARLY || validity == HIT_TOO_LATE)
+            {
+                // False alarm. Deal with this if desired.
+            }
+        }
+
+
+        on_event:finish()
+        {
+            if (item.receye && !generate_object_info) eyetracker.stop_tracking();
+            done(CONTINUE);
+        }
+    }
+
+
+    // Aborts any ongoing activity on this page and signals the initiator
+    // of the trial that we're done.
+    void done(int msgid)
+    {
+        // Just in case; abort presentation if still active.
+        layout.reset();
+
+        signal_target(msgid);   // tell caller we're done
+        target = null;
+
+        // Enable the mouse cursor again.
+        show_cursor();
+
+        control.clear_status();
+    }
+
+
+    //==========================================================================
+
+
+    // Performs preparatory work required before using this page.
+    void setup(int ntrials=-1)
+    {
+        test_page_overlay.setup(this);
+
+        // Enable or disable the progress bar.
+        test_page_overlay.show_progress_bar(ntrials);   // disabled if < 0
+
+
+        // Enable button-box button 2 (continue).
+        control.target = this;
+        control.disable_buttons();
+//        control.enable_all_buttons(0);
+        control.enable_button(1, 0);
+    }
+
+    // Sets the list index, this is used when generating objects.
+    void set_list_index(int i)
+    {
+        if (!generate_object_info)
+            println("There is no reason to call function set_list_index(int i)"
+            "this indicates a bug in the program.");
+
+        listindex = i;
+    }
+
+
+    // Performs cleaning up if necessary.
+    void cleanup()
+    {
+        test_page_overlay.cleanup();
+        listindex = -1;
+
+        control.disable_buttons();
+        control.target = null;
+    }
+
+
+    // Starts a trial.
+    void action(Object caller, TestItem it, time tref, int count=-1)
+    {
+        // Save the passed trial control parameters.
+        item = it;
+
+
+        // Show this page (if not yet done) and make tref the trial start time.
+        tref = test_window1.show_test_page(this, tref + INTERTRIAL_INTERVAL);
+
+
+        // Reset response data.
+        response.clear();
+
+
+        // Start eye-tracker drift-check at t-ref. When the drift check is 
+        // done the stimulus will be started (see on_event:message() above).
+        // On drift-check failure or abort we'll exit to do a recalibration.
+        start_drift_check(tref);
+
+
+        // Update progress counter (if enabled).
+        test_page_overlay.update_progress_bar(count);
+
+
+        // Update status line on control window. Cleared in done() above.
+        control.set_status(
+            string(item.id) + "  " + 
+            string(item.type) + "  " + 
+            substring(item.text, 0, 30) + "...");
+
+
+        // We don't want the mouse cursor to interfere.
+        hide_cursor();
+
+
+        // Remember who to signal when the trial is over.
+        target = caller;
+    }
+}

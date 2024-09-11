@@ -1,0 +1,68 @@
+/******************************************************************************\
+FILE:           session.zm
+AUTHOR:         Theo Veenker <theo.veenker@beexy.nl>
+ADAPTED BY:     -
+
+DESCRIPTION:
+
+Session specific initialization.
+
+
+HISTORY:
+2013-01-10 TV   Created.
+
+\******************************************************************************/
+
+plugin zep_file;
+
+// Flag controlling whether object information and test window contents and
+// object information should be saved. It is set when in preparing mode and
+// the participant id is "nosweat".
+bool generate_object_info;
+
+// use this variable to control the name of the output.
+string final_script_name;
+
+// This function is called after group assignment and check out of experiment,
+// researcher, participant and group records, but before the new session has 
+// been created. At this point the database is fully accessible.
+int setup_pre_session()
+{
+    return OK;
+}
+
+// This function is called just after the new session has been created. So
+// the new session id is known. At this point the database is still fully 
+// accessible.
+int setup_session()
+{
+    final_script_name = script_name();
+    generate_object_info = expdb.experiment.status == EXP_STATUS_PREPARING && 
+        expdb.session.participant_id == "nosweat";
+
+    // lets just be stubborn when running generate_object_info.zp
+    if (!generate_object_info)
+    {
+        int i = 0;
+        while (i < num_options())
+            if (option_name(i++) == "generate")
+                generate_object_info = true;
+
+        if (have_flag("--generate") )
+            generate_object_info = true;
+    }
+
+    if (generate_object_info) 
+    {
+        string dir = data_dir() + final_script_name + "/obt/";
+        if (!file_exists(dir)) create_dir_tree(dir);
+        dir = data_dir() + final_script_name + "/img/";
+        if (!file_exists(dir)) create_dir_tree(dir);
+    }
+
+    if (test::load_stimuli(stimuli_dir()) != OK) return ERROR;
+
+//    test::save_stimuli();
+
+    return OK;
+}

@@ -1,0 +1,592 @@
+/******************************************************************************\
+FILE:           task.zm
+AUTHOR:         Theo Veenker <theo.veenker@beexy.nl>
+ADAPTED BY:     Maarten Duijndam <M.J.A.Duijndam@uu.nl>
+                Li Kloostra <L.Kloostra@uu.nl>
+
+DESCRIPTION:
+
+Implementation of task: Text Reading
+See readme.txt for more information.
+
+
+Global structure of this experiment phase:
+
+  - instructions
+
+  - eye-tracker calibration
+
+  - practice part
+      trial
+        eye-tracker recalibration (only done when necessary)
+        stimulus presentation
+        eye-tracker recalibration (only done when necessary)
+        question (conditional)
+
+  - pause
+
+  - eye-tracker calibration
+
+  - test part
+      trial
+        eye-tracker recalibration (only done when necessary)
+        stimulus presentation
+        eye-tracker recalibration (only done when necessary)
+        question (conditional)
+
+
+HISTORY:
+2012-08-23 TV   Created.
+2015-11-19 MD   Adapted to make it easy to include smi_eyetracker.
+2024-08-08 LK   Instructies vertaald
+
+\******************************************************************************/
+
+
+import defs;
+import stimuli;
+import shuffle;
+import output;
+// Choose one of the two eyetracker modules, reading usually happens with adult,
+// hence the non infant version is chosen.
+import eyetracker;
+// import eyetracker_infant;/
+import et_setup_page;
+import test_page;
+import question_page;
+import object_info;
+
+
+Block task
+{
+
+    on_event:entry()
+    {
+        // Randomize test items table.
+        if (shuffle_test_items(selected_group) != OK)
+            terminate;
+        eyetracker.setup();
+    }
+
+    on_event:exit()
+    {
+        // We're closing. Retrieve eye-movement data file recorded.
+        test::eyetracker.retrieve_data_files();
+
+        eyetracker.cleanup();
+    }
+
+    Part instructions
+    {
+        on_event:entry()
+        {
+//            pause_page.set_text_size(1000, 600);
+            pause_page.set_text(
+                "<b>Beste participant,</b>\n"
+                "\n"
+                "Fijn dat je mee wilt doen aan dit experiment.\n"
+                "\n"
+                "Je krijgt zo meteen korte verhaaltjes te lezen op het scherm. "
+                "Jouw taak is het aandachtig lezen van deze verhaaltjes. "
+                "Als je klaar bent met lezen, druk je op de onderste knop "
+                "van de buttonbox. "
+                "Soms wordt een verhaaltje gevolgd door een "
+                "vraag. Deze beantwoord je met 'ja' of 'nee'.\n"
+                "\n"
+
+                "Druk op de linkerknop van de buttenbox voor <i>NEE</i> "
+                "en op de rechterknop voor <i>JA</i>. "
+	        	"Dit hoef je niet te onthouden.\n"
+
+//                "To respond, hit the left shift key for <i>False</i> and the "
+//                "right shift key for <i>True</i>.\n"
+
+//                "To respond, hit the left button on the button-box for "
+//                "<i>False</i> and the right button for <i>True</i>. "
+//                "Alternatively you can use the left or right shift keys.\n"
+
+                "\n"
+                "Eerst wordt de eye-tracker gecalibreerd. Daarna volgt een "
+                "korte oefenfase. \n"
+                "Als je nog vragen hebt, kun je die nu of na de oefenfase "
+                "stellen aan de experimentleider. \n"
+                "\n"
+//                "<i>Hit Enter when ready to start.</i>",
+                "<i>Druk op een knop van de buttonbox om te beginnen.</i>",
+                true);
+
+            pause_page.action(this);
+            control.enable_all_buttons(CONTINUE);
+        }
+    }
+
+
+    Part calibration1
+    {
+        on_event:entry()
+        {
+            et_setup_page.action(this);
+        }
+    }
+
+
+    Block practice
+    {
+        TestItem        item;   // current item
+
+
+        on_event:entry()
+        {
+            num_cycles = prac_items.size;
+
+//            int listnum = selected_group + 1;
+//            int recordingnum = 0;
+//            string edfname =
+//                format(expdb.session.id, 4) + "_" +
+//                format(listnum, 2) + "_" +
+//                format(recordingnum, 2);
+//
+//            // Let eye-tracker open a data file.
+//            eyetracker.open_data_file(edfname);
+//
+//            eyetracker.print_to_data_file("Text Reading Experiment");
+
+            // Prepare test page: progress bar enabled.
+            //test_page.setup(num_cycles);
+            // Prepare test page: progress bar disabled.
+            test_page.setup(-1);
+        }
+
+
+        on_event:exit()
+        {
+            test_page.cleanup();
+
+            eyetracker.abort();
+//            eyetracker.close_data_file();
+        }
+
+
+        Trial trial
+        {
+            on_event:entry()
+            {
+                item = prac_items[practice.cycle];
+
+//                // Add begin of trial message to eye-tracker data file for
+//                // analysis with the Fixation tool (Cozijn 1994).
+//                eyetracker.print_to_data_file("trialbeg " +
+//                    string(item.id) + " " +
+//                    string(practice.cycle + 1) + " " +
+//                    string(item.id) + " " +
+//                    string(item.type));
+//                eyetracker.print_to_data_file("plafile " +
+//                    string(item.type) +
+//                    string(item.id) + ".bmp");
+
+                // Show information on eye-tracker screen.
+                eyetracker.set_tracker_status_message("Practice trial " +
+                    string(practice.cycle+1));
+            }
+
+
+            on_event:exit()
+            {
+//                // Add end of trial message.
+//                eyetracker.print_to_data_file("trialend " +
+//                    string(item.id) + " " +
+//                    string(practice.cycle + 1) + " " +
+//                    string(item.id) + " " +
+//                    string(item.type));
+
+                // Clear eye-tracker status line.
+                eyetracker.set_tracker_status_message("");
+            }
+
+
+            TransientPart
+            {
+                on_event:entry()
+                {
+                    if (length(item.text) == 0)
+                        question.enter();   // No text, do question part.
+                    else
+                        presentation.enter();   // Skip recalibration part.
+                }
+            }
+
+
+            Part recalibration1
+            {
+                on_event:entry()
+                {
+                    et_setup_page.action(this);
+                }
+            }
+
+
+            SubTrial presentation
+            {
+                on_event:entry()
+                {
+                    //test_page.setup(practice.num_cycles);
+                    test_page.setup(-1);
+
+                    test_page.action(this, item, reference_time, practice.cycle);
+                }
+
+
+                on_event:exit()
+                {
+                    test_page.cleanup();
+                }
+            }
+
+
+            TransientPart
+            {
+                on_event:entry()
+                {
+                    // If the eye-tracker drift checking has failed or was
+                    // aborted then do a recalibration, otherwise check if
+                    // we need to ask a comprehension question.
+                    if (test_page.response.recalibrate)
+                        recalibration1.enter(); // Enter recalibration subtrial.
+                    else if (random(100) >= STATEMENT_CHANCE ||
+                            length(item.qtext) == 0)
+                        trial.next_cycle(); // Skip question subtrial.
+                }
+            }
+
+
+            TransientPart
+            {
+                on_event:entry()
+                {
+                    question.enter();       // Skip recalibration part.
+                }
+            }
+
+
+            Part recalibration2
+            {
+                on_event:entry()
+                {
+                    et_setup_page.action(this);
+                }
+            }
+
+
+            SubTrial question
+            {
+                on_event:entry()
+                {
+                    //question_page.setup(practice.num_cycles);
+                    question_page.setup(-1);
+
+                    question_page.action(this, item, reference_time,
+                        practice.cycle);
+                }
+
+
+                on_event:exit()
+                {
+                    question_page.cleanup();
+                }
+            }
+
+
+            TransientPart
+            {
+                on_event:entry()
+                {
+                    // If the eye-tracker drift checking has failed or was
+                    // aborted then do a recalibration.
+                    if (question_page.response.recalibrate)
+                        recalibration2.enter(); // Enter recalibration subtrial.
+                }
+            }
+        }
+    }
+
+
+    Part
+    {
+        on_event:entry()
+        {
+            blank_page.action_auto(this, 500ms);
+        }
+    }
+
+
+    Part pause
+    {
+        on_event:entry()
+        {
+            pause_page.set_text(
+                "Eind van de oefenfase. \n"
+                "\n"
+                "Als je nog vragen hebt kun je die nu stellen "
+                "aan de proefleider.\n"
+                "\n"
+//                "<i>Hit Enter when ready to proceed.</i>",
+                "<i>Druk op een knop van de buttonbox om te beginnen "
+                "aan het experiment.</i>",
+                true);
+
+            pause_page.action(this);
+            control.enable_all_buttons(CONTINUE);
+        }
+    }
+
+
+    Part calibration2
+    {
+        on_event:entry()
+        {
+            et_setup_page.action(this);
+        }
+    }
+
+
+    Block test
+    {
+        TestItem        item;   // current item
+        TestOutput      output; // current output table row
+
+
+        on_event:entry()
+        {
+
+            num_cycles = test_items[selected_group].size;
+//            num_cycles = 3;
+
+            int listnum = selected_group + 1;
+            int recordingnum = 1;
+            string edfname =
+                format(expdb.session.id, 4) + "_" +
+                format(listnum, 2) + "_" +
+                format(recordingnum, 2);
+
+            // Let eye-tracker open a data file.
+            eyetracker.open_data_file(
+                edfname
+                );
+
+            // Start eye data record stream.
+            eyetracker.start_stream();
+
+            // Log some information.
+            eyetracker.add_message(EYE_DATA_DISPLAY);
+            eyetracker.add_message(EYE_DATA_TRACKBOX);
+            eyetracker.add_message(EYE_DATA_APPLICATION);
+            eyetracker.add_message(EYE_DATA_TRACKER);
+            eyetracker.add_message(EYE_DATA_EXPERIMENT, expdb.experiment.id);
+            eyetracker.add_message(EYE_DATA_RESEARCHER, expdb.researcher.id);
+            eyetracker.add_message(EYE_DATA_PARTICIPANT, expdb.participant.id);
+            if (expdb.group != null)
+                eyetracker.add_message(EYE_DATA_GROUP, expdb.group.id);
+            eyetracker.add_message(EYE_DATA_SESSION, string(expdb.session.id));
+            eyetracker.add_message(EYE_DATA_LIST, string(listnum));
+            eyetracker.add_message(EYE_DATA_RECORDING, string(recordingnum));
+            eyetracker.add_message(EYE_DATA_TITLE, "Text Reading Experiment");
+
+            // eyetracker.print_to_data_file("Text Reading Experiment");
+
+            // Prepare test page: progress bar enabled.
+            //test_page.setup(num_cycles);
+            // Prepare test page: progres bar disabled.
+            test_page.setup(num_cycles);
+        }
+
+
+        on_event:exit()
+        {
+            test_page.cleanup();
+
+            eyetracker.abort();
+            eyetracker.close_data_file();
+
+            // Save test output table as CSV file.
+            save_trial_data();
+        }
+
+
+        Trial trial
+        {
+            on_event:entry()
+            {
+                item = test_items[selected_group][test.cycle];
+
+                output.trialnum = test.cycle + 1;
+                output.id = item.id;
+                output.type = item.type;
+                output.text = substring(item.text, 0, 30);
+                output.receye = item.receye;
+                output.qtext = substring(item.qtext, 0, 30);
+                output.qreceye = item.qreceye;
+                output.qanswer = item.qanswer;
+                output.qvalue = -1;
+                output.qrt = -9999;
+                output.qcorrect = -1;
+
+                // Add begin of trial message to eye-tracker data file for
+                // analysis with the Fixation tool (Cozijn 1994).
+                eyetracker.print_to_data_file("trialbeg " +
+                    string(item.id) + " " +
+                    string(test.cycle + 1) + " " +
+                    string(item.id) + " " +
+                    string(item.type));
+                eyetracker.print_to_data_file("plafile " +
+                    string(item.type) +
+                    string(item.id) + ".bmp");
+
+                // Show information on eye-tracker screen.
+                eyetracker.set_tracker_status_message("Test trial " +
+                    string(test.cycle+1));
+            }
+
+
+            on_event:exit()
+            {
+                // Add new row to test output table.
+                test_output_append(output);
+
+                // Add end of trial message.
+                eyetracker.print_to_data_file("trialend " +
+                    string(item.id) + " " +
+                    string(test.cycle + 1) + " " +
+                    string(item.id) + " " +
+                    string(item.type));
+
+                // Clear eye-tracker status line.
+                eyetracker.set_tracker_status_message("");
+            }
+
+
+            TransientPart
+            {
+                on_event:entry()
+                {
+                    if (length(item.text) == 0)
+                        question.enter();   // No text, do question part.
+                    else
+                        presentation.enter();   // Skip recalibration part.
+                }
+            }
+
+
+            Part recalibration1
+            {
+                on_event:entry()
+                {
+                    et_setup_page.action(this);
+                }
+            }
+
+
+            SubTrial presentation
+            {
+                on_event:entry()
+                {
+                    //test_page.setup(test.num_cycles);
+                    test_page.setup(-1);
+
+                    test_page.action(this, item, reference_time, test.cycle);
+                }
+
+
+                on_event:exit()
+                {
+                    output.rt = test_page.response.rt;
+                }
+            }
+
+
+            TransientPart
+            {
+                on_event:entry()
+                {
+                    // If the eye-tracker drift checking has failed or was
+                    // aborted then do a recalibration, otherwise check if
+                    // we need to ask a comprehension question.
+                    if (test_page.response.recalibrate)
+                        recalibration1.enter(); // Enter recalibration subtrial.
+                    else if (random(100) >= STATEMENT_CHANCE ||
+                            length(item.qtext) == 0)
+                        trial.next_cycle(); // Skip question subtrial.
+                }
+            }
+
+
+            TransientPart
+            {
+                on_event:entry()
+                {
+                    question.enter();       // Skip recalibration part.
+                }
+            }
+
+
+            Part recalibration2
+            {
+                on_event:entry()
+                {
+                    et_setup_page.action(this);
+                }
+            }
+
+
+            SubTrial question
+            {
+                on_event:entry()
+                {
+                    //question_page.setup(test.num_cycles);
+                    question_page.setup(-1);
+
+                    question_page.action(this, item, reference_time,
+                        test.cycle);
+                }
+
+
+                on_event:exit()
+                {
+                    output.qvalue = question_page.response.value;
+                    output.qrt = question_page.response.rt;
+                    output.qcorrect = question_page.response.correct;
+
+                    question_page.cleanup();
+                }
+            }
+
+
+            TransientPart
+            {
+                on_event:entry()
+                {
+                    // If the eye-tracker drift checking has failed or was
+                    // aborted then do a recalibration.
+                    if (question_page.response.recalibrate)
+                        recalibration2.enter(); // Enter recalibration subtrial.
+                }
+            }
+        }
+    }
+
+
+    Part
+    {
+        on_event:entry()
+        {
+            blank_page.action_auto(this, 500ms);
+        }
+    }
+}
+
+
+void action(Part caller)
+{
+    // Activate the task. When the task is done, the registered caller
+    // (c.q. the main experiment object) will automatically be signalled.
+    task.enter(caller);
+}

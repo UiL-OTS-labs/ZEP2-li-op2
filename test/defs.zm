@@ -1,0 +1,33 @@
+/******************************************************************************\
+FILE:           defs.zm
+AUTHOR:         Theo Veenker <theo.veenker@beexy.nl>
+ADAPTED BY:     -
+
+DESCRIPTION:
+
+Defines experiment settings such as for trial timing.
+
+
+HISTORY:
+2012-08-23 TV   Created.
+
+\******************************************************************************/
+
+
+// Duration of the interval between two trials.
+const dur       INTERTRIAL_INTERVAL             = 500ms;
+
+// Duration of the interval between the test subtrial and question subtrial.
+const dur       INTERSUBTRIAL_INTERVAL          = 250ms;
+
+// Delay from drift-check to visual stimulus.
+const dur       DC_VISUAL_DELAY                 = 100ms;
+
+// Delay between manual participant response and recording end.
+const dur       RECORDING_STOP_DELAY            = 100ms;
+
+// Chance of presenting a question/statement (0..100%).
+const int       STATEMENT_CHANCE                = 100;
+
+// Dump the test items to the terminal after shuffling.
+const bool      DUMP_TEST_ITEMS                 = false;

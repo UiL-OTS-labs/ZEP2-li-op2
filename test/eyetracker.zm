@@ -1,0 +1,250 @@
+/******************************************************************************\
+FILE:           eyetracker.zm
+AUTHOR:         Theo Veenker <theo.veenker@beexy.nl>
+ADAPTED BY:     -
+
+DESCRIPTION:
+
+Provides a device independent eye-tracker object. For children or infants
+use module eyetracker_infant instead.
+
+
+HISTORY:
+2019-08-09 TV   Created.
+
+\******************************************************************************/
+
+// Import the module corresponding to the eye-tracker device being used.
+// import std_et_dummy;
+import std_et_eyelink;
+//import std_et_tobii;
+
+
+enum EyeTrkMessage
+{
+    DRIFT_CHECK_DONE,
+    RECALIBRATE,
+    RECORDING_DONE,
+}
+
+
+EyeTracker eyetracker
+{
+    void setup()
+    {
+        // Link to eye-tracker device interface. This device produces our
+        // gaze samples and all other events (see below).
+        source = eyetracker_device;
+        eyetracker_device.optimal_eye_to_camera_distance = 520;
+
+        // Duration of attention target phase, focus target phase and
+        // wake-up target (if shown).
+//        attention_target_duration   = 1000ms;
+//        focus_target_duration       = 500ms;
+//        wakeup_target_duration      = 1000ms;
+
+        // Target circle outline color and fill color and wake-up color.
+//        default_target_line_color   = color:black;
+//        default_target_color        = color:red;
+//        wakeup_target_color         = color:yellow;
+
+        // Target images to be used instead of circles.
+//        attention_target_image      = "";
+//        focus_target_image          = "";
+//        wakeup_target_image         = "";
+
+        // Image to display during camera setup and when testing tracking.
+//        setup_target_image          = "";
+        test_image                  = zep_dir() + "data/images/test-image.png";
+
+        // Whether target should cross fade from image to circle in focus
+        // phase.
+//        cross_fade_focus_target     = true;
+
+        // Maximum/minimum target width at begin/end of focus phase [px].
+//        max_target_size             = 100;
+//        min_target_size             = 10;
+
+        // Base width of (unmodulated) target [px].
+//        setup_target_size           = 100;
+
+        // Amplitude and frequency of target size modulation.
+//        target_size_mod             = 0.2;      // 0..1
+//        target_size_mod_freq        = 1.0;      // 0..10Hz
+
+        // Amplitude and frequency of target rotation modulation.
+//        target_wiggle_mod           = 0.05;     // 0..10
+//        target_wiggle_mod_freq      = 4.0;      // 0..10Hz
+
+        // Where to store native format eye data files if supported by
+        // eye-tracker device. Not defining this directory turns off the
+        // creation of native format eye data files.
+        output_dir                  = data_dir() + script_name() + "/dat/";
+    }
+
+
+    void cleanup()
+    {
+        // Unlink from eye-tracker device interface.
+        source = null;
+    }
+
+
+    // Called when user is leaving the eye-tracker's setup menu to continue
+    // the experiment.
+    on_event:proceed()
+    {
+        signal_target(CONTINUE);
+        target = null;
+    }
+
+
+    // Called when user is leaving the eye-tracker's setup menu with the
+    // intent to abort the experiment.
+    on_event:dont_proceed()
+    {
+        signal_target(CANCEL);
+        target = null;
+    }
+
+
+    on_event:drift_check_done()
+    {
+        signal_target(DRIFT_CHECK_DONE);
+    }
+
+
+    on_event:drift_check_fail()
+    {
+        signal_target(RECALIBRATE);
+    }
+
+
+    on_event:drift_check_abort()
+    {
+        signal_target(RECALIBRATE);
+    }
+
+
+    on_event:tracking_done()
+    {
+        control.hide_gaze();
+        control.hide_fixation();
+
+        signal_target(RECORDING_DONE);
+    }
+
+
+    on_event:tracking_fail()
+    {
+        control.hide_gaze();
+        control.hide_fixation();
+
+        signal_target(RECORDING_DONE);
+    }
+
+
+    on_event:tracking_abort()
+    {
+        control.hide_gaze();
+        control.hide_fixation();
+
+        signal_target(RECORDING_DONE);
+    }
+
+
+    on_event:gaze_sample()
+    {
+        // Reported eye positions are relative to the test window.
+
+        if (!eye_data_ignore_or_no_eyes)
+        {
+            control.show_gaze(
+                gaze_x / test_window1.width,
+                gaze_y / test_window1.height);
+        }
+        else
+        {
+            control.hide_gaze();
+        }
+    }
+
+
+/*
+    on_event:saccade_start()
+    {
+    }
+
+
+    on_event:saccade_end()
+    {
+    }
+*/
+
+
+    on_event:fixation_start()
+    {
+        // Reported eye positions are relative to the test window.
+
+        control.show_fixation(
+            fixation_x / test_window1.width,
+            fixation_y / test_window1.height);
+    }
+
+
+    on_event:fixation_end()
+    {
+        // Reported eye positions are relative to the test window.
+
+        control.hide_fixation();
+    }
+
+
+    on_event:fixation_update()
+    {
+        // Reported eye positions are relative to the test window.
+
+        control.show_fixation(
+            fixation_x / test_window1.width,
+            fixation_y / test_window1.height);
+    }
+
+
+    on_event:blink_start()
+    {
+        control.hide_gaze();
+        control.hide_fixation();
+    }
+
+
+/*
+    on_event:blink_end()
+    {
+    }
+
+
+    on_event:blink_update()
+    {
+    }
+*/
+
+
+    bool handle_key(char key, int modifiers)
+    {
+        return eyetracker_device.handle_key(key, modifiers);
+    }
+}
+
+
+CsvEyeDataWriter eye_data_writer
+{
+    init()
+    {
+        source = eyetracker;
+
+        // Where to store regular eye data files. If you don't need these
+        // files, then simply remove the eye_data_writer object and all
+        // references to it.
+        output_dir = data_dir() + script_name() + "/csv/";
+    }
+}

@@ -1,0 +1,30 @@
+/******************************************************************************\
+FILE:           et_eyelink_settings.zm
+AUTHOR:         Theo Veenker <theo.veenker@beexy.nl>
+ADAPTED BY:     -
+
+DESCRIPTION:
+
+Defines miscellaneous settings for the EyeLink eye-tracker device.
+
+\******************************************************************************/
+
+
+// Calibration type.
+const CalibrationType CALIBRATION_TYPE          = CALIBRATION_TYPE_13;
+
+// Manual or auto-paced calibration. For infants you may want to trigger
+// calibration targets manually.
+const bool      MANUAL_CALIBRATION              = false;
+
+// Analyzer configuration.
+//   standard (cognition):                  0
+//   sensitive (pursuit, neurological):     1
+const int ANALYZER_CONFIGURATION                = 0;
+
+
+// Fixation and blink update interval during tracking. 0 means off.
+const dur       UPDATE_INTERVAL                 = 0ms;
+
+// Minimum interval between head samples. 0 means off. (not implemented)
+//const dur       HEAD_UPDATE_INTERVAL            = 0ms;

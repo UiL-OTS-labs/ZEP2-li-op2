@@ -1,0 +1,177 @@
+/******************************************************************************\
+FILE:           object_info.zm
+AUTHOR:         Theo Veenker <theo.veenker@beexy.nl>
+ADAPTED BY:     Maarten Duijndam
+
+DESCRIPTION:
+
+Defines the format of the object information output table.
+
+HISTORY:
+2013-01-10 TV   Created.
+2016-02-05 MD   Previously only 1 list was saved, now all list are saved.
+
+\******************************************************************************/
+
+
+// Output table record for object information.
+record ObjectInfo
+{
+    string      id;                     // item id
+//    ItemType    type;                 // item type (condition)
+    string      completetype;           // item type (condition), prefixed "Q"
+                                        //   if stimulus was a question
+    int         nlines;                 // number of lines
+    int         linenum;                // line number
+    int         objnumintext;           // word number in text
+    int         nwordsinline;           // number of words in line      
+    int         objnuminline;           // object number within line
+    int         x;                      // object x (lower-left corner)
+    int         y;                      // object y (lower-left corner)
+    int         width;                  // object width
+    int         height;                 // object height
+    int         linelength;             // line length (excludes leading 
+                                        //   and/or trailing spaces)
+    int         wordlength;             // word length (excludes leading 
+                                        //   and/or trailing spaces)
+    string      text;                   // object text (excludes any leading 
+                                        //   and/or trailing spaces) 
+}
+
+
+// Object information output table.
+ObjectInfo[..][..] object_info;
+
+// Appends one row of data to object information output table.
+void object_info_append(int listindex, ObjectInfo data)
+{
+    if (listindex >= object_info.size)
+        object_info.size = listindex + 1;
+
+    object_info[listindex].size = object_info[listindex].size + 1;
+    object_info[listindex][object_info[listindex].size-1] = data;
+}
+
+
+// Writes object information output table contents to CSV file and clears 
+// the table.
+void object_info_save()
+{
+    if (!generate_object_info) return;
+
+    string dir = data_dir() + script_name() + "/obt/";
+    int listidx = 0;
+
+    while (listidx < object_info.size) {
+        int listnum = listidx + 1;
+
+        // Save table to CSV file (create if non-existent).
+        object_info[listidx].save(dir + "objects" + string(listnum) + ".csv", 
+            "Object Information: list " + string(listnum));
+        object_info[listidx].size = 0;
+
+        listidx++;
+    }
+}
+
+//------------------------------------------------------------------------------
+
+/*
+ * Checks if the object is on the last line.
+ */
+bool object_is_on_last_line(ObjectInfo[] objects, ObjectInfo obt)
+{
+    int i = 0;
+    ObjectInfo[..] temp;
+
+    // store objects with identical id in temp
+    while (i < objects.size)
+    {
+        if (objects[i].completetype == obt.completetype)
+        {
+            temp.size = temp.size + 1;
+            temp[temp.size - 1] = objects[i];
+        }
+        i++;
+    }
+
+    int maxline = 0;
+    i = 0;
+    while (i < temp.size) {
+        if (temp[i].linenum > maxline)
+            maxline = temp[i].linenum;
+        i++;
+    }
+
+    return obt.linenum == maxline;
+}
+
+/*
+ * The text shapes format to fit nicely in a layout. This means in practise,
+ * that the first and last line do not have the same height as the lines in
+ * the middle. However, for a reading experiment the height should be equal
+ * for all lines, that is the height should be homogenous.
+ *
+ * this function tries to achieve that condition. This only works
+ * when there are more than two lines.
+ */
+void object_info_correct_height(int listindex, int spacing)
+{
+    ObjectInfo[] objects;
+    objects = object_info[listindex];
+    int height=0;
+    int i = 0;
+    /* Get the largest height and maximum linenumber. */
+    while (i < objects.size) 
+    {
+        if (objects[i].height > height)
+            height = objects[i].height;
+        i++;
+    }
+
+    /* Adjust bottom and top objects, in such way the height for
+     * all objects is identical.
+     */
+    i = 0;
+    while (i < objects.size)
+    {
+        // Adjust y and height for object in the first line
+        // effectively the object moves upwards, but adjust.
+
+        if (objects[i].height < height &&
+            objects[i].linenum == 0 &&
+            object_is_on_last_line(objects, objects[i])
+            )
+        {
+            int diff          = height - objects[i].height;
+            objects[i].y      = objects[i].y - diff / 2;
+            objects[i].height = objects[i].height + diff;
+        }
+        else if (objects[i].height < height && objects[i].linenum == 0)
+        {
+            int diff          = height - objects[i].height;
+            objects[i].y      = objects[i].y - diff;
+            objects[i].height = objects[i].height + diff;
+        }
+
+        // Only height has to be adjusted.
+        if (objects[i].height < height &&
+            object_is_on_last_line(objects, objects[i])
+            )
+        {
+            int diff          = height - objects[i].height;
+            objects[i].height = objects[i].height + diff;
+        }
+
+        // sanity check
+        if (objects[i].height != height)
+        {
+            println("objects[i].height = " + string(objects[i].height) +
+                    " while height = " + string(height) );
+            println("linenum = " + string(objects[i].linenum));
+        }
+        
+        i++;
+    }
+}
+

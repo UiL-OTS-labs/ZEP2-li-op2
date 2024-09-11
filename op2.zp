@@ -1,0 +1,132 @@
+/******************************************************************************\
+FILE:           reading.zp
+AUTHOR:         Theo Veenker <theo.veenker@beexy.nl>
+ADAPTED BY:     -
+
+DESCRIPTION:
+
+Implementation of task: Text Reading
+
+For more information on the reading task see readme.txt in the
+test folder.
+
+
+Global structure of experiment:
+
+  - welcome
+
+  - phase 1 (see subfolder test)
+
+  - thankyou
+
+
+HISTORY:
+2013-07-03 TV   Created.
+2013-07-03 MD   Major overhaul to generate stimuli much easier now there is
+                support for multiple lists.
+
+\******************************************************************************/
+
+requires 2.5;
+
+import std_windows1;
+import std_texts_en;
+import std_entry_page1;
+import std_exit_page1;
+import std_pause_page;
+import std_blank_page;
+import io_beexybox;
+
+import test::task;
+import test::generate_objects;
+
+Experiment experiment
+{
+    on_event:entry()
+    {
+        show_test_windows();
+    }
+
+    on_event:message()
+    {
+        // On Ctrl+F4 jump unconditionally to the thank-you part.
+        if (message_sender == control && message_arg == SYS_STOP)
+        {
+            control.mark_experiment_aborted();
+            thankyou.enter();
+        }
+    }
+
+    // Decides whether to start te task or generate the
+    // objects and png
+    TransientPart decide_generate
+    {
+        on_event:entry()
+        {
+            if (generate_object_info)
+                generate_objs.enter();
+            else
+                welcome.enter();
+        }
+    }
+
+    // if commandline option --generate is present all objects
+    // and png's are generated for all lists.
+    Part generate_objs
+    {
+        on_event:entry()
+        {
+            if (generate_object_info)
+            {
+                test::generate(this);
+            }
+        }
+
+        on_event:exit()
+        {
+            if (generate_object_info)
+            {
+                test::object_info_save();
+                control.mark_experiment_aborted();
+                terminate;
+            }
+        }
+    }
+
+    Part welcome
+    {
+        on_event:entry()
+        {
+            entry_page.set_text(WELCOME_TEXT);
+            entry_page.action(this, 0s);
+        }
+    }
+
+
+    Part phase1
+    {
+        on_event:entry()
+        {
+            test::action(this);
+        }
+    }
+
+
+    Part thankyou
+    {
+        on_event:entry()
+        {
+            control.end_experiment();   // Check-in session.
+
+            exit_page.set_text(THANK_YOU_TEXT);
+            exit_page.action(this, 10s);
+        }
+
+
+        on_event:exit()
+        {
+            // Save object information (when in object info generation mode).
+            test::object_info_save();
+        }
+    }
+}
