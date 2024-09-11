@@ -7,7 +7,7 @@ ADAPTED BY:     Maarten Duijndam <M.J.A.Duijndam@uu.nl>
 DESCRIPTION:
 
 Implementation of task: Text Reading
-See readme.txt for more information.
+See readme.md for more information.
 
 
 Global structure of this experiment phase:
@@ -55,6 +55,7 @@ import et_setup_page;
 import test_page;
 import question_page;
 import object_info;
+import insert;
 
 
 Block task
@@ -64,7 +65,14 @@ Block task
     {
         // Randomize test items table.
         if (shuffle_test_items(selected_group) != OK)
-            terminate;
+            terminate "Unable to shuffle items according specs";
+
+        if (have_flag("short")) {
+            test_items[selected_group].size = 4;
+        }
+        
+        insert_pause(test_items[selected_group]);
+
         eyetracker.setup();
     }
 

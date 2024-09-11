@@ -2,33 +2,38 @@
 import stimuli;
 
 const string pause_text = 
-    M"<b>Pauze<\b>\n\n"
-    "Je hebt nu een korte pauze. Blijf rustig zitten de experiment leider komt "
-    "even kijken.";
+    "PAUZE\n"
+    "Je hebt nu een korte pauze. Blijf rustig zitten de experiment\n"
+    "leider komt even kijken.";
 
 // This item is inserted in the middle
-TestItem pause_item = {
-    999,
-    FILL,
-    pause_text,
-    false,
-    false,
-    "",
-    false,
-    false,
-    false
+// You can initialize an array, but not a single item...
+TestItem[] pause_item = {
+    {
+        "999",
+        FILL,
+        pause_text,
+        false,
+        false,
+        "",
+        false,
+        false,
+        false
+    }
 };
 
-TestItem[] temp_stims = {};
+TestItem[] temp_items= {};
 
-// Inserts pause halfway through the experiment
+// Inserts pause halfway through the experiment.
+// You should first shuffle your stimuli and then
+// insert the pause only once.
 void
 insert_pause(TestItem[] items) {
     
     // save second half of stimuli.
     int i = items.size/2;
     while (i < items.size) {
-        append_test_item(temp_stips, items[i]);
+        append_test_item(temp_items, items[i]);
         i++;
     }
 
@@ -36,15 +41,15 @@ insert_pause(TestItem[] items) {
     items.size = items.size/2;
 
     // Insert the pause item
-    append_test_item(items, pause_item);
+    append_test_item(items, pause_item[0]);
 
     // put the second half after the pause item.
     i = 0;
-    while(i < temp_stips.size) {
+    while(i < temp_items.size) {
         append_test_item(items, temp_items[i]);
         i++;
     }
 
     // restore default state.
-    temp_stims.size = 0;
+    temp_items.size = 0;
 }
