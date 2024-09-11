@@ -1,0 +1,50 @@
+
+import stimuli;
+
+const string pause_text = 
+    M"<b>Pauze<\b>\n\n"
+    "Je hebt nu een korte pauze. Blijf rustig zitten de experiment leider komt "
+    "even kijken.";
+
+// This item is inserted in the middle
+TestItem pause_item = {
+    999,
+    FILL,
+    pause_text,
+    false,
+    false,
+    "",
+    false,
+    false,
+    false
+};
+
+TestItem[] temp_stims = {};
+
+// Inserts pause halfway through the experiment
+void
+insert_pause(TestItem[] items) {
+    
+    // save second half of stimuli.
+    int i = items.size/2;
+    while (i < items.size) {
+        append_test_item(temp_stips, items[i]);
+        i++;
+    }
+
+    // Temporarily remove 2nd half of stimuli
+    items.size = items.size/2;
+
+    // Insert the pause item
+    append_test_item(items, pause_item);
+
+    // put the second half after the pause item.
+    i = 0;
+    while(i < temp_stips.size) {
+        append_test_item(items, temp_items[i]);
+        i++;
+    }
+
+    // restore default state.
+    temp_stims.size = 0;
+}

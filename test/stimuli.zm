@@ -157,3 +157,8 @@ void save_stimuli()
         "Test items");
 }
 
+// Appends test item to the end of items.
+void append_test_item(TestItem[] items, TestItem item) {
+    items.size = items.size + 1;
+    items[items.size - 1] = item;
+}
