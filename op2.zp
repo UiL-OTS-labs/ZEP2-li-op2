@@ -30,7 +30,7 @@ HISTORY:
 requires 2.6;
 
 import std_windows1;
-import std_texts_en;
+import std_texts_nl;
 import std_entry_page1;
 import std_exit_page1;
 import std_pause_page;
