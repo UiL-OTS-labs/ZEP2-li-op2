@@ -35,7 +35,12 @@ EyeTracker eyetracker
         // Link to eye-tracker device interface. This device produces our
         // gaze samples and all other events (see below).
         source = eyetracker_device;
-        eyetracker_device.optimal_eye_to_camera_distance = 520;
+
+        // Set the optimal distance between camera and participant
+        // Eyelink 1000
+        eyetracker_device.optimal_eye_to_camera_distance = 600;
+        // Eyelink portable duo
+        //eyetracker_device.optimal_eye_to_camera_distance = 520;
 
         // Duration of attention target phase, focus target phase and
         // wake-up target (if shown).
